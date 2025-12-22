@@ -1,0 +1,57 @@
+<div style="overflow-x: hidden;height: 100%;">
+    <mat-toolbar class="navbar">
+        <div style="display: flex;align-items: center;">
+            <a><img src="logo/HL_logo.jpg" alt="" width="30" height="30" style="border-radius: 50px;"></a>
+            <span style="margin-left: 5px;"><b>Luxurial</b></span>
+        </div>
+    </mat-toolbar>
+    <div class="user-info d-flex align-items-center p-1">
+        <img [src]="userImage" width="80" class="rounded-circle border border-dark-subtle">
+        <p class="mb-0 text-center" style="margin-left: 15px;">
+            <b>{{UserName}}</b><br>
+            <small style="font-size: 13px;">Admin</small>
+        </p>
+    </div>
+    <div class="row mt-2">
+        <div class="col-4 text-center">
+            <button mat-icon-button>
+                <mat-icon>person</mat-icon>
+            </button>
+        </div>
+        <div class="col-4 text-center">
+            <button mat-icon-button>
+                <mat-icon>mail</mat-icon>
+            </button>
+        </div>
+        <div class="col-4 text-center">
+            <button mat-icon-button>
+                <mat-icon>power_settings_new</mat-icon>
+            </button>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <mat-nav-list class="sidenav-list">
+        <ng-container *ngFor="let item of menuItems">
+            <a *ngIf="!item.subMenuItems?.length" mat-list-item [routerLink]="item.routerLink" routerLinkActive="active"
+                class="top-item" (click)="onToggleClose()">
+                <mat-icon>{{item.icon}}</mat-icon>
+                <span style="font-size: 14px;padding-left: 10px;">{{item.title}}</span>
+            </a>
+            <mat-expansion-panel *ngIf="item.subMenuItems?.length" class="mat-elevation-z0">
+                <mat-expansion-panel-header style="padding: 0px 15px;">
+                    <mat-icon>{{item.icon}}</mat-icon>
+                    <span style="font-size: 14px;font-weight:normal;">{{item.title}}</span>
+                </mat-expansion-panel-header>
+                <mat-nav-list>
+                    <ng-container *ngFor="let child of item.subMenuItems">
+                        <a mat-list-item [routerLink]="child.routerLink" routerLinkActive="active"
+                            (click)="onToggleClose()">
+                            <span style="font-size: 35px;">•</span>
+                            <span style="font-size: 14px;padding-left: 10px;">{{child.title}}</span>
+                        </a>
+                    </ng-container>
+                </mat-nav-list>
+            </mat-expansion-panel>
+        </ng-container>
+    </mat-nav-list>
+</div>

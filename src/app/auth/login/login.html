@@ -1,0 +1,30 @@
+<div class="container d-flex justify-content-center">
+    <div class="form-container">
+        <p class="title">Welcome to Luxuria</p>
+        <p class="title">Login</p>
+        <form class="form" [formGroup]="LoginForm">
+            <div id="firstFilter" class="filter-switch">
+                <input id="option1" name="LoginType" value="Admin" type="radio" formControlName="LoginType" />
+                <label class="option" for="option1">Admin</label>
+                <input id="option2" name="LoginType" value="Employee" type="radio" formControlName="LoginType" />
+                <label class="option" for="option2">Employee</label>
+                <span class="background"></span>
+            </div>
+            <div class="input-group">
+                <label for="username">Email</label>
+                <input type="text" placeholder="" formControlName="EmailID" />
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" placeholder="" formControlName="Password" />
+            </div>
+            <div class="forgot">
+                <a href="#">Forgot Password ?</a>
+            </div>
+            <button class="sign" (click)="Login()">Sign in</button>
+        </form>
+        <p class="signup">
+            Don't have an account? <a routerLink="/register">Sign up</a>
+        </p>
+    </div>
+</div>

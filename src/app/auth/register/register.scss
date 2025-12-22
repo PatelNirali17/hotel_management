@@ -1,0 +1,89 @@
+.form-container {
+    width: 400px;
+    border-radius: 0.75rem;
+    background-color: #f7f7f7;
+    padding: 2rem;
+    color: #333;
+    box-shadow: #d9ae5f 0px 1px 4px;
+    margin-top: 100px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #d9ae5f;
+}
+
+.form {
+    margin-top: 1.5rem;
+}
+
+.input-group {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.input-group label {
+    display: block;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid #ccc;
+    border-top-left-radius: 0.375rem !important;
+    border-bottom-left-radius: 0.375rem !important;
+    background-color: #f7f7f7;
+    padding: 0.75rem 1rem;
+    color: #333;
+}
+
+.input-group input:focus {
+    border-color: #d9ae5f !important;
+}
+
+.forgot {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #666;
+    margin: 8px 0 14px 0;
+}
+
+.forgot a,
+.signup a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot a:hover,
+.signup a:hover {
+    color: #d9ae5f;
+    text-decoration: underline #d9ae5f;
+}
+
+.sign {
+    display: block;
+    width: 100%;
+    background-color: #d9ae5f;
+    padding: 0.75rem;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+}
+
+.signup {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 10px;
+}

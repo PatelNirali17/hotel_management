@@ -1,0 +1,9 @@
+<div class="container-fluid">
+    <ul class="breadcrumb">
+        <li><a *ngIf="router.url != '/'" routerLink="/dashboard"><mat-icon>home</mat-icon></a></li>
+        <li *ngFor="let breadcrumb of breadcrumbs; let i = index;">
+            <a [hidden]="i == (breadcrumbs.length - 1)" (click)="navigateTo(breadcrumb.url)">{{breadcrumb.name}}</a>
+            <span [hidden]="i != (breadcrumbs.length - 1)" class="text-uppercase">{{breadcrumb.name}}</span>
+        </li>
+    </ul>
+</div>

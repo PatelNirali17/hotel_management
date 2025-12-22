@@ -1,0 +1,43 @@
+.navbar {
+    background-color: #d9ae5f;
+    color: white;
+    height: 56px;
+}
+
+.user-info {
+    width: 230px;
+
+    p {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
+}
+
+.nested-panel {
+    // margin-left: 20px;
+    box-shadow: none !important;
+
+}
+
+.mat-expansion-panel-header mat-icon {
+    margin-right: 10px;
+}
+
+::ng-deep .mdc-list-item__primary-text {
+    display: flex;
+    align-items: center;
+}
+
+a.active {
+    // background: #e5f4fa !important;
+    color: #d9ae5f !important;
+}
+a.active span{
+    color: #d9ae5f !important;
+}
+
+a.active mat-icon {
+    color: #d9ae5f !important;
+}
+
