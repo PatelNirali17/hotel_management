@@ -14,8 +14,6 @@ export class SideMenu {
   @Output() closeSideNav = new EventEmitter();
   menuItems: any[] = [];
   activeRoute: string = '';
-  UserName: any = "Nirali Patel"
-  userImage = 'users/default-user.jpg'
   constructor(private router: Router, private authenticationService: AuthenticationService, @Inject(PLATFORM_ID) private platformId: object) {
     if (isPlatformBrowser(this.platformId)) {
       var UserMenuList = this.authenticationService.UserMenuValue

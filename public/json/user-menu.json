@@ -15,7 +15,7 @@
             "title": "Dashboard 1",
             "routerLink": "/dashboard",
             "href": null,
-            "icon": "brightness_1",
+            "icon": null,
             "target": null,
             "hasSubMenu": false,
             "parentId": 1
@@ -25,7 +25,7 @@
             "title": "Dashboard 2",
             "routerLink": "/dashboard2",
             "href": null,
-            "icon": "brightness_1",
+            "icon": null,
             "target": null,
             "hasSubMenu": false,
             "parentId": 1
@@ -45,7 +45,7 @@
             "title": "Bookings",
             "routerLink": null,
             "href": null,
-            "icon": "article",
+            "icon": "book",
             "target": null,
             "hasSubMenu": true,
             "parentId": 0
@@ -55,7 +55,7 @@
             "title": "All Bookings",
             "routerLink": "/bookinsdetails",
             "href": null,
-            "icon": "brightness_1",
+            "icon": null,
             "target": null,
             "hasSubMenu": false,
             "parentId": 5
@@ -65,12 +65,12 @@
             "title": "Cancel Bookings",
             "routerLink": "/cancelbookins",
             "href": null,
-            "icon": "brightness_1",
+            "icon": null,
             "target": null,
             "hasSubMenu": false,
             "parentId": 5
         },
-         {
+        {
             "id": 8,
             "title": "Rooms",
             "routerLink": null,
@@ -83,9 +83,9 @@
         {
             "id": 9,
             "title": "All Room",
-            "routerLink": "/roomdetails",
+            "routerLink": "/rooms/roomdetails",
             "href": null,
-            "icon": "brightness_1",
+            "icon": null,
             "target": null,
             "hasSubMenu": false,
             "parentId": 8
@@ -93,9 +93,9 @@
         {
             "id": 10,
             "title": "Room Type",
-            "routerLink": "/roomtype",
+            "routerLink": "/rooms/roomtype",
             "href": null,
-            "icon": "brightness_1",
+            "icon": null,
             "target": null,
             "hasSubMenu": false,
             "parentId": 8
@@ -103,12 +103,314 @@
         {
             "id": 10,
             "title": "Rate & Pricing",
-            "routerLink": "/roomrate",
+            "routerLink": "/rooms/roomrate",
             "href": null,
-            "icon": "brightness_1>",
+            "icon": null,
             "target": null,
             "hasSubMenu": false,
             "parentId": 8
+        },
+        {
+            "id": 11,
+            "title": "Staff",
+            "routerLink": null,
+            "href": null,
+            "icon": "group",
+            "target": null,
+            "hasSubMenu": true,
+            "parentId": 0
+        },
+        {
+            "id": 12,
+            "title": "All Staff",
+            "routerLink": "/staffdetails",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 11
+        },
+        {
+            "id": 13,
+            "title": "Staff Profile",
+            "routerLink": "/staffProfile",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 11
+        },
+        {
+            "id": 14,
+            "title": "Departments",
+            "routerLink": "/departments",
+            "href": null,
+            "icon": "dns",
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 0
+        },
+        {
+            "id": 15,
+            "title": "Housekeeping",
+            "routerLink": null,
+            "href": null,
+            "icon": "cleaning_services",
+            "target": null,
+            "hasSubMenu": true,
+            "parentId": 0
+        },
+        {
+            "id": 16,
+            "title": "Room Cleaning",
+            "routerLink": "/roomcleaning",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 15
+        },
+        {
+            "id": 17,
+            "title": "Laundry Services",
+            "routerLink": "/laundryservices",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 15
+        },
+        {
+            "id": 18,
+            "title": "Leave Management",
+            "routerLink": null,
+            "href": null,
+            "icon": "travel_explore",
+            "target": null,
+            "hasSubMenu": true,
+            "parentId": 0
+        },
+        {
+            "id": 19,
+            "title": "Leave Requests",
+            "routerLink": "/leaverequests",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 18
+        },
+        {
+            "id": 20,
+            "title": "Leave Balance",
+            "routerLink": "/leavebalance",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 18
+        },
+        {
+            "id": 21,
+            "title": "Leave Types",
+            "routerLink": "/leavetypes",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 18
+        },
+        {
+            "id": 22,
+            "title": "Events",
+            "routerLink": "/events",
+            "href": null,
+            "icon": "cake",
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 0
+        },
+        {
+            "id": 23,
+            "title": "Guests",
+            "routerLink": null,
+            "href": null,
+            "icon": "hail",
+            "target": null,
+            "hasSubMenu": true,
+            "parentId": 0
+        },
+        {
+            "id": 24,
+            "title": "All Guests",
+            "routerLink": "/allguests",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 23
+        },
+        {
+            "id": 25,
+            "title": "Guest Profile",
+            "routerLink": "/guestprofile",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 23
+        },
+        {
+            "id": 26,
+            "title": "Cabs",
+            "routerLink": null,
+            "href": null,
+            "icon": "local_taxi",
+            "target": null,
+            "hasSubMenu": true,
+            "parentId": 0
+        },
+        {
+            "id": 27,
+            "title": "Cab List",
+            "routerLink": "/cablist",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 26
+        },
+        {
+            "id": 28,
+            "title": "Cab Booking",
+            "routerLink": "/cabbooking",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 26
+        },
+        {
+            "id": 29,
+            "title": "Reports",
+            "routerLink": null,
+            "href": null,
+            "icon": "inventory_2",
+            "target": null,
+            "hasSubMenu": true,
+            "parentId": 0
+        },
+        {
+            "id": 30,
+            "title": "Stocks",
+            "routerLink": "/stocks",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 29
+        },
+        {
+            "id": 31,
+            "title": "Expense",
+            "routerLink": "/expense",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 29
+        }
+    ],
+    "EmployeeMenu": [
+        {
+            "id": 1,
+            "title": "Employee Dashboard",
+            "routerLink": "/dashboard",
+            "href": null,
+            "icon": "desktop_mac",
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 0
+        },
+         {
+            "id": 2,
+            "title": "Attendance",
+            "routerLink": "/attendance",
+            "href": null,
+            "icon": "inventory_2",
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 0
+        },
+        {
+            "id": 3,
+            "title": "My Leaves",
+            "routerLink": null,
+            "href": null,
+            "icon": "assignment",
+            "target": null,
+            "hasSubMenu": true,
+            "parentId": 0
+        },
+        {
+            "id": 4,
+            "title": "Leave Requests",
+            "routerLink": "/leaverequests",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 3
+        },
+        {
+            "id": 5,
+            "title": "Leave Balance",
+            "routerLink": "/leavebalance",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 3
+        },
+        {
+            "id": 6,
+            "title": "Payroll",
+            "routerLink": null,
+            "href": null,
+            "icon": "payments",
+            "target": null,
+            "hasSubMenu": true,
+            "parentId": 0
+        },
+        {
+            "id": 7,
+            "title": "Salary",
+            "routerLink": "/leaverequests",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 6
+        },
+        {
+            "id": 8,
+            "title": "Bank Details",
+            "routerLink": "/leavebalance",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 6
+        },
+         {
+            "id": 9,
+            "title": "Shift",
+            "routerLink": "/shift",
+            "href": null,
+            "icon": "content_paste_search",
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 0
         }
     ]
 }

@@ -3,6 +3,7 @@ import { Login } from './auth/login/login';
 import { Register } from './auth/register/register';
 import { MainPage } from './features/main-page/main-page';
 import { Dashboard } from './features/dashboard/page/dashboard/dashboard';
+import { RoomsRoutesList } from './features/rooms/room-routes';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -12,6 +13,10 @@ export const routes: Routes = [
         path: '', component: MainPage,
         children: [
             { path: 'dashboard', component: Dashboard, data: { breadcrumb: 'Dashboard' } },
+            {
+                path: 'rooms', component: Dashboard, data: { breadcrumb: 'Rooms' },
+                children: RoomsRoutesList
+            },
         ]
     }
 ];

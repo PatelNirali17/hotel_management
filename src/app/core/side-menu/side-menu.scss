@@ -1,6 +1,6 @@
 .navbar {
     background-color: #d9ae5f;
-    color: white;
+    color: #2b2b2b;
     height: 56px;
 }
 
@@ -30,8 +30,9 @@
 }
 
 a.active {
-    // background: #e5f4fa !important;
+    background: #fcf8ef !important;
     color: #d9ae5f !important;
+    border: 1px solid #faefd6;
 }
 a.active span{
     color: #d9ae5f !important;
