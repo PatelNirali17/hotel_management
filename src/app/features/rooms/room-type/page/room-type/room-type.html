@@ -1,3 +1,38 @@
 <div class="container-fluid">
-
+    <div class="row g-2">
+        <div class="col-lg-12">
+            <div class="d-flex align-items-center mb-3">
+                <div class="p-0">
+                    <button matButton="elevated" class="bgprimary">
+                        <mat-icon>add</mat-icon> Create Room Type
+                    </button>
+                </div>
+                <div class="p-0 px-1">
+                    <button matButton="elevated" class="bgsecondary">
+                        <mat-icon>filter_list</mat-icon> Filter
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" *ngFor="let room of RoomTypesDetails | paginate: { itemsPerPage:12, currentPage: page }">
+            <div class="room-tile">
+                <div class="status-pill" [ngClass]="room.status === 'Active' ? 'active' : 'inactive'">
+                    {{ room.status }}
+                </div>
+                <div class="accent-strip"></div>
+                <div class="tile-content">
+                    <h5 class="room-no">Room {{ room.roomNo }}</h5>
+                    <p class="room-type">{{ room.roomType }} <span>({{ room.shortCode }})</span></p>
+                    <div class="info-row">
+                        <span>{{ room.acType }}</span>
+                        <span>{{ room.capacity }} Persons</span>
+                    </div>
+                    <div class="price">₹{{ room.rent }} <small>/ Night</small></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2 text-end">
+            <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
+        </div>
+    </div>
 </div>

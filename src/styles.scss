@@ -7,6 +7,7 @@
 @use "app/shared/style/base" as *;
 @import "../node_modules/@angular/material/prebuilt-themes/azure-blue.css";
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "@fortawesome/fontawesome-free/css/all.css";
 
 // Primary = #d9ae5f
 
@@ -42,7 +43,7 @@ body {
   color: #555555 !important;
 }
 
-.bgsecondary {
+.bgsecondary:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
 }
 

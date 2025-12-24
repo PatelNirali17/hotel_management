@@ -36,6 +36,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 @NgModule({
@@ -79,7 +80,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatTreeModule,
     MatBottomSheetModule,
     MatDividerModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    NgxPaginationModule
   ],
   exports:[
     CommonModule,
@@ -120,7 +122,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatTreeModule,
     MatBottomSheetModule,
     MatDividerModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    NgxPaginationModule
   ]
 })
 export class SharedModule { }

@@ -14,7 +14,7 @@ export const routes: Routes = [
         children: [
             { path: 'dashboard', component: Dashboard, data: { breadcrumb: 'Dashboard' } },
             {
-                path: 'rooms', component: Dashboard, data: { breadcrumb: 'Rooms' },
+                path: 'rooms', data: { breadcrumb: 'Rooms' },
                 children: RoomsRoutesList
             },
         ]

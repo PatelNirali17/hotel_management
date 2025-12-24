@@ -39,7 +39,6 @@ export class Breadcrumb {
           name: node.data['breadcrumb'],
           url: '/' + url
         })
-        console.log(this.breadcrumbs)
       }
     }
     if (node.firstChild) {

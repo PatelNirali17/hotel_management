@@ -1,0 +1,69 @@
+.room-tile {
+  position: relative;
+  display: flex;
+  background: #fffefa; /* secondary */
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #d9ae5f;
+}
+.accent-strip {
+  width: 10px;
+  background-color: #d9ae5f; /* primary */
+}
+
+.tile-content {
+  padding: 10px;
+  flex: 1;
+  color: #555;
+}
+
+.room-no {
+  font-weight: 600;
+  color: #2b2b2b;
+  margin-bottom: 4px;
+}
+
+.room-type {
+  margin-bottom: 0px;
+  font-size: 0.95rem;
+}
+
+.room-type span {
+  color: #b08b4f;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+/* Price */
+.price {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #d9ae5f;
+}
+
+/* Status pill */
+.status-pill {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-pill.active {
+  background: #d9ae5f;
+  color: #2b2b2b;
+}
+
+.status-pill.inactive {
+  background: #f5f5f5; /* accent */
+  color: #8b8b8b;
+}
