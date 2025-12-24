@@ -1,69 +1,65 @@
-.room-tile {
-  position: relative;
-  display: flex;
-  background: #fffefa; /* secondary */
-  border-radius: 18px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  border: 1px solid #d9ae5f;
-}
-.accent-strip {
-  width: 10px;
-  background-color: #d9ae5f; /* primary */
+
+.luxury-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: transparent;
 }
 
-.tile-content {
-  padding: 10px;
-  flex: 1;
+.luxury-table thead th {
+  background: #f5f5f5; /* accent */
+  color: #2b2b2b;
+  font-weight: 600;
+  padding: 8px;
+  border-bottom: 2px solid #d9ae5f;
+}
+
+.luxury-table tbody td {
+  padding: 3px;
+  vertical-align: middle;
   color: #555;
 }
 
-.room-no {
+/* Zebra rows */
+.luxury-table tbody tr:nth-child(even) {
+  background: rgba(217, 174, 95, 0.08);
+}
+
+/* Hover */
+.luxury-table tbody tr:hover {
+  background: rgba(217, 174, 95, 0.15);
+}
+
+/* Highlight columns */
+.col-room {
   font-weight: 600;
   color: #2b2b2b;
-  margin-bottom: 4px;
+  border-right: 1px solid rgba(0,0,0,0.1);
 }
 
-.room-type {
-  margin-bottom: 0px;
-  font-size: 0.95rem;
-}
-
-.room-type span {
-  color: #b08b4f;
-}
-
-.info-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
-  margin-bottom: 12px;
-}
-
-/* Price */
-.price {
-  font-size: 1.4rem;
+.col-rent {
   font-weight: 600;
   color: #d9ae5f;
+  font-size: 1.05rem;
+  border-left: 1px solid rgba(0,0,0,0.1);
 }
 
-/* Status pill */
-.status-pill {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  padding: 4px 12px;
-  border-radius: 50px;
+/* Sub text */
+.sub {
   font-size: 0.75rem;
-  font-weight: 500;
+  color: #888;
 }
 
-.status-pill.active {
+/* Status */
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-right: 6px;
+}
+
+.status-dot.active {
   background: #d9ae5f;
-  color: #2b2b2b;
-}
-
-.status-pill.inactive {
-  background: #f5f5f5; /* accent */
-  color: #8b8b8b;
 }
