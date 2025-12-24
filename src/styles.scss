@@ -13,7 +13,7 @@
 
 body {
   color-scheme: light;
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   color: var(--mat-sys-on-surface);
   font: var(--mat-sys-body-medium);
   margin: 0;
@@ -30,37 +30,29 @@ body {
 }
 
 .bgprimary {
-  background-color: #d9ae5f !important;
-  color: #2b2b2b !important;
-}
-
-.bgprimary:hover {
-  background-color: #b08b4f !important;
+  background-color: #6B5B95 !important;
+  color: #FFFFFF !important;
 }
 
 .bgsecondary {
-  background-color: #fff8e1 !important;
-  color: #555555 !important;
-}
-
-.bgsecondary:hover {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
+  background-color: #F3F1F8 !important;
+  color: #5F5A73 !important;
 }
 
 .bgaccent {
-  background-color: #f5f5f5 !important;
-  color: #d9ae5f !important;
+  background-color: #C48B9F !important;
+  color: #FFFFFF !important;
 }
 
 // .mat-mdc-radio-checked .mat-mdc-radio-inner-circle {
 //   background-color: #d9ae5f !important;
 // }
 .mat-mdc-radio-button .mdc-radio__native-control:enabled:checked+.mdc-radio__background>.mdc-radio__inner-circle {
-  background-color: #d9ae5f !important;
+  background-color: #6B5B95 !important;
 }
 
 .mat-mdc-radio-button .mdc-radio__native-control:enabled:checked+.mdc-radio__background>.mdc-radio__outer-circle {
-  border-color: #d9ae5f !important;
+  border-color: #6B5B95 !important;
 }
 
 //default scrollbar

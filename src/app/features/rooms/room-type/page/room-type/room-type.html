@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row g-2">
-        <div class="col-lg-12">
+        <!-- <div class="col-lg-12">
             <div class="d-flex align-items-center mb-3">
                 <div class="p-0">
                     <button matButton="elevated" class="bgprimary">
@@ -13,7 +13,7 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="col-lg-12">
             <div class="table-responsive">
                 <table class="table luxury-table">
@@ -25,18 +25,34 @@
                             <th>Capacity</th>
                             <th class="col-rent">Rent</th>
                             <th>Status</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr *ngFor="let room of RoomTypesDetails | paginate: { itemsPerPage:10, currentPage: page }">
                             <td class="col-room">#{{ room.roomNo }}</td>
-                            <td>{{ room.roomType }}<div class="sub">{{ room.shortCode }}</div></td>
+                            <td>{{ room.roomType }}<span class="sub"> ({{ room.shortCode }})</span></td>
                             <td>{{ room.acType }}</td>
                             <td>{{ room.capacity }}</td>
                             <td class="col-rent">₹{{ room.rent }}</td>
                             <td>
                                 <span class="status-dot" [class.active]="room.status === 'Active'"></span>
                                 {{ room.status }}
+                            </td>
+                            <td>
+                                <button matIconButton [matMenuTriggerFor]="menu">
+                                    <mat-icon>more_vert</mat-icon>
+                                </button>
+                                <mat-menu #menu="matMenu">
+                                    <button mat-menu-item>
+                                        <mat-icon>edit</mat-icon>
+                                        <span>Edit</span>
+                                    </button>
+                                    <button mat-menu-item>
+                                        <mat-icon>delete</mat-icon>
+                                        <span>Delete</span>
+                                    </button>
+                                </mat-menu>
                             </td>
                         </tr>
                     </tbody>
