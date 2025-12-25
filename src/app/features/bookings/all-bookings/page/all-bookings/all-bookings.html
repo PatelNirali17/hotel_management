@@ -1,0 +1,87 @@
+<div class="container-fluid">
+    <div class="row g-2">
+        <div class="col-lg-12 mt-0">
+            <div class="d-flex align-items-center justify-content-end">
+                <div class="p-0">
+                    <button type="button" (click)="OpenCreateBookingDialog()"
+                        class="btn bgprimary btn-sm d-flex align-items-center"><mat-icon>add</mat-icon> Create
+                        Booking</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table luxury-table">
+                    <thead>
+                        <tr>
+                            <th class="col-first-column bgsecondary">SRNo</th>
+                            <th class="bgsecondary">Name</th>
+                            <th class="bgsecondary">Package</th>
+                            <th class="bgsecondary">Room Type</th>
+                            <th class="bgsecondary">Status</th>
+                            <th class="col-border bgsecondary">Email</th>
+                            <th class="bgsecondary">CheckIn</th>
+                            <th class="bgsecondary">CheckOut</th>
+                            <th class="bgsecondary">Payment</th>
+                            <th class="bgsecondary">Mobile Number</th>
+                            <th class="bgsecondary">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr
+                            *ngFor="let Booking of BookingDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            <td class="col-first-column">{{ i + 1 }}</td>
+                            <td>{{ Booking.firstName }} {{ Booking.lastName }}</td>
+                            <td>{{ Booking.package }}</td>
+                            <td>{{ Booking.roomType }}</td>
+                            <td>
+                                <span class="status-badge" [ngClass]="{'booked': Booking.status === 'Booked','open': Booking.status === 'CheckIn',
+                                 'inactive': Booking.status === 'Cancelled','draft': Booking.status === 'CheckOut'}">
+                                    <span class="status-dot"></span>
+                                    {{ Booking.status }}
+                                </span>
+                            </td>
+                            <td class="col-border">{{ Booking.email }}</td>
+                            <td>{{ Booking.checkInDate }}</td>
+                            <td>{{ Booking.checkOutDate }}</td>
+                            <td>
+                                <span class="status-badge" [ngClass]="{'booked': Booking.payment === 'Paid',
+                                'inactive': Booking.payment === 'Unpaid'}">
+                                    <span class="status-dot"></span>
+                                    {{ Booking.payment }}
+                                </span>
+                            </td>
+                            <td>{{ Booking.mobile }}</td>
+                            <td>
+                                <button matIconButton [matMenuTriggerFor]="menu">
+                                    <mat-icon>more_vert</mat-icon>
+                                </button>
+                                <mat-menu #menu="matMenu">
+                                    <button mat-menu-item style="color: #6B5B95;">
+                                        <mat-icon style="color: #6B5B95;">edit_square</mat-icon>
+                                        <span>Edit</span>
+                                    </button>
+                                    <button mat-menu-item style="color: #d10f01;">
+                                        <mat-icon style="color: #d10f01;">delete</mat-icon>
+                                        <span>Delete</span>
+                                    </button>
+                                     <button mat-menu-item style="color: #6B5B95;">
+                                        <mat-icon style="color: #6B5B95;">logout</mat-icon>
+                                        <span>CheckOut</span>
+                                    </button>
+                                     <button mat-menu-item style="color: #6B5B95;">
+                                        <mat-icon style="color: #6B5B95;">cancel</mat-icon>
+                                        <span>Cancel Booking</span>
+                                    </button>
+                                </mat-menu>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-0 text-end">
+            <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
+        </div>
+    </div>
+</div>

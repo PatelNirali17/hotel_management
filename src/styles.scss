@@ -119,6 +119,17 @@ mat-option {
     color: #6B5B95 !important;
 }
 
+.mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background, .mdc-checkbox__native-control:enabled:indeterminate~.mdc-checkbox__background {
+    border-color: #6B5B95 !important;
+    background-color: #6B5B95 !important;
+}
+.mat-calendar-body-selected {
+    background-color: #6B5B95 !important;
+}
+.mat-calendar-body-in-range::before {
+    background: #e1d7fa !important;
+}
+
 //default scrollbar
 ::-webkit-scrollbar {
   width: 3px;

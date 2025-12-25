@@ -53,7 +53,7 @@
         {
             "id": 6,
             "title": "All Bookings",
-            "routerLink": "/bookinsdetails",
+            "routerLink": "bookings/bookinsdetails",
             "href": null,
             "icon": null,
             "target": null,
@@ -63,7 +63,7 @@
         {
             "id": 7,
             "title": "Cancel Bookings",
-            "routerLink": "/cancelbookins",
+            "routerLink": "bookings/cancelbookins",
             "href": null,
             "icon": null,
             "target": null,

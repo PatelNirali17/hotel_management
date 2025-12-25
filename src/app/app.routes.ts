@@ -4,6 +4,7 @@ import { Register } from './auth/register/register';
 import { MainPage } from './features/main-page/main-page';
 import { Dashboard } from './features/dashboard/page/dashboard/dashboard';
 import { RoomsRoutesList } from './features/rooms/room-routes';
+import { BookingsRoutesList } from './features/bookings/bookings-routes';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -16,6 +17,10 @@ export const routes: Routes = [
             {
                 path: 'rooms', data: { breadcrumb: 'Rooms' },
                 children: RoomsRoutesList
+            },
+              {
+                path: 'bookings', data: { breadcrumb: 'Bookings' },
+                children: BookingsRoutesList
             },
         ]
     }

@@ -1,0 +1,67 @@
+<h1 mat-dialog-title>New Room</h1>
+<div mat-dialog-content class="bgsecondary">
+    <form class="row">
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Room No</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Room Type</mat-label>
+                <mat-select required>
+                    <mat-option *ngFor="let RoomType of RoomTypeList"
+                        [value]="RoomType.name">{{RoomType.name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center">
+            <mat-checkbox>AC Room</mat-checkbox>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Meal</mat-label>
+                <mat-select required>
+                    <mat-option value="None">None</mat-option>
+                    <mat-option value="Lunch">Lunch</mat-option>
+                    <mat-option value="Dinner">Dinner</mat-option>
+                    <mat-option value="Breakfast">Breakfast</mat-option>
+                    <mat-option value="All">All</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Capacity</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Rent</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Status</mat-label>
+                <mat-select required>
+                    <mat-option value="Open">Open</mat-option>
+                    <mat-option value="Booked">Booked</mat-option>
+                    <mat-option value="Inactive">Inactive</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+         <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Mobile Number</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button class="bgaccent">Save</button>
+    <button mat-raised-button [mat-dialog-close]="true" class="bgsecondary">Close</button>
+</div>

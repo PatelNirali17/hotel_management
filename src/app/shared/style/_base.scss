@@ -30,7 +30,7 @@
 }
 
 .col-border {
-    font-weight: 600;
+    // font-weight: 600;
     color: #6B5B95;
     border-left: 1px solid #6B5B95;
 }
@@ -68,9 +68,16 @@
     background-color: #C48B9F;
 }
 .status-badge.inactive {
-    background-color: #F2F2F2;
+    background-color: #e6e6e6;
     color: #9E9E9E;
 }
 .status-badge.inactive .status-dot {
     background-color: #9E9E9E;
+}
+.status-badge.draft {
+    background-color: #F7F2E8;
+    color: #B89B5E;
+}
+.status-badge.draft .status-dot {
+    background-color: #B89B5E;
 }
