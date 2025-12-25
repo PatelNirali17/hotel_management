@@ -1,0 +1,162 @@
+[
+  {
+    "RoomNo": 101,
+    "AC_NonAC": "AC",
+    "Meal": "All",
+    "Mobile": "1234567890",
+    "RoomType": "Delux",
+    "Rent": 25,
+    "Capacity": 2,
+    "Status": "Booked"
+  },
+  {
+    "RoomNo": 102,
+    "AC_NonAC": "Non AC",
+    "Meal": "Lunch",
+    "Mobile": "1234567890",
+    "RoomType": "Super Delux",
+    "Rent": 50,
+    "Capacity": 3,
+    "Status": "Open"
+  },
+  {
+    "RoomNo": 103,
+    "AC_NonAC": "AC",
+    "Meal": "All",
+    "Mobile": "1234567890",
+    "RoomType": "Super Delux",
+    "Rent": 31,
+    "Capacity": 2,
+    "Status": "Booked"
+  },
+  {
+    "RoomNo": 104,
+    "AC_NonAC": "Non AC",
+    "Meal": "Dinner",
+    "Mobile": "1234567890",
+    "RoomType": "Delux",
+    "Rent": 31,
+    "Capacity": 3,
+    "Status": "Inactive"
+  },
+  {
+    "RoomNo": 105,
+    "AC_NonAC": "AC",
+    "Meal": "Breakfast",
+    "Mobile": "1234567890",
+    "RoomType": "Vila",
+    "Rent": 50,
+    "Capacity": 2,
+    "Status": "Open"
+  },
+  {
+    "RoomNo": 106,
+    "AC_NonAC": "AC",
+    "Meal": "None",
+    "Mobile": "1234567890",
+    "RoomType": "Double",
+    "Rent": 45,
+    "Capacity": 4,
+    "Status": "Booked"
+  },
+  {
+    "RoomNo": 201,
+    "AC_NonAC": "Non AC",
+    "Meal": "None",
+    "Mobile": "1234567890",
+    "RoomType": "Single",
+    "Rent": 20,
+    "Capacity": 4,
+    "Status": "Booked"
+  },
+  {
+    "RoomNo": 202,
+    "AC_NonAC": "AC",
+    "Meal": "Dinner",
+    "Mobile": "1234567890",
+    "RoomType": "Delux",
+    "Rent": 25,
+    "Capacity": 3,
+    "Status": "Inactive"
+  },
+  {
+    "RoomNo": 203,
+    "AC_NonAC": "AC",
+    "Meal": "Breakfast",
+    "Mobile": "1234567890",
+    "RoomType": "Delux",
+    "Rent": 29,
+    "Capacity": 2,
+    "Status": "Open"
+  },
+  {
+    "RoomNo": 204,
+    "AC_NonAC": "Non AC",
+    "Meal": "Lunch",
+    "Mobile": "1234567890",
+    "RoomType": "Super Delux",
+    "Rent": 50,
+    "Capacity": 6,
+    "Status": "Open"
+  },
+  {
+    "RoomNo": 205,
+    "AC_NonAC": "Non AC",
+    "Meal": "Dinner",
+    "Mobile": "1234567890",
+    "RoomType": "Super Delux",
+    "Rent": 45,
+    "Capacity": 3,
+    "Status": "Inactive"
+  },
+  {
+    "RoomNo": 206,
+    "AC_NonAC": "AC",
+    "Meal": "Lunch",
+    "Mobile": "1234567890",
+    "RoomType": "Delux",
+    "Rent": 31,
+    "Capacity": 6,
+    "Status": "Booked"
+  },
+  {
+    "RoomNo": 207,
+    "AC_NonAC": "Non AC",
+    "Meal": "Lunch",
+    "Mobile": "1234567890",
+    "RoomType": "Delux",
+    "Rent": 45,
+    "Capacity": 3,
+    "Status": "Booked"
+  },
+  {
+    "RoomNo": 208,
+    "AC_NonAC": "Non AC",
+    "Meal": "Breakfast",
+    "Mobile": "1234567890",
+    "RoomType": "Vila",
+    "Rent": 25,
+    "Capacity": 2,
+    "Status": "Open"
+  },
+  {
+    "RoomNo": 301,
+    "AC_NonAC": "Non AC",
+    "Meal": "Dinner",
+    "Mobile": "1234567890",
+    "RoomType": "Single",
+    "Rent": 20,
+    "Capacity": 3,
+    "Status": "Open"
+  },
+  {
+    "RoomNo": 302,
+    "AC_NonAC": "AC",
+    "Meal": "None",
+    "Mobile": "1234567890",
+    "RoomType": "Super Delux",
+    "Rent": 29,
+    "Capacity": 4,
+    "Status": "Booked"
+  }
+]

@@ -29,6 +29,12 @@ body {
   font-family: Roboto;
 }
 
+:host {
+  --mdc-outlined-text-field-focus-outline-color: #6B5B95 !important;
+  --mdc-filled-text-field-focus-active-indicator-color: #6B5B95 !important;
+  --mdc-outlined-text-field-focus-label-text-color: #6B5B95 !important;
+}
+
 .bgprimary {
   background-color: #6B5B95 !important;
   color: #FFFFFF !important;
@@ -55,45 +61,103 @@ body {
   border-color: #6B5B95 !important;
 }
 
+.ngx-pagination .current {
+  background: #6B5B95 !important;
+}
+
+.mat-mdc-dialog-surface {
+  border-radius: 10px !important;
+}
+
+.mat-mdc-dialog-title::before {
+  height: 20px !important;
+}
+
+.mat-mdc-dialog-title {
+  padding: 0px 10px !important;
+  background-color: #6B5B95 !important;
+  color: #FFFFFF !important;
+}
+
+.mdc-floating-label--required:not(.mdc-floating-label--hide-required-marker)::after {
+  color: red;
+  font-weight: bolder;
+}
+
+.mat-mdc-select-value-text {
+  font-size: 14px !important;
+}
+
+.mat-mdc-form-field-input-control.mat-mdc-form-field-input-control {
+  font-size: 14px !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  // background-color: var(--mdc-filled-text-field-container-color, var(--mat-app-surface-variant));
+  background-color: transparent !important;
+}
+
+.mdc-text-field {
+  padding: 0px !important;
+}
+
+.mat-mdc-form-field-bottom-align::before {
+  height: 0px !important;
+}
+
+mat-option {
+  font-size: 14px !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label {
+    color: #6B5B95 !important;
+}
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after {
+    border-bottom-color: #6B5B95 !important;
+}
+.mat-mdc-form-field.mat-focused .mat-mdc-select-arrow {
+    color: #6B5B95 !important;
+}
+
 //default scrollbar
 ::-webkit-scrollbar {
-    width: 3px;
-    height: 8px;
+  width: 3px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-button {
-    width: 0px;
-    height: 0px;
+  width: 0px;
+  height: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #e1e1e1;
-    border: 0px none #ffffff;
-    border-radius: 0px;
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 0px;
 
-    &:hover {
-        background: #cccccc;
-    }
+  &:hover {
+    background: #cccccc;
+  }
 
-    &:active {
-        background: #888888;
-    }
+  &:active {
+    background: #888888;
+  }
 }
 
 ::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+
+  &:hover {
     background: #666666;
-    border: 0px none #ffffff;
-    border-radius: 0px;
+  }
 
-    &:hover {
-        background: #666666;
-    }
-
-    &:active {
-        background: #333333;
-    }
+  &:active {
+    background: #333333;
+  }
 }
 
 ::-webkit-scrollbar-corner {
-    background: transparent;
+  background: transparent;
 }

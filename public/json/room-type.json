@@ -1,146 +1,44 @@
 [
   {
-    "roomNo": 101,
-    "acType": "AC",
-    "shortCode": "DL",
-    "roomType": "Delux",
-    "rent": 25,
-    "capacity": 2,
-    "status": "Active"
+    "name": "Deluxe",
+    "code": "DLX",
+    "description": "Spacious room with king-size bed, sea view",
+    "maxOccupancy": 2,
+    "basePrice": 75
   },
   {
-    "roomNo": 102,
-    "acType": "Non AC",
-    "shortCode": "SDL",
-    "roomType": "Super Delux",
-    "rent": 50,
-    "capacity": 3,
-    "status": "Inactive"
+    "name": "Super Deluxe",
+    "code": "SDL",
+    "description": "Larger room with extra amenities",
+    "maxOccupancy": 3,
+    "basePrice": 100
   },
   {
-    "roomNo": 103,
-    "acType": "AC",
-    "shortCode": "SDL",
-    "roomType": "Super Delux",
-    "rent": 31,
-    "capacity": 2,
-    "status": "Active"
+    "name": "Suite",
+    "code": "STE",
+    "description": "Luxury room with living area and kitchen",
+    "maxOccupancy": 4,
+    "basePrice": 150
   },
   {
-    "roomNo": 104,
-    "acType": "Non AC",
-    "shortCode": "DL",
-    "roomType": "Delux",
-    "rent": 31,
-    "capacity": 3,
-    "status": "Inactive"
+    "name": "Single",
+    "code": "SGL",
+    "description": "Cozy single room for solo travelers",
+    "maxOccupancy": 1,
+    "basePrice": 40
   },
   {
-    "roomNo": 105,
-    "acType": "AC",
-    "shortCode": "VL",
-    "roomType": "Vila",
-    "rent": 50,
-    "capacity": 2,
-    "status": "Inactive"
+    "name": "Double",
+    "code": "DBL",
+    "description": "Room with two beds",
+    "maxOccupancy": 2,
+    "basePrice": 60
   },
   {
-    "roomNo": 106,
-    "acType": "AC",
-    "shortCode": "DB",
-    "roomType": "Double",
-    "rent": 45,
-    "capacity": 4,
-    "status": "Active"
-  },
-  {
-    "roomNo": 201,
-    "acType": "Non AC",
-    "shortCode": "SL",
-    "roomType": "Single",
-    "rent": 20,
-    "capacity": 4,
-    "status": "Active"
-  },
-  {
-    "roomNo": 202,
-    "acType": "AC",
-    "shortCode": "DL",
-    "roomType": "Delux",
-    "rent": 25,
-    "capacity": 3,
-    "status": "Inactive"
-  },
-  {
-    "roomNo": 203,
-    "acType": "AC",
-    "shortCode": "DL",
-    "roomType": "Delux",
-    "rent": 29,
-    "capacity": 2,
-    "status": "Inactive"
-  },
-  {
-    "roomNo": 204,
-    "acType": "Non AC",
-    "shortCode": "SDL",
-    "roomType": "Super Delux",
-    "rent": 50,
-    "capacity": 6,
-    "status": "Inactive"
-  },
-  {
-    "roomNo": 205,
-    "acType": "Non AC",
-    "shortCode": "SDL",
-    "roomType": "Super Delux",
-    "rent": 45,
-    "capacity": 3,
-    "status": "Inactive"
-  },
-  {
-    "roomNo": 206,
-    "acType": "AC",
-    "shortCode": "DL",
-    "roomType": "Delux",
-    "rent": 31,
-    "capacity": 6,
-    "status": "Active"
-  },
-  {
-    "roomNo": 207,
-    "acType": "Non AC",
-    "shortCode": "DL",
-    "roomType": "Delux",
-    "rent": 45,
-    "capacity": 3,
-    "status": "Active"
-  },
-  {
-    "roomNo": 208,
-    "acType": "Non AC",
-    "shortCode": "VL",
-    "roomType": "Vila",
-    "rent": 25,
-    "capacity": 2,
-    "status": "Inactive"
-  },
-  {
-    "roomNo": 301,
-    "acType": "Non AC",
-    "shortCode": "SL",
-    "roomType": "Single",
-    "rent": 20,
-    "capacity": 3,
-    "status": "Inactive"
-  },
-  {
-    "roomNo": 302,
-    "acType": "AC",
-    "shortCode": "SDL",
-    "roomType": "Super Delux",
-    "rent": 29,
-    "capacity": 4,
-    "status": "Active"
+    "name": "Villa",
+    "code": "VIL",
+    "description": "Private villa with garden and multiple rooms",
+    "maxOccupancy": 6,
+    "basePrice": 200
   }
 ]

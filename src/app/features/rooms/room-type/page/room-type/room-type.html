@@ -1,55 +1,46 @@
 <div class="container-fluid">
     <div class="row g-2">
-        <!-- <div class="col-lg-12">
-            <div class="d-flex align-items-center mb-3">
+        <div class="col-lg-12 mt-0">
+            <div class="d-flex align-items-center justify-content-end">
                 <div class="p-0">
-                    <button matButton="elevated" class="bgprimary">
-                        <mat-icon>add</mat-icon> Create Room Type
-                    </button>
-                </div>
-                <div class="p-0 px-1">
-                    <button matButton="elevated" class="bgsecondary">
-                        <mat-icon>filter_list</mat-icon> Filter
-                    </button>
+                    <button type="button" (click)="OpenRoomTypeDialog()"
+                        class="btn bgprimary btn-sm d-flex align-items-center"><mat-icon>add</mat-icon> Create Room
+                        Type</button>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div class="col-lg-12">
             <div class="table-responsive">
                 <table class="table luxury-table">
                     <thead>
                         <tr>
-                            <th class="col-room">Room</th>
-                            <th>Type</th>
-                            <th>AC</th>
-                            <th>Capacity</th>
-                            <th class="col-rent">Rent</th>
-                            <th>Status</th>
-                            <th>Action</th>
+                            <th class="col-first-column bgsecondary">SrNo</th>
+                            <th class="bgsecondary">Type</th>
+                            <th class="bgsecondary">Description</th>
+                            <th class="col-border bgsecondary">Rent</th>
+                            <th class="bgsecondary">Capacity</th>
+                            <th class="bgsecondary">Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let room of RoomTypesDetails | paginate: { itemsPerPage:10, currentPage: page }">
-                            <td class="col-room">#{{ room.roomNo }}</td>
-                            <td>{{ room.roomType }}<span class="sub"> ({{ room.shortCode }})</span></td>
-                            <td>{{ room.acType }}</td>
-                            <td>{{ room.capacity }}</td>
-                            <td class="col-rent">₹{{ room.rent }}</td>
-                            <td>
-                                <span class="status-dot" [class.active]="room.status === 'Active'"></span>
-                                {{ room.status }}
-                            </td>
+                        <tr
+                            *ngFor="let room of RoomTypesDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            <td class="col-first-column">{{ i + 1 }}</td>
+                            <td>{{ room.name }}<span class="subtext"> ({{ room.code }})</span></td>
+                            <td>{{ room.description }}</td>
+                            <td class="col-border" style="color: #6B5B95">₹{{ room.basePrice }}</td>
+                            <td>{{ room.maxOccupancy }}</td>
                             <td>
                                 <button matIconButton [matMenuTriggerFor]="menu">
                                     <mat-icon>more_vert</mat-icon>
                                 </button>
                                 <mat-menu #menu="matMenu">
-                                    <button mat-menu-item>
-                                        <mat-icon>edit</mat-icon>
+                                    <button mat-menu-item style="color: #6B5B95;">
+                                        <mat-icon style="color: #6B5B95;">edit_square</mat-icon>
                                         <span>Edit</span>
                                     </button>
-                                    <button mat-menu-item>
-                                        <mat-icon>delete</mat-icon>
+                                    <button mat-menu-item style="color: #d10f01;">
+                                        <mat-icon style="color: #d10f01;">delete</mat-icon>
                                         <span>Delete</span>
                                     </button>
                                 </mat-menu>
@@ -59,7 +50,7 @@
                 </table>
             </div>
         </div>
-        <div class="col-lg-12 mt-2 text-end">
+        <div class="col-lg-12 mt-0 text-end">
             <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
         </div>
     </div>

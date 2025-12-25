@@ -1,0 +1,76 @@
+.luxury-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: transparent;
+}
+
+.luxury-table thead th {
+    background: #f5f5f5;
+    color: #2b2b2b;
+    font-weight: 600;
+    padding: 8px;
+    border-bottom: 2px solid #6B5B95;
+}
+
+.luxury-table tbody td {
+    padding: 0px 8px;
+    vertical-align: middle;
+    color: #555;
+}
+
+.luxury-table tbody tr:nth-of-type(even) td {
+    background: #F3F1F8;
+}
+
+.col-first-column {
+    font-weight: 600;
+    color: #2b2b2b;
+    border-right: 1px solid #6B5B95;
+}
+
+.col-border {
+    font-weight: 600;
+    color: #6B5B95;
+    border-left: 1px solid #6B5B95;
+}
+
+.subtext {
+    font-size: 0.75rem;
+    color: #6B5B95;
+}
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.status-badge.booked {
+    background-color: #eee7f8;
+    color: #6B5B95;
+}
+.status-badge.booked .status-dot {
+    background-color: #6B5B95;
+}
+.status-badge.open {
+    background-color: #F6E9EE;
+    color: #C48B9F;
+}
+.status-badge.open .status-dot {
+    background-color: #C48B9F;
+}
+.status-badge.inactive {
+    background-color: #F2F2F2;
+    color: #9E9E9E;
+}
+.status-badge.inactive .status-dot {
+    background-color: #9E9E9E;
+}

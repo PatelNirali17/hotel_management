@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { SharedModule } from '../../../../../shared/shared-module';
 import { RoomTypeService } from '../../room-type-service';
+import { MatDialog } from '@angular/material/dialog';
+import { RoomTypeDialog } from '../../component/room-type-dialog/room-type-dialog';
 
 @Component({
   selector: 'app-room-type',
@@ -13,7 +15,7 @@ export class RoomType {
   IsActiveUser: boolean = true;
   page: any;
 
-  constructor(private roomTypeService: RoomTypeService) {
+  constructor(private roomTypeService: RoomTypeService, private dialog: MatDialog) {
     this.GetRoomTypes()
   }
   onPageChanged(event: any) {
@@ -26,6 +28,19 @@ export class RoomType {
         this.RoomTypesDetails = result
       },
     })
+  }
+
+  OpenRoomTypeDialog() {
+    const dialogRef = this.dialog.open(RoomTypeDialog, {
+      minWidth: '700px',
+      maxWidth: '700px',
+      // data: obj,
+      disableClose: true
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      this.GetRoomTypes()
+    });
   }
 
 }
