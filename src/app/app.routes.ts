@@ -8,6 +8,7 @@ import { BookingsRoutesList } from './features/bookings/bookings-routes';
 import { StaffRoutesList } from './features/staff/staff-routes';
 import { DepartmentsRoutesList } from './features/departments/departments-routes';
 import { HousekeepingRoutesList } from './features/housekeeping/housekeeping-routes';
+import { LeaveRoutesList } from './features/leave-management/leave-management-routes';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -36,6 +37,10 @@ export const routes: Routes = [
             {
                 path: 'housekeeping', data: { breadcrumb: 'Housekeeping' },
                 children: HousekeepingRoutesList
+            },
+            {
+                path: 'leave', data: { breadcrumb: 'Leave Management' },
+                children: LeaveRoutesList
             },
         ]
 

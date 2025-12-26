@@ -138,6 +138,9 @@ mat-option {
 .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled):not(.mat-mdc-option-multiple) {
   background-color: #e1d7fa !important;
 }
+.mat-mdc-dialog-actions{
+  padding: 5px !important;
+}
 
 //default scrollbar
 ::-webkit-scrollbar {

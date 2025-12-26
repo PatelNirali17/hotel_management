@@ -19,7 +19,7 @@
                             <th class="bgsecondary">AC/Non AC</th>
                             <th class="bgsecondary">Meal</th>
                             <th class="bgsecondary">Capacity</th>
-                            <th class="col-border bgsecondary">Rent</th>
+                            <th class="bgsecondary">Rent</th>
                             <th class="bgsecondary">Status</th>
                             <th class="bgsecondary">Mobile Number</th>
                             <th class="bgsecondary">Action</th>
@@ -33,7 +33,7 @@
                             <td>{{ room.AC_NonAC }}</td>
                             <td>{{ room.Meal }}</td>
                             <td>{{ room.Capacity }}</td>
-                            <td class="col-border" style="color: #6B5B95">₹{{ room.Rent }}</td>
+                            <td>₹{{ room.Rent }}</td>
                             <td>
                                 <span class="status-badge" [ngClass]="{'booked': room.Status === 'Booked','open': room.Status === 'Open',
                                  'inactive': room.Status === 'Inactive'}">

@@ -1,0 +1,34 @@
+[
+    {
+        "leaveTypeName": "Casual Leave",
+        "description": "Short-term personal leave",
+        "category": "Paid",
+        "totalLeavesPerYear": 12,
+        "CarryOverLimit": 5,
+        "status": "Active"
+    },
+    {
+        "leaveTypeName": "Sick Leave",
+        "description": "Medical-related leave",
+        "category": "Paid",
+        "totalLeavesPerYear": 10,
+        "CarryOverLimit": 0,
+        "status": "Active"
+    },
+    {
+        "leaveTypeName": "Annual Leave",
+        "description": "Yearly planned leave",
+        "category": "Paid",
+        "totalLeavesPerYear": 18,
+        "CarryOverLimit": 10,
+        "status": "Inactive"
+    },
+    {
+        "leaveTypeName": "Unpaid Leave",
+        "description": "Leave without pay",
+        "category": "Unpaid",
+        "totalLeavesPerYear": 0,
+        "CarryOverLimit": 0,
+        "status": "Active"
+    }
+]

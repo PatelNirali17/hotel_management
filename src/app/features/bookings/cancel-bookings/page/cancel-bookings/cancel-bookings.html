@@ -10,7 +10,7 @@
                             <th class="bgsecondary">Room Type</th>
                             <th class="bgsecondary">Payment</th>
                             <th class="bgsecondary">Cancellation Date</th>
-                            <th class="col-border bgsecondary">Cancellation Status</th>
+                            <th class="bgsecondary">Cancellation Status</th>
                             <th class="bgsecondary">Refund Status</th>
                             <th class="bgsecondary">Cancellation Fee</th>
                             <th class="bgsecondary">Reason</th>
@@ -25,7 +25,7 @@
                             <td>{{ CancelBooking.RoomType }}</td>
                             <td>{{ CancelBooking.Payment }}</td>
                             <td>{{ CancelBooking.CancellationDate }}</td>
-                            <td class="col-border">
+                            <td>
                                 <span class="status-badge"
                                     [ngClass]="{'booked': CancelBooking.CancellationStatus === 'Confirmed',
                                 'open': CancelBooking.CancellationStatus === 'Pending','inactive': CancelBooking.CancellationStatus === 'Rejected'}">

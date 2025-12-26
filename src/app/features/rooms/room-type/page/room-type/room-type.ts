@@ -12,7 +12,6 @@ import { RoomTypeDialog } from '../../component/room-type-dialog/room-type-dialo
 })
 export class RoomType {
   RoomTypesDetails: any;
-  IsActiveUser: boolean = true;
   page: any;
 
   constructor(private roomTypeService: RoomTypeService, private dialog: MatDialog) {

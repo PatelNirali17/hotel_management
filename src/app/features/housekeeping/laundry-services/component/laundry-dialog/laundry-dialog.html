@@ -1,1 +1,91 @@
-<p>laundry-dialog works!</p>
+<h1 mat-dialog-title>New Room</h1>
+<div mat-dialog-content class="bgsecondary">
+    <form class="row">
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Guest Name</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Received Date</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Completion Date</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Service Type</mat-label>
+                <mat-select required>
+                    <mat-option value="Washing">Washing</mat-option>
+                    <mat-option value="Dry Cleaning">Dry Cleaning</mat-option>
+                    <mat-option value="Pressing">Pressing</mat-option>
+                    <mat-option value="Ironing">Ironing</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Status</mat-label>
+                <mat-select required>
+                    <mat-option value="In Progress">In Progress</mat-option>
+                    <mat-option value="Completed">Completed</mat-option>
+                    <mat-option value="Cancelled">Cancelled</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Quantity</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Employee</mat-label>
+                <mat-select required>
+                    <mat-option *ngFor="let Staff of StaffList" [value]="Staff.Name">{{Staff.Name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Payment Status</mat-label>
+                <mat-select required>
+                    <mat-option value="Paid">Paid</mat-option>
+                    <mat-option value="Pending">Pending</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Payment Method</mat-label>
+                <mat-select required>
+                    <mat-option value="Room Charge">Room Charge</mat-option>
+                    <mat-option value="Cash">Cash</mat-option>
+                    <mat-option value="Credit Card">Credit Card</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Comments</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button class="bgaccent">Save</button>
+    <button mat-raised-button [mat-dialog-close]="true" class="bgsecondary">Close</button>
+</div>

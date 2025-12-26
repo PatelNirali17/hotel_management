@@ -1,0 +1,73 @@
+<div class="container-fluid">
+    <div class="row g-2">
+        <div class="col-lg-12 mt-0">
+            <div class="d-flex align-items-center justify-content-end">
+                <div class="p-0">
+                    <button type="button" (click)="OpenLeaveTypeDialog()"
+                        class="btn bgprimary btn-sm d-flex align-items-center"><mat-icon>add</mat-icon> Create Leave
+                        Type</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table luxury-table">
+                    <thead>
+                        <tr>
+                            <th class="col-first-column bgsecondary">SrNo</th>
+                            <th class="bgsecondary">Leave Type</th>
+                            <th class="bgsecondary">Description</th>
+                            <th class="bgsecondary">Category</th>
+                            <th class="bgsecondary">Total Leaves Per Year</th>
+                            <th class="bgsecondary">Carry Over Limit</th>
+                            <th class="bgsecondary">Status</th>
+                            <th class="bgsecondary">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr
+                            *ngFor="let LeaveTypes of LeaveTypesDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            <td class="col-first-column">{{ i + 1 }}</td>
+                            <td>{{ LeaveTypes.leaveTypeName }}</td>
+                            <td>{{ LeaveTypes.description }}</td>
+                            <td>
+                                <span class="status-badge" [ngClass]="{'booked': LeaveTypes.category === 'Paid',
+                                'open': LeaveTypes.category === 'Unpaid'}">
+                                    <span class="status-dot"></span>
+                                    {{ LeaveTypes.category }}
+                                </span>
+                            </td>
+                            <td>{{ LeaveTypes.totalLeavesPerYear }}</td>
+                            <td>{{ LeaveTypes.CarryOverLimit }}</td>
+                            <td>
+                                <span class="status-badge" [ngClass]="{'booked': LeaveTypes.status === 'Active',
+                                'inactive': LeaveTypes.status === 'Inactive'}">
+                                    <span class="status-dot"></span>
+                                    {{ LeaveTypes.status }}
+                                </span>
+                            </td>
+                            <td>
+                                <button matIconButton [matMenuTriggerFor]="menu">
+                                    <mat-icon>more_vert</mat-icon>
+                                </button>
+                                <mat-menu #menu="matMenu">
+                                    <button mat-menu-item style="color: #6B5B95;">
+                                        <mat-icon style="color: #6B5B95;">edit_square</mat-icon>
+                                        <span>Edit</span>
+                                    </button>
+                                    <button mat-menu-item style="color: #d10f01;">
+                                        <mat-icon style="color: #d10f01;">delete</mat-icon>
+                                        <span>Delete</span>
+                                    </button>
+                                </mat-menu>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-0 text-end">
+            <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
+        </div>
+    </div>
+</div>

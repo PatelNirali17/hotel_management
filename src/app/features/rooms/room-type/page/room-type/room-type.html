@@ -17,7 +17,7 @@
                             <th class="col-first-column bgsecondary">SrNo</th>
                             <th class="bgsecondary">Type</th>
                             <th class="bgsecondary">Description</th>
-                            <th class="col-border bgsecondary">Rent</th>
+                            <th class="bgsecondary">Rent</th>
                             <th class="bgsecondary">Capacity</th>
                             <th class="bgsecondary">Action</th>
                         </tr>
@@ -28,7 +28,7 @@
                             <td class="col-first-column">{{ i + 1 }}</td>
                             <td>{{ room.name }}<span class="subtext"> ({{ room.code }})</span></td>
                             <td>{{ room.description }}</td>
-                            <td class="col-border" style="color: #6B5B95">₹{{ room.basePrice }}</td>
+                            <td>₹{{ room.basePrice }}</td>
                             <td>{{ room.maxOccupancy }}</td>
                             <td>
                                 <button matIconButton [matMenuTriggerFor]="menu">

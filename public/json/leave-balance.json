@@ -1,0 +1,90 @@
+[
+  {
+    "employeeName": "John Doe",
+    "department": "Front Office",
+    "year": 2025,
+    "leaveTypeName": "Casual Leave",
+    "totalAllocated": 12,
+    "usedLeaves": 4,
+    "carryForwardLeaves": 2,
+    "remainingLeaves": 10,
+    "status": "Active"
+  },
+  {
+    "employeeName": "Amit Sharma",
+    "department": "Housekeeping",
+    "year": 2025,
+    "leaveTypeName": "Sick Leave",
+    "totalAllocated": 10,
+    "usedLeaves": 3,
+    "carryForwardLeaves": 0,
+    "remainingLeaves": 7,
+    "status": "Active"
+  },
+  {
+    "employeeName": "Priya Patel",
+    "department": "Front Office",
+    "year": 2025,
+    "leaveTypeName": "Annual Leave",
+    "totalAllocated": 18,
+    "usedLeaves": 6,
+    "carryForwardLeaves": 5,
+    "remainingLeaves": 17,
+    "status": "Active"
+  },
+  {
+    "employeeName": "Rahul Verma",
+    "department": "Kitchen",
+    "year": 2025,
+    "leaveTypeName": "Comp Off",
+    "totalAllocated": 5,
+    "usedLeaves": 1,
+    "carryForwardLeaves": 0,
+    "remainingLeaves": 4,
+    "status": "Active"
+  },
+  {
+    "employeeName": "Neha Singh",
+    "department": "Housekeeping",
+    "year": 2025,
+    "leaveTypeName": "Unpaid Leave",
+    "totalAllocated": 0,
+    "usedLeaves": 2,
+    "carryForwardLeaves": 0,
+    "remainingLeaves": 0,
+    "status": "Active"
+  },
+  {
+    "employeeName": "Suresh Kumar",
+    "department": "Maintenance",
+    "year": 2025,
+    "leaveTypeName": "Casual Leave",
+    "totalAllocated": 12,
+    "usedLeaves": 5,
+    "carryForwardLeaves": 1,
+    "remainingLeaves": 8,
+    "status": "Active"
+  },
+  {
+    "employeeName": "Anjali Mehta",
+    "department": "HR",
+    "year": 2025,
+    "leaveTypeName": "Paternity Leave",
+    "totalAllocated": 15,
+    "usedLeaves": 4,
+    "carryForwardLeaves": 0,
+    "remainingLeaves": 11,
+    "status": "Active"
+  },
+  {
+    "employeeName": "Vikram Rao",
+    "department": "Security",
+    "year": 2025,
+    "leaveTypeName": "Emergency Leave",
+    "totalAllocated": 6,
+    "usedLeaves": 2,
+    "carryForwardLeaves": 0,
+    "remainingLeaves": 4,
+    "status": "Active"
+  }
+]
