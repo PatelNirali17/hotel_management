@@ -1,0 +1,79 @@
+<h1 mat-dialog-title>Cancel Booking</h1>
+<div mat-dialog-content class="bgsecondary">
+    <form class="row">
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">First Name</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Last Name</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Room Type</mat-label>
+                <mat-select required>
+                    <mat-option *ngFor="let RoomType of RoomTypeList"
+                        [value]="RoomType.name">{{RoomType.name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Payment</mat-label>
+                <mat-select required>
+                    <mat-option value="Paid">Paid</mat-option>
+                    <mat-option value="Unpaid">Unpaid</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Cancellation Date</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Cancellation Status</mat-label>
+                <mat-select required>
+                    <mat-option value="Pending">Pending</mat-option>
+                    <mat-option value="Confirmed">Confirmed</mat-option>
+                    <mat-option value="Rejected">Rejected</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Refund Status</mat-label>
+                <mat-select required>
+                    <mat-option value="Processed">Processed</mat-option>
+                    <mat-option value="Pending">Pending</mat-option>
+                    <mat-option value="Cancelled">Cancelled</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Cancellation Fee</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Reason</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button class="bgaccent">Save</button>
+    <button mat-raised-button [mat-dialog-close]="true" class="bgsecondary">Close</button>
+</div>

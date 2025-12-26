@@ -1,0 +1,70 @@
+<div class="container-fluid">
+    <div class="row g-2">
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table luxury-table">
+                    <thead>
+                        <tr>
+                            <th class="col-first-column bgsecondary">SRNo</th>
+                            <th class="bgsecondary">Name</th>
+                            <th class="bgsecondary">Room Type</th>
+                            <th class="bgsecondary">Payment</th>
+                            <th class="bgsecondary">Cancellation Date</th>
+                            <th class="col-border bgsecondary">Cancellation Status</th>
+                            <th class="bgsecondary">Refund Status</th>
+                            <th class="bgsecondary">Cancellation Fee</th>
+                            <th class="bgsecondary">Reason</th>
+                            <th class="bgsecondary">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr
+                            *ngFor="let CancelBooking of CancelBookingDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            <td class="col-first-column">{{ i + 1 }}</td>
+                            <td>{{ CancelBooking.firstName }} {{ CancelBooking.lastName }}</td>
+                            <td>{{ CancelBooking.RoomType }}</td>
+                            <td>{{ CancelBooking.Payment }}</td>
+                            <td>{{ CancelBooking.CancellationDate }}</td>
+                            <td class="col-border">
+                                <span class="status-badge"
+                                    [ngClass]="{'booked': CancelBooking.CancellationStatus === 'Confirmed',
+                                'open': CancelBooking.CancellationStatus === 'Pending','inactive': CancelBooking.CancellationStatus === 'Rejected'}">
+                                    <span class="status-dot"></span>
+                                    {{ CancelBooking.CancellationStatus }}
+                                </span>
+                            </td>
+                            <td>
+                                <span class="status-badge"
+                                    [ngClass]="{'booked': CancelBooking.RefundStatus === 'Processed',
+                                'open': CancelBooking.RefundStatus === 'Pending','inactive': CancelBooking.RefundStatus === 'Cancelled'}">
+                                    <span class="status-dot"></span>
+                                    {{ CancelBooking.RefundStatus }}
+                                </span>
+                            </td>
+                            <td style="color: #6B5B95">₹{{ CancelBooking.CancellationFee }}</td>
+                            <td>{{ CancelBooking.Reason }}</td>
+                            <td>
+                                <button matIconButton [matMenuTriggerFor]="menu">
+                                    <mat-icon>more_vert</mat-icon>
+                                </button>
+                                <mat-menu #menu="matMenu">
+                                    <button mat-menu-item style="color: #6B5B95;" (click)="EditCancelBooking(CancelBooking)">
+                                        <mat-icon style="color: #6B5B95;">edit_square</mat-icon>
+                                        <span>Edit</span>
+                                    </button>
+                                    <button mat-menu-item style="color: #d10f01;">
+                                        <mat-icon style="color: #d10f01;">delete</mat-icon>
+                                        <span>Delete</span>
+                                    </button>
+                                </mat-menu>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-0 text-end">
+            <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
+        </div>
+    </div>
+</div>

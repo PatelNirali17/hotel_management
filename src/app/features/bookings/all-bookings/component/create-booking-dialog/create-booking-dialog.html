@@ -58,6 +58,15 @@
         </div>
         <div class="col-lg-4">
             <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Payment</mat-label>
+                <mat-select required>
+                    <mat-option value="Paid">Paid</mat-option>
+                    <mat-option value="Unpaid">Unpaid</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
                 <mat-label style="font-size: 14px;">Email</mat-label>
                 <input matInput required>
             </mat-form-field>
@@ -67,13 +76,6 @@
                 <mat-label style="font-size: 14px;">Mobile Number</mat-label>
                 <input matInput required>
             </mat-form-field>
-        </div>
-         <div class="col-lg-6 d-flex align-items-center">
-            <mat-radio-group>
-                <mat-label style="font-size: 14px;">Payment</mat-label>
-                <mat-radio-button value="Paid">Paid</mat-radio-button>
-                <mat-radio-button value="Unpaid">Unpaid</mat-radio-button>
-            </mat-radio-group>
         </div>
     </form>
 </div>

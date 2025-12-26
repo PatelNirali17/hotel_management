@@ -110,24 +110,33 @@ mat-option {
 }
 
 .mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label {
-    color: #6B5B95 !important;
-}
-.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after {
-    border-bottom-color: #6B5B95 !important;
-}
-.mat-mdc-form-field.mat-focused .mat-mdc-select-arrow {
-    color: #6B5B95 !important;
+  color: #6B5B95 !important;
 }
 
-.mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background, .mdc-checkbox__native-control:enabled:indeterminate~.mdc-checkbox__background {
-    border-color: #6B5B95 !important;
-    background-color: #6B5B95 !important;
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after {
+  border-bottom-color: #6B5B95 !important;
 }
+
+.mat-mdc-form-field.mat-focused .mat-mdc-select-arrow {
+  color: #6B5B95 !important;
+}
+
+.mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background,
+.mdc-checkbox__native-control:enabled:indeterminate~.mdc-checkbox__background {
+  border-color: #6B5B95 !important;
+  background-color: #6B5B95 !important;
+}
+
 .mat-calendar-body-selected {
-    background-color: #6B5B95 !important;
+  background-color: #6B5B95 !important;
 }
+
 .mat-calendar-body-in-range::before {
-    background: #e1d7fa !important;
+  background: #e1d7fa !important;
+}
+
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled):not(.mat-mdc-option-multiple) {
+  background-color: #e1d7fa !important;
 }
 
 //default scrollbar
@@ -142,31 +151,15 @@ mat-option {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e1e1e1;
+  background: #6B5B95;
   border: 0px none #ffffff;
   border-radius: 0px;
-
-  &:hover {
-    background: #cccccc;
-  }
-
-  &:active {
-    background: #888888;
-  }
 }
 
 ::-webkit-scrollbar-track {
-  background: #666666;
+  background: #a0a0a0;
   border: 0px none #ffffff;
   border-radius: 0px;
-
-  &:hover {
-    background: #666666;
-  }
-
-  &:active {
-    background: #333333;
-  }
 }
 
 ::-webkit-scrollbar-corner {

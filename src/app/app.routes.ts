@@ -5,6 +5,9 @@ import { MainPage } from './features/main-page/main-page';
 import { Dashboard } from './features/dashboard/page/dashboard/dashboard';
 import { RoomsRoutesList } from './features/rooms/room-routes';
 import { BookingsRoutesList } from './features/bookings/bookings-routes';
+import { StaffRoutesList } from './features/staff/staff-routes';
+import { DepartmentsRoutesList } from './features/departments/departments-routes';
+import { HousekeepingRoutesList } from './features/housekeeping/housekeeping-routes';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -18,10 +21,23 @@ export const routes: Routes = [
                 path: 'rooms', data: { breadcrumb: 'Rooms' },
                 children: RoomsRoutesList
             },
-              {
+            {
                 path: 'bookings', data: { breadcrumb: 'Bookings' },
                 children: BookingsRoutesList
             },
+            {
+                path: 'staff', data: { breadcrumb: 'Staff' },
+                children: StaffRoutesList
+            },
+            {
+                path: 'departments', data: { breadcrumb: 'Departments' },
+                children: DepartmentsRoutesList
+            },
+            {
+                path: 'housekeeping', data: { breadcrumb: 'Housekeeping' },
+                children: HousekeepingRoutesList
+            },
         ]
+
     }
 ];

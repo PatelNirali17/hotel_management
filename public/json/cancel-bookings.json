@@ -1,0 +1,178 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Deo",
+        "RoomType": "Delux",
+        "Payment": "Paid",
+        "CancellationDate": "05-02-2024",
+        "CancellationStatus": "Confirmed",
+        "RefundStatus": "Processed",
+        "CancellationFee": 50.00,
+        "Reason": "Changed travel plans"
+    },
+    {
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "RoomType": "Suite",
+        "Payment": "Paid",
+        "CancellationDate": "01-03-2024",
+        "CancellationStatus": "Pending",
+        "RefundStatus": "Pending",
+        "CancellationFee": 100.00,
+        "Reason": "Personal reasons"
+    },
+    {
+        "firstName": "Alice",
+        "lastName": "Johnson",
+        "RoomType": "Single",
+        "Payment": "Not Paid",
+        "CancellationDate": "28-03-2024",
+        "CancellationStatus": "Rejected",
+        "RefundStatus": "Cancelled",
+        "CancellationFee": 0.00,
+        "Reason": "Found a better rate"
+    },
+    {
+        "firstName": "Michael",
+        "lastName": "Brown",
+        "RoomType": "Super Deluxe",
+        "Payment": "Paid",
+        "CancellationDate": "08-05-2024",
+        "CancellationStatus": "Confirmed",
+        "RefundStatus": "Processed",
+        "CancellationFee": 30.00,
+        "Reason": "Work commitments"
+    },
+    {
+        "firstName": "Emily",
+        "lastName": "White",
+        "RoomType": "Single",
+        "Payment": "Paid",
+        "CancellationDate": "15-06-2024",
+        "CancellationStatus": "Pending",
+        "RefundStatus": "Pending",
+        "CancellationFee": 70.00,
+        "Reason": "Health issues"
+    },
+    {
+        "firstName": "David",
+        "lastName": "Jones",
+        "RoomType": "Suite",
+        "Payment": "Paid",
+        "CancellationDate": "25-06-2024",
+        "CancellationStatus": "Confirmed",
+        "RefundStatus": "Processed",
+        "CancellationFee": 60.00,
+        "Reason": "Unexpected travel"
+    },
+    {
+        "firstName": "Linda",
+        "lastName": "Martin",
+        "RoomType": "Delux",
+        "Payment": "Not Paid",
+        "CancellationDate": "05-08-2024",
+        "CancellationStatus": "Pending",
+        "RefundStatus": "Pending",
+        "CancellationFee": 0.00,
+        "Reason": "Change of plans"
+    },
+    {
+        "firstName": "Robert",
+        "lastName": "Taylor",
+        "RoomType": "Deluxe",
+        "Payment": "Paid",
+        "CancellationDate": "10-09-2024",
+        "CancellationStatus": "Confirmed",
+        "RefundStatus": "Processed",
+        "CancellationFee": 40.00,
+        "Reason": "Family emergency"
+    },
+    {
+        "firstName": "Susan",
+        "lastName": "Moore",
+        "RoomType": "Suite",
+        "Payment": "Paid",
+        "CancellationDate": "01-10-2024",
+        "CancellationStatus": "Rejected",
+        "RefundStatus": "Cancelled",
+        "CancellationFee": 0.00,
+        "Reason": "Found a cheaper option"
+    },
+    {
+        "firstName": "William",
+        "lastName": "Davis",
+        "RoomType": "Super Deluxe",
+        "Payment": "Not Paid",
+        "CancellationDate": "05-11-2024",
+        "CancellationStatus": "Pending",
+        "RefundStatus": "Pending",
+        "CancellationFee": 0.00,
+        "Reason": "Event cancellation"
+    },
+    {
+        "firstName": "Maria",
+        "lastName": "Garcia",
+        "RoomType": "Delux",
+        "Payment": "Paid",
+        "CancellationDate": "28-11-2024",
+        "CancellationStatus": "Confirmed",
+        "RefundStatus": "Processed",
+        "CancellationFee": 55.00,
+        "Reason": "Unexpected schedule change"
+    },
+    {
+        "firstName": "James",
+        "lastName": "Hernandez",
+        "RoomType": "Suite",
+        "Payment": "Paid",
+        "CancellationDate": "05-01-2024",
+        "CancellationStatus": "Pending",
+        "RefundStatus": "Pending",
+        "CancellationFee": 80.00,
+        "Reason": "Travel restrictions"
+    },
+    {
+        "firstName": "Lisa",
+        "lastName": "Martinez",
+        "RoomType": "Double",
+        "Payment": "Paid",
+        "CancellationDate": "10-02-2024",
+        "CancellationStatus": "Confirmed",
+        "RefundStatus": "Processed",
+        "CancellationFee": 45.00,
+        "Reason": "Booking error"
+    },
+    {
+        "firstName": "Robert",
+        "lastName": "Brown",
+        "RoomType": "Villa",
+        "Payment": "Not Paid",
+        "CancellationDate": "15-03-2024",
+        "CancellationStatus": "Pending",
+        "RefundStatus": "Pending",
+        "CancellationFee": 0.00,
+        "Reason": "Personal reasons"
+    },
+    {
+        "firstName": "Mary",
+        "lastName": "Jones",
+        "RoomType": "Family",
+        "Payment": "Paid",
+        "CancellationDate": "10-04-2024",
+        "CancellationStatus": "Confirmed",
+        "RefundStatus": "Processed",
+        "CancellationFee": 90.00,
+        "Reason": "Unexpected event"
+    },
+    {
+        "firstName": "Charles",
+        "lastName": "Wilson",
+        "RoomType": "Delux",
+        "Payment": "Paid",
+        "CancellationDate": "05-05-2024",
+        "CancellationStatus": "Pending",
+        "RefundStatus": "Pending",
+        "CancellationFee": 100.00,
+        "Reason": "Change in travel dates"
+    }
+]

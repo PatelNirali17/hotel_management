@@ -1,0 +1,37 @@
+[
+    {
+        "Name":"Cook",
+        "ShortName":"Coo",
+        "Status":"Active"
+    },
+     {
+        "Name":"Kitchen Manager",
+        "ShortName":"Kmg",
+        "Status":"Active"
+    },
+     {
+        "Name":"Casino Host",
+        "ShortName":"Cht",
+        "Status":"Inactive"
+    },
+     {
+        "Name":"Driver",
+        "ShortName":"Drv",
+        "Status":"Active"
+    },
+     {
+        "Name":"Purchase Officer",
+        "ShortName":"Pur",
+        "Status":"Active"
+    },
+     {
+        "Name":"Receptionist",
+        "ShortName":"Rec",
+        "Status":"Active"
+    },
+     {
+        "Name":"Event Manager",
+        "ShortName":"Evt",
+        "Status":"Active"
+    }
+]

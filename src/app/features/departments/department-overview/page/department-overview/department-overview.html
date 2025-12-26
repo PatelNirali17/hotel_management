@@ -1,0 +1,59 @@
+<div class="container-fluid">
+    <div class="row g-2">
+        <div class="col-lg-12 mt-0">
+            <div class="d-flex align-items-center justify-content-end">
+                <div class="p-0">
+                    <button type="button" (click)="OpenCreateDepartmentOverviewDialog()"
+                        class="btn bgprimary btn-sm d-flex align-items-center"><mat-icon>add</mat-icon> Create
+                        Department Overview</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table luxury-table">
+                    <thead>
+                        <tr>
+                            <th class="col-first-column bgsecondary">SrNo</th>
+                            <th class="bgsecondary">Department Name</th>
+                            <th class="bgsecondary">HOD</th>
+                            <th class="bgsecondary">Mobile</th>
+                            <th class="col-border bgsecondary">Email</th>
+                            <th class="bgsecondary">Total Staff</th>
+                            <th class="bgsecondary">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr
+                            *ngFor="let Department of DepartmentOverviewDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            <td class="col-first-column">{{ i + 1 }}</td>
+                            <td>{{ Department.DepartmentName }}</td>
+                            <td>{{ Department.HOD }}</td>
+                            <td>{{ Department.Mobile }}</td>
+                            <td class="col-border">{{ Department.Email }}</td>
+                            <td>{{ Department.TotalStaff }}</td>
+                            <td>
+                                <button matIconButton [matMenuTriggerFor]="menu">
+                                    <mat-icon>more_vert</mat-icon>
+                                </button>
+                                <mat-menu #menu="matMenu">
+                                    <button mat-menu-item style="color: #6B5B95;">
+                                        <mat-icon style="color: #6B5B95;">edit_square</mat-icon>
+                                        <span>Edit</span>
+                                    </button>
+                                    <button mat-menu-item style="color: #d10f01;">
+                                        <mat-icon style="color: #d10f01;">delete</mat-icon>
+                                        <span>Delete</span>
+                                    </button>
+                                </mat-menu>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-0 text-end">
+            <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
+        </div>
+    </div>
+</div>

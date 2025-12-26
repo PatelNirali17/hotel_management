@@ -3,6 +3,7 @@ import { SharedModule } from '../../../../../shared/shared-module';
 import { AllBookingsService } from '../../all-bookings-service';
 import { CreateBookingDialog } from '../../component/create-booking-dialog/create-booking-dialog';
 import { MatDialog } from '@angular/material/dialog';
+import { CancelBookingsDialog } from '../../../cancel-bookings/component/cancel-bookings-dialog/cancel-bookings-dialog';
 
 @Component({
   selector: 'app-all-bookings',
@@ -34,6 +35,19 @@ export class AllBookings {
       minWidth: '700px',
       maxWidth: '700px',
       // data: obj,
+      disableClose: true
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      this.GetBookingDetails()
+    });
+  }
+  
+  OpenCancelBookingDialog(Booking: any) {
+    const dialogRef = this.dialog.open(CancelBookingsDialog, {
+      minWidth: '700px',
+      maxWidth: '700px',
+      data: Booking,
       disableClose: true
     });
 

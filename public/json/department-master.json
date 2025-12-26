@@ -1,0 +1,37 @@
+[
+    {
+        "Name":"Housekeeping",
+        "ShortName":"HK",
+        "Status":"Active"
+    },
+     {
+        "Name":"Food and Beverage",
+        "ShortName":"F&B",
+        "Status":"Active"
+    },
+     {
+        "Name":"Kitchen",
+        "ShortName":"KT",
+        "Status":"Active"
+    },
+     {
+        "Name":"Accounts",
+        "ShortName":"AC",
+        "Status":"Active"
+    },
+     {
+        "Name":"Security",
+        "ShortName":"SC",
+        "Status":"Active"
+    },
+     {
+        "Name":"Transport",
+        "ShortName":"TR",
+        "Status":"Active"
+    },
+     {
+        "Name":"Purchase",
+        "ShortName":"PR",
+        "Status":"Inactive"
+    }
+]

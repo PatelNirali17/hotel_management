@@ -13,7 +13,7 @@ export class CreateBookingDialog {
   RoomTypeList: any;
 
   constructor(public dialogRef: MatDialogRef<CreateBookingDialog>, private roomTypeService: RoomTypeService,
-    @Inject(MAT_DIALOG_DATA) public RoomDetails: any) {
+    @Inject(MAT_DIALOG_DATA) public BookingDetails: any) {
 
     this.roomTypeService.GetRoomTypes().subscribe({
       next: (result: any) => {

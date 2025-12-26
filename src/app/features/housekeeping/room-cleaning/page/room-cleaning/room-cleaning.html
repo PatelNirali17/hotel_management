@@ -1,0 +1,80 @@
+<div class="container-fluid">
+    <div class="row g-2">
+        <div class="col-lg-12 mt-0">
+            <div class="d-flex align-items-center justify-content-end">
+                <div class="p-0">
+                    <button type="button" (click)="OpenCreateRoomCleaningDialog()"
+                        class="btn bgprimary btn-sm d-flex align-items-center"><mat-icon>add</mat-icon> Create
+                        Room Cleaning</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table luxury-table">
+                    <thead>
+                        <tr>
+                            <th class="col-first-column bgsecondary">Room No</th>
+                            <th class="bgsecondary">Floor</th>
+                            <th class="bgsecondary">Cleaning Status</th>
+                            <th class="bgsecondary">Scheduled Date</th>
+                            <th class="bgsecondary">Scheduled Time</th>
+                            <th class="col-border bgsecondary">Assigned Staff</th>
+                            <th class="bgsecondary">Completion Time</th>
+                            <th class="bgsecondary">Notes</th>
+                            <th class="bgsecondary">Priority</th>
+                            <th class="bgsecondary">Cleaning Type</th>
+                            <th class="bgsecondary">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr
+                            *ngFor="let RoomCleaning of RoomCleaningDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            <td class="col-first-column">#{{ RoomCleaning.roomNo }}</td>
+                            <td>{{ RoomCleaning.floor }}</td>
+                            <td>
+                                <span class="status-badge"
+                                    [ngClass]="{'booked': RoomCleaning.cleaningStatus === 'Completed',
+                                'open': RoomCleaning.cleaningStatus === 'Scheduled','draft': RoomCleaning.cleaningStatus === 'In Progress'}">
+                                    <span class="status-dot"></span>
+                                    {{ RoomCleaning.cleaningStatus }}
+                                </span>
+                            </td>
+                            <td>{{ RoomCleaning.scheduledDate }}</td>
+                            <td>{{ RoomCleaning.scheduledTime }}</td>
+                            <td class="col-border">{{ RoomCleaning.assignedStaff }}</td>
+                            <td>{{ RoomCleaning.completionTime }}</td>
+                            <td>{{ RoomCleaning.notes }}</td>
+                            <td>
+                                <span class="status-badge" [ngClass]="{'booked': RoomCleaning.priority === 'High','open': RoomCleaning.priority === 'Standard',
+                                 'inactive': RoomCleaning.priority === 'Low'}">
+                                    <span class="status-dot"></span>
+                                    {{ RoomCleaning.priority }}
+                                </span>
+                            </td>
+                            <td>{{ RoomCleaning.cleaningType }}</td>
+                            <td>
+                                <button matIconButton [matMenuTriggerFor]="menu">
+                                    <mat-icon>more_vert</mat-icon>
+                                </button>
+                                <mat-menu #menu="matMenu">
+                                    <button mat-menu-item style="color: #6B5B95;">
+                                        <mat-icon style="color: #6B5B95;">edit_square</mat-icon>
+                                        <span>Edit</span>
+                                    </button>
+                                    <button mat-menu-item style="color: #d10f01;">
+                                        <mat-icon style="color: #d10f01;">delete</mat-icon>
+                                        <span>Delete</span>
+                                    </button>
+                                </mat-menu>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-0 text-end">
+            <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
+        </div>
+    </div>
+</div>
