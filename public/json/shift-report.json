@@ -1,0 +1,31 @@
+[
+  {
+    "ReportID": 1,
+    "EmployeeName": "Bertie Jones",
+    "Department": "Kitchen",
+    "ShiftName": "Morning",
+    "Date": "2025-12-28",
+    "AttendanceStatus": "Present",
+    "WorkedHours": 8
+  },
+  {
+    "ReportID": 2,
+    "EmployeeName": "Sarah Smith",
+    "Department": "Kitchen",
+    "ShiftName": "Evening",
+    "Date": "2025-12-28",
+    "AttendanceStatus": "Absent",
+    "WorkedHours": 0
+  },
+  {
+    "ReportID": 3,
+    "EmployeeName": "Jay Soni",
+    "Department": "Transport",
+    "ShiftName": "Night",
+    "Date": "2025-12-28",
+    "AttendanceStatus": "Present",
+    "WorkedHours": 8
+  }
+]
+
+

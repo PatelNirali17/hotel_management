@@ -26,15 +26,19 @@
         <div class="col-lg-4">
             <mat-form-field class="w-100">
                 <mat-label style="font-size: 14px;">Scheduled Date</mat-label>
-                <input matInput [matDatepicker]="picker">
-                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-                <mat-datepicker #picker></mat-datepicker>
+                <input matInput [matDatepicker]="ScheduledDate" (focus)="ScheduledDate.open()"
+                    (click)="ScheduledDate.open()">
+                <mat-datepicker-toggle matIconSuffix [for]="ScheduledDate"></mat-datepicker-toggle>
+                <mat-datepicker #ScheduledDate></mat-datepicker>
             </mat-form-field>
         </div>
         <div class="col-lg-4">
             <mat-form-field class="w-100">
                 <mat-label style="font-size: 14px;">Scheduled Time</mat-label>
-                <input matInput type="time" required>
+                <input matInput [matTimepicker]="ScheduledTime" (focus)="ScheduledTime.open()"
+                    (click)="ScheduledTime.open()">
+                <mat-timepicker-toggle matIconSuffix [for]="ScheduledTime" />
+                <mat-timepicker #ScheduledTime />
             </mat-form-field>
         </div>
         <div class="col-lg-4">
@@ -48,7 +52,10 @@
         <div class="col-lg-4">
             <mat-form-field class="w-100">
                 <mat-label style="font-size: 14px;">Completion Time</mat-label>
-                <input matInput type="time" required>
+                <input matInput [matTimepicker]="CompletionTime" (focus)="CompletionTime.open()"
+                    (click)="CompletionTime.open()">
+                <mat-timepicker-toggle matIconSuffix [for]="CompletionTime" />
+                <mat-timepicker #CompletionTime />
             </mat-form-field>
         </div>
         <div class="col-lg-4">

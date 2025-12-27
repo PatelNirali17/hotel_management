@@ -1,0 +1,23 @@
+[
+  {
+    "ShiftID": 1,
+    "ShiftName": "Morning",
+    "StartTime": "08:00",
+    "EndTime": "16:00",
+    "Status": "Active"
+  },
+  {
+    "ShiftID": 2,
+    "ShiftName": "Evening",
+    "StartTime": "16:00",
+    "EndTime": "00:00",
+    "Status": "Active"
+  },
+  {
+    "ShiftID": 3,
+    "ShiftName": "Night",
+    "StartTime": "00:00",
+    "EndTime": "08:00",
+    "Status": "Active"
+  }
+]

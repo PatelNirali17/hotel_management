@@ -112,6 +112,46 @@
         },
         {
             "id": 12,
+            "title": "Shift Management",
+            "routerLink": null,
+            "href": null,
+            "icon": "content_paste_search",
+            "target": null,
+            "hasSubMenu": true,
+            "parentId": 0
+        },
+        {
+            "id": 13,
+            "title": "Shift List",
+            "routerLink": "shift/shiftlist",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 12
+        },
+        {
+            "id": 14,
+            "title": "Assign Shift",
+            "routerLink": "shift/assignshift",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 12
+        },
+        {
+            "id": 15,
+            "title": "Shift Report",
+            "routerLink": "shift/shiftreport",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 12
+        },
+        {
+            "id": 16,
             "title": "Departments",
             "routerLink": null,
             "href": null,
@@ -121,37 +161,37 @@
             "parentId": 0
         },
         {
-            "id": 13,
+            "id": 17,
             "title": "Department Master",
             "routerLink": "departments/departmentmaster",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": true,
-            "parentId": 12
+            "parentId": 16
         },
         {
-            "id": 14,
+            "id": 18,
             "title": "Department Overview",
             "routerLink": "departments/departmentoverview",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": true,
-            "parentId": 12
+            "parentId": 16
         },
         {
-            "id": 15,
+            "id": 19,
             "title": "Designation Master",
             "routerLink": "departments/designation",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": true,
-            "parentId": 12
+            "parentId": 16
         },
         {
-            "id": 16,
+            "id": 20,
             "title": "Housekeeping",
             "routerLink": null,
             "href": null,
@@ -161,27 +201,27 @@
             "parentId": 0
         },
         {
-            "id": 17,
+            "id": 21,
             "title": "Room Cleaning",
             "routerLink": "housekeeping/roomcleaning",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 16
+            "parentId": 20
         },
         {
-            "id": 18,
+            "id": 22,
             "title": "Laundry Services",
             "routerLink": "housekeeping/laundryservices",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 16
+            "parentId": 20
         },
         {
-            "id": 19,
+            "id": 23,
             "title": "Leave Management",
             "routerLink": null,
             "href": null,
@@ -191,37 +231,37 @@
             "parentId": 0
         },
         {
-            "id": 20,
+            "id": 24,
             "title": "Leave Requests",
             "routerLink": "leave/leaverequests",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 19
+            "parentId": 23
         },
         {
-            "id": 21,
+            "id": 25,
             "title": "Leave Balance",
             "routerLink": "leave/leavebalance",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 19
+            "parentId": 23
         },
         {
-            "id": 22,
+            "id": 26,
             "title": "Leave Types",
             "routerLink": "leave/leavetypes",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 19
+            "parentId": 23
         },
         {
-            "id": 23,
+            "id": 27,
             "title": "Events",
             "routerLink": "/events",
             "href": null,
@@ -231,7 +271,7 @@
             "parentId": 0
         },
         {
-            "id": 24,
+            "id": 28,
             "title": "Guests",
             "routerLink": "/allguests",
             "href": null,
@@ -241,7 +281,7 @@
             "parentId": 0
         },
         {
-            "id": 25,
+            "id": 29,
             "title": "Cabs",
             "routerLink": null,
             "href": null,
@@ -251,27 +291,27 @@
             "parentId": 0
         },
         {
-            "id": 26,
+            "id": 30,
             "title": "Cab List",
             "routerLink": "/cablist",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 25
+            "parentId": 29
         },
         {
-            "id": 27,
+            "id": 31,
             "title": "Cab Booking",
             "routerLink": "/cabbooking",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 25
+            "parentId": 29
         },
         {
-            "id": 28,
+            "id": 32,
             "title": "Reports",
             "routerLink": null,
             "href": null,
@@ -281,24 +321,24 @@
             "parentId": 0
         },
         {
-            "id": 29,
+            "id": 33,
             "title": "Stocks",
             "routerLink": "/stocks",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 28
+            "parentId": 32
         },
         {
-            "id": 30,
+            "id": 34,
             "title": "Expense",
             "routerLink": "/expense",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 28
+            "parentId": 32
         }
     ],
     "EmployeeMenu": [

@@ -1,0 +1,44 @@
+<h1 mat-dialog-title>New Assign Shift</h1>
+<div mat-dialog-content class="bgsecondary">
+    <form class="row">
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Employee</mat-label>
+                <mat-select required>
+                    <mat-option *ngFor="let Staff of StaffList" [value]="Staff.Name">{{Staff.Name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Department</mat-label>
+                <mat-select required>
+                    <mat-option *ngFor="let Department of DepartmentList"
+                        [value]="Department.Name">{{Department.Name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Shift Name</mat-label>
+                <mat-select required>
+                    <mat-option *ngFor="let Shift of ShiftList"
+                        [value]="Shift.ShiftName">{{Shift.ShiftName}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Shift Date</mat-label>
+                <input matInput [matDatepicker]="ShiftDate" (focus)="ShiftDate.open()"
+                    (click)="ShiftDate.open()">
+                <mat-datepicker-toggle matIconSuffix [for]="ShiftDate"></mat-datepicker-toggle>
+                <mat-datepicker #ShiftDate></mat-datepicker>
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button class="bgaccent">Save</button>
+    <button mat-raised-button [mat-dialog-close]="true" class="bgsecondary">Close</button>
+</div>

@@ -138,8 +138,38 @@ mat-option {
 .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled):not(.mat-mdc-option-multiple) {
   background-color: #e1d7fa !important;
 }
-.mat-mdc-dialog-actions{
+
+.mat-mdc-dialog-actions {
   padding: 5px !important;
+}
+
+.mat-clock-dial-cell.mat-clock-dial-cell-active {
+  background-color: #6B5B95 !important;
+}
+
+.mat-clock-dial-hand:not(.mat-clock-dial-hand-disabled) {
+  background-color: #6B5B95 !important;
+}
+
+.mat-clock-dial:before {
+  background-color: #6B5B95 !important;
+}
+
+.mat-clock-dial-value.mat-clock-dial-value-active {
+  background-color: #e1d7fa !important;
+}
+
+.mat-time-period-item-active {
+  color: #6B5B95 !important;
+  background-color: #e1d7fa !important;
+}
+
+.mat-mdc-button:not(:disabled) {
+  color: #6B5B95 !important;
+}
+
+.mat-timepicker-toggle.mat-timepicker-toggle-active button {
+  color: #6B5B95 !important;
 }
 
 //default scrollbar

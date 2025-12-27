@@ -34,9 +34,10 @@
         <div class="col-lg-4">
             <mat-form-field class="w-100">
                 <mat-label style="font-size: 14px;">Cancellation Date</mat-label>
-                <input matInput [matDatepicker]="picker">
-                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-                <mat-datepicker #picker></mat-datepicker>
+                <input matInput [matDatepicker]="CancellationDate" (focus)="CancellationDate.open()"
+                    (click)="CancellationDate.open()">
+                <mat-datepicker-toggle matIconSuffix [for]="CancellationDate"></mat-datepicker-toggle>
+                <mat-datepicker #CancellationDate></mat-datepicker>
             </mat-form-field>
         </div>
         <div class="col-lg-4">
