@@ -33,6 +33,7 @@
     font-size: 0.75rem;
     color: #6B5B95;
 }
+
 .status-badge {
     display: inline-flex;
     align-items: center;
@@ -42,36 +43,54 @@
     font-size: 13px;
     font-weight: 500;
 }
+
 .status-dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
 }
+
 .status-badge.booked {
     background-color: #eee7f8;
     color: #6B5B95;
 }
+
 .status-badge.booked .status-dot {
     background-color: #6B5B95;
 }
+
 .status-badge.open {
     background-color: #F6E9EE;
     color: #C48B9F;
 }
+
 .status-badge.open .status-dot {
     background-color: #C48B9F;
 }
+
 .status-badge.inactive {
     background-color: #e6e6e6;
     color: #9E9E9E;
 }
+
 .status-badge.inactive .status-dot {
     background-color: #9E9E9E;
 }
+
 .status-badge.draft {
     background-color: #F7F2E8;
     color: #B89B5E;
 }
+
 .status-badge.draft .status-dot {
     background-color: #B89B5E;
+}
+
+.status-badge.related {
+    background-color: #E8F1FA;
+    color: #4A7EBB;
+}
+
+.status-badge.related .status-dot {
+    background-color: #4A7EBB;
 }

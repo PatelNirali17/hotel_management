@@ -263,7 +263,7 @@
         {
             "id": 27,
             "title": "Events",
-            "routerLink": "/events",
+            "routerLink": "events/allevents",
             "href": null,
             "icon": "cake",
             "target": null,
@@ -273,7 +273,7 @@
         {
             "id": 28,
             "title": "Guests",
-            "routerLink": "/allguests",
+            "routerLink": "guests/allguests",
             "href": null,
             "icon": "hail",
             "target": null,
@@ -293,7 +293,7 @@
         {
             "id": 30,
             "title": "Cab List",
-            "routerLink": "/cablist",
+            "routerLink": "cabs/cablist",
             "href": null,
             "icon": null,
             "target": null,
@@ -303,7 +303,7 @@
         {
             "id": 31,
             "title": "Cab Booking",
-            "routerLink": "/cabbooking",
+            "routerLink": "cabs/cabbooking",
             "href": null,
             "icon": null,
             "target": null,

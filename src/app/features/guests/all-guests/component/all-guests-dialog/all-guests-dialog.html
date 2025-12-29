@@ -1,0 +1,102 @@
+<h1 mat-dialog-title>New Guest</h1>
+<div mat-dialog-content class="bgsecondary">
+    <form class="row">
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Full Name</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Email</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Phone</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Nationality</mat-label>
+                <mat-select required>
+                    <mat-option *ngFor="let Location of LocationDetails"
+                        [value]="Location.nationality">{{Location.nationality}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Date Of Birth</mat-label>
+                <input matInput [matDatepicker]="DateOfBirth" (focus)="DateOfBirth.open()" (click)="DateOfBirth.open()">
+                <mat-datepicker-toggle matIconSuffix [for]="DateOfBirth"></mat-datepicker-toggle>
+                <mat-datepicker #DateOfBirth></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">gender</mat-label>
+                <mat-select required>
+                    <mat-option value="Female">Female</mat-option>
+                    <mat-option value="Male">Male</mat-option>
+                    <mat-option value="Other">Other</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">ID Type</mat-label>
+                <mat-select required>
+                    <mat-option *ngFor="let ID of IDTypeList" [value]="ID.idType">{{ID.idType}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">ID Number</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">City</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Country</mat-label>
+                <mat-select required>
+                    <mat-option *ngFor="let Location of LocationDetails"
+                        [value]="Location.country">{{Location.country}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Registration Date</mat-label>
+                <input matInput [matDatepicker]="RegistrationDate" (focus)="RegistrationDate.open()"
+                    (click)="RegistrationDate.open()">
+                <mat-datepicker-toggle matIconSuffix [for]="RegistrationDate"></mat-datepicker-toggle>
+                <mat-datepicker #RegistrationDate></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Status</mat-label>
+                <mat-select required>
+                    <mat-option value="Active">Active</mat-option>
+                    <mat-option value="Inactive">Inactive</mat-option>
+                    <mat-option value="Blocked">Blocked</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button class="bgaccent">Save</button>
+    <button mat-raised-button [mat-dialog-close]="true" class="bgsecondary">Close</button>
+</div>

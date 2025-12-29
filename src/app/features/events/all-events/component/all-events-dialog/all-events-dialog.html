@@ -1,0 +1,121 @@
+<h1 mat-dialog-title>New Event</h1>
+<div mat-dialog-content class="bgsecondary">
+    <form class="row">
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Event Name</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Event Type</mat-label>
+                <mat-select required>
+                    <mat-option value="Wedding">Wedding</mat-option>
+                    <mat-option value="Corporate Meeting">Corporate Meeting</mat-option>
+                    <mat-option value="Conference">Conference</mat-option>
+                    <mat-option value="Birthday Party">Birthday Party</mat-option>
+                    <mat-option value="Anniversary">Anniversary</mat-option>
+                    <mat-option value="Product Launch">Product Launch</mat-option>
+                    <mat-option value="Seminar">Seminar</mat-option>
+                    <mat-option value="Reception">Reception</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Client</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Phone</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Email</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Event Date</mat-label>
+                <input matInput [matDatepicker]="EventDate" (focus)="EventDate.open()" (click)="EventDate.open()">
+                <mat-datepicker-toggle matIconSuffix [for]="EventDate"></mat-datepicker-toggle>
+                <mat-datepicker #EventDate></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Start Time</mat-label>
+                <input matInput [matTimepicker]="StartTime" (focus)="StartTime.open()" (click)="StartTime.open()">
+                <mat-timepicker-toggle matIconSuffix [for]="StartTime" />
+                <mat-timepicker #StartTime />
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">End Time</mat-label>
+                <input matInput [matTimepicker]="EndTime" (focus)="EndTime.open()" (click)="EndTime.open()">
+                <mat-timepicker-toggle matIconSuffix [for]="EndTime" />
+                <mat-timepicker #EndTime />
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Venue</mat-label>
+                <mat-select required>
+                    <mat-option value="Grand Ballroom">Grand Ballroom</mat-option>
+                    <mat-option value="Conference Hall A">Conference Hall A</mat-option>
+                    <mat-option value="Conference Hall B">Conference Hall B</mat-option>
+                    <mat-option value="Rooftop Terrace">Rooftop Terrace</mat-option>
+                    <mat-option value="Garden Area">Garden Area</mat-option>
+                    <mat-option value="Poolside">Poolside</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Guests</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Catering</mat-label>
+                <mat-select required>
+                    <mat-option value="Buffet">Buffet</mat-option>
+                    <mat-option value="Plated Service">Plated Service</mat-option>
+                    <mat-option value="Cocktail Reception">Cocktail Reception</mat-option>
+                    <mat-option value="Family Style">Family Style</mat-option>
+                    <mat-option value="No Catering">No Catering</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Amount</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Status</mat-label>
+                <mat-select required>
+                    <mat-option value="Pending">Pending</mat-option>
+                    <mat-option value="Confirmed">Confirmed</mat-option>
+                    <mat-option value="In Progress">In Progress</mat-option>
+                    <mat-option value="Completed">Completed</mat-option>
+                    <mat-option value="Cancelled">Cancelled</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button class="bgaccent">Save</button>
+    <button mat-raised-button [mat-dialog-close]="true" class="bgsecondary">Close</button>
+</div>

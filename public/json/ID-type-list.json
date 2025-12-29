@@ -1,0 +1,22 @@
+[
+  {
+    "idType": "Passport",
+    "description": "International travelers' passport"
+  },
+  {
+    "idType": "Driver's License",
+    "description": "Domestic travelers' driving license"
+  },
+  {
+    "idType": "National ID",
+    "description": "Government-issued national identity card"
+  },
+  {
+    "idType": "Aadhaar Card",
+    "description": "Indian unique identification card"
+  },
+  {
+    "idType": "Voter ID Card",
+    "description": "Indian election commission issued voter identity card"
+  }
+]

@@ -1,22 +1,11 @@
-<!-- Attadance Status
-| Scenario                   | System Action |
-| -------------------------- | ------------- |
-| Check-in + Check-out done  | `Present`     |
-| Check-in late (rule-based) | `Late`        |
-| Worked < required hours    | `Half Day`    |
-| No check-in                | `No Show`     |
-
-"AttendanceStatus": "On Leave" if leave add this date
-
- -->
 <div class="container-fluid">
     <div class="row g-2">
         <div class="col-lg-12 mt-0">
             <div class="d-flex align-items-center justify-content-end">
                 <div class="p-0">
-                    <button type="button" (click)="OpenShiftReportDialog()"
+                    <button type="button" (click)="OpenCreateCabListDialog()"
                         class="btn bgprimary btn-sm d-flex align-items-center"><mat-icon>add</mat-icon> Create
-                        Shift Report</button>
+                        Cab</button>
                 </div>
             </div>
         </div>
@@ -26,31 +15,41 @@
                     <thead>
                         <tr>
                             <th class="col-first-column bgsecondary">SrNo</th>
-                            <th class="bgsecondary">Employee Name</th>
-                            <th class="bgsecondary">Department</th>
-                            <th class="bgsecondary">Shift Name</th>
-                            <th class="bgsecondary">Date</th>
-                            <th class="bgsecondary">Attendance Status</th>
-                            <th class="bgsecondary">Worked Hours</th>
+                            <th class="bgsecondary">Driver Name</th>
+                            <th class="bgsecondary">Driver Contact</th>
+                            <th class="bgsecondary">Cab Model</th>
+                            <th class="bgsecondary">License Plate</th>
+                            <th class="bgsecondary">Status</th>
+                            <th class="bgsecondary">Capacity</th>
+                            <th class="bgsecondary">Last Service Date</th>
+                            <th class="bgsecondary">Location</th>
+                            <th class="bgsecondary">Booking Count</th>
+                            <th class="bgsecondary">Rating</th>
+                            <th class="bgsecondary">Notes</th>
                             <th class="bgsecondary">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr
-                            *ngFor="let Shift of ShiftReportDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            *ngFor="let Cab of CabListDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
                             <td class="col-first-column">{{ i + 1 }}</td>
-                            <td>{{ Shift.EmployeeName }}</td>
-                            <td>{{ Shift.Department }}</td>
-                            <td>{{ Shift.ShiftName }}</td>
-                            <td>{{ Shift.Date }}</td>
+                            <td>{{ Cab.driverName }}</td>
+                            <td>{{ Cab.driverContact }}</td>
+                            <td>{{ Cab.cabModel }}</td>
+                            <td>{{ Cab.licensePlate }}</td>
                             <td>
-                                <span class="status-badge" [ngClass]="{'booked': Shift.AttendanceStatus === 'Present','open': Shift.AttendanceStatus === 'Half Day',
-                                'draft': Shift.AttendanceStatus === 'On Leave','inactive': Shift.AttendanceStatus === 'Absent'}">
+                                <span class="status-badge" [ngClass]="{'booked': Cab.status === 'Available','draft': Cab.status === 'In Use',
+                                 'open': Cab.status === 'Maintenance'}">
                                     <span class="status-dot"></span>
-                                    {{ Shift.AttendanceStatus }}
+                                    {{ Cab.status }}
                                 </span>
                             </td>
-                            <td>{{ Shift.WorkedHours }}</td>
+                            <td>{{ Cab.capacity }}</td>
+                            <td>{{ Cab.lastServiceDate }}</td>
+                            <td>{{ Cab.location }}</td>
+                            <td>{{ Cab.bookingCount }}</td>
+                            <td>{{ Cab.rating }}</td>
+                            <td>{{ Cab.notes }}</td>
                             <td>
                                 <button matIconButton [matMenuTriggerFor]="menu">
                                     <mat-icon>more_vert</mat-icon>
@@ -63,6 +62,10 @@
                                     <button mat-menu-item style="color: #d10f01;">
                                         <mat-icon style="color: #d10f01;">delete</mat-icon>
                                         <span>Delete</span>
+                                    </button>
+                                    <button mat-menu-item style="color: #6B5B95;">
+                                        <mat-icon style="color: #6B5B95;">list</mat-icon>
+                                        <span>View Details</span>
                                     </button>
                                 </mat-menu>
                             </td>

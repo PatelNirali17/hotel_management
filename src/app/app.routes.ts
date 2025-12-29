@@ -10,6 +10,9 @@ import { DepartmentsRoutesList } from './features/departments/departments-routes
 import { HousekeepingRoutesList } from './features/housekeeping/housekeeping-routes';
 import { LeaveRoutesList } from './features/leave-management/leave-management-routes';
 import { ShiftRoutesList } from './features/shift-management/shift-management-routes';
+import { EventsRoutesList } from './features/events/events-routes';
+import { GuestsRoutesList } from './features/guests/guests-routes';
+import { CabsRoutesList } from './features/cabs/cabs-routes';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -46,6 +49,18 @@ export const routes: Routes = [
             {
                 path: 'shift', data: { breadcrumb: 'Shift Management' },
                 children: ShiftRoutesList
+            },
+            {
+                path: 'events', data: { breadcrumb: 'Events' },
+                children: EventsRoutesList
+            },
+            {
+                path: 'guests', data: { breadcrumb: 'Guests' },
+                children: GuestsRoutesList
+            },
+            {
+                path: 'cabs', data: { breadcrumb: 'Cabs' },
+                children: CabsRoutesList
             },
         ]
 
