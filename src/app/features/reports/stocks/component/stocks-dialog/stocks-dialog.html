@@ -1,0 +1,58 @@
+<h1 mat-dialog-title>New Stock</h1>
+<div mat-dialog-content class="bgsecondary">
+    <form class="row">
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Product Code</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Product Name</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Status</mat-label>
+                <mat-select required>
+                    <mat-option value="Low Stock">Low Stock</mat-option>
+                    <mat-option value="In Stock">In Stock</mat-option>
+                    <mat-option value="Out Of Stock">Out Of Stock</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Price</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Category</mat-label>
+                <mat-select required>
+                    <mat-option value="Room Service">Room Service</mat-option>
+                    <mat-option value="Bathroom Supplies">Bathroom Supplies</mat-option>
+                    <mat-option value="Beverages">Beverages</mat-option>
+                    <mat-option value="Health & Safety">Health & Safety</mat-option>
+                    <mat-option value="Cleaning Supplies">Cleaning Supplies</mat-option>
+                    <mat-option value="Electronics">Electronics</mat-option>
+                    <mat-option value="Dining Supplies">Dining Supplies</mat-option>
+                    <mat-option value="Maintenance Supplies">Maintenance Supplies</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Quantity</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button class="bgaccent">Save</button>
+    <button mat-raised-button [mat-dialog-close]="true" class="bgsecondary">Close</button>
+</div>

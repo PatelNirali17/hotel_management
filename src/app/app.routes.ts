@@ -13,6 +13,7 @@ import { ShiftRoutesList } from './features/shift-management/shift-management-ro
 import { EventsRoutesList } from './features/events/events-routes';
 import { GuestsRoutesList } from './features/guests/guests-routes';
 import { CabsRoutesList } from './features/cabs/cabs-routes';
+import { ReportsRoutesList } from './features/reports/reports-routes';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -61,6 +62,10 @@ export const routes: Routes = [
             {
                 path: 'cabs', data: { breadcrumb: 'Cabs' },
                 children: CabsRoutesList
+            },
+              {
+                path: 'reports', data: { breadcrumb: 'Reports' },
+                children: ReportsRoutesList
             },
         ]
 

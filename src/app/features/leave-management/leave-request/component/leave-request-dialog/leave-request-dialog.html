@@ -1,0 +1,64 @@
+<h1 mat-dialog-title>New Leave Request</h1>
+<div mat-dialog-content class="bgsecondary">
+    <form class="row">
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Employee</mat-label>
+                <mat-select required (selectionChange)="onEmployeeChange($event)">
+                    <mat-option *ngFor="let Employee of EmployeeList"
+                        [value]="Employee.id">{{Employee.Name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Manager</mat-label>
+                <mat-select required>
+                    <mat-option *ngFor="let Manager of ManagerList"
+                        [value]="Manager.HOD">{{Manager.HOD}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Leave Type</mat-label>
+                <mat-select required>
+                    <mat-option *ngFor="let LeaveType of LeaveTypeList"
+                        [value]="LeaveType.leaveTypeName">{{LeaveType.leaveTypeName}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Start Date</mat-label>
+                <input matInput [matDatepicker]="StartDate" (focus)="StartDate.open()" (click)="StartDate.open()">
+                <mat-datepicker-toggle matIconSuffix [for]="StartDate"></mat-datepicker-toggle>
+                <mat-datepicker #StartDate></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">End Date</mat-label>
+                <input matInput [matDatepicker]="EndDate" (focus)="EndDate.open()" (click)="EndDate.open()">
+                <mat-datepicker-toggle matIconSuffix [for]="EndDate"></mat-datepicker-toggle>
+                <mat-datepicker #EndDate></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Total Days</mat-label>
+                <input matInput required readonly>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Reason</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button class="bgaccent">Save</button>
+    <button mat-raised-button [mat-dialog-close]="true" class="bgsecondary">Close</button>
+</div>

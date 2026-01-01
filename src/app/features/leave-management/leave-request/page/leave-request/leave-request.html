@@ -1,11 +1,11 @@
 <div class="container-fluid">
     <div class="row g-2">
-        <div class="col-lg-12 mt-0">
+        <div class="col-lg-12 mt-0" *ngIf="IsAddLeaveRequest">
             <div class="d-flex align-items-center justify-content-end">
                 <div class="p-0">
-                    <button type="button" (click)="OpenCreateCabListDialog()"
-                        class="btn bgprimary btn-sm d-flex align-items-center"><mat-icon>add</mat-icon> Create
-                        Cab</button>
+                    <button type="button" (click)="OpenLeaveRequestDialog()"
+                        class="btn bgprimary btn-sm d-flex align-items-center"><mat-icon>add</mat-icon> Add Leave
+                        Request</button>
                 </div>
             </div>
         </div>
@@ -15,33 +15,37 @@
                     <thead>
                         <tr>
                             <th class="col-first-column bgsecondary">SrNo</th>
-                            <th class="bgsecondary">Driver Name</th>
-                            <th class="bgsecondary">Cab Model</th>
-                            <th class="bgsecondary">License Plate</th>
+                            <th class="bgsecondary" *ngIf="!IsAddLeaveRequest">Employee Name</th>
+                            <th class="bgsecondary" *ngIf="!IsAddLeaveRequest">Department</th>
+                            <th class="bgsecondary">Manager Name</th>
+                            <th class="bgsecondary">Leave Type</th>
+                            <th class="bgsecondary">Start Date</th>
+                            <th class="bgsecondary">End Date</th>
+                            <th class="bgsecondary">Total Days</th>
+                            <th class="bgsecondary">Reason</th>
                             <th class="bgsecondary">Status</th>
-                            <th class="bgsecondary">Capacity</th>
-                            <th class="bgsecondary">Location</th>
-                            <th class="bgsecondary">Rating</th>
                             <th class="bgsecondary">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr
-                            *ngFor="let Cab of CabListDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            *ngFor="let Request of LeaveRequestDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
                             <td class="col-first-column">{{ i + 1 }}</td>
-                            <td>{{ Cab.driverName }}</td>
-                            <td>{{ Cab.cabModel }}</td>
-                            <td>{{ Cab.licensePlate }}</td>
+                            <td *ngIf="!IsAddLeaveRequest">{{ Request.employeename }}</td>
+                            <td *ngIf="!IsAddLeaveRequest">{{ Request.department }}</td>
+                            <td>{{ Request.managername }}</td>
+                            <td>{{ Request.leavetype }}</td>
+                            <td>{{ Request.startdate }}</td>
+                            <td>{{ Request.enddate }}</td>
+                            <td>{{ Request.totaldays }}</td>
+                            <td>{{ Request.reason }}</td>
                             <td>
-                                <span class="status-badge" [ngClass]="{'booked': Cab.status === 'Available','draft': Cab.status === 'In Use',
-                                 'open': Cab.status === 'Maintenance'}">
+                                <span class="status-badge" [ngClass]="{'booked': Request.status === 'Approved',
+                                'open': Request.status === 'Pending','inactive': Request.status === 'Rejected'}">
                                     <span class="status-dot"></span>
-                                    {{ Cab.status }}
+                                    {{ Request.status }}
                                 </span>
                             </td>
-                            <td>{{ Cab.capacity }}</td>
-                            <td>{{ Cab.location }}</td>
-                            <td>{{ Cab.rating }}</td>
                             <td>
                                 <button matIconButton [matMenuTriggerFor]="menu">
                                     <mat-icon>more_vert</mat-icon>
@@ -54,10 +58,6 @@
                                     <button mat-menu-item style="color: #d10f01;">
                                         <mat-icon style="color: #d10f01;">delete</mat-icon>
                                         <span>Delete</span>
-                                    </button>
-                                    <button mat-menu-item style="color: #6B5B95;">
-                                        <mat-icon style="color: #6B5B95;">list</mat-icon>
-                                        <span>View Details</span>
                                     </button>
                                 </mat-menu>
                             </td>

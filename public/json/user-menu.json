@@ -232,8 +232,8 @@
         },
         {
             "id": 24,
-            "title": "Leave Requests",
-            "routerLink": "leave/leaverequests",
+            "title": "Leave Request",
+            "routerLink": "leave/leaverequest",
             "href": null,
             "icon": null,
             "target": null,
@@ -242,6 +242,16 @@
         },
         {
             "id": 25,
+            "title": "Leave Request Approval",
+            "routerLink": "leave/leaverequestapproval",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 23
+        },
+        {
+            "id": 26,
             "title": "Leave Balance",
             "routerLink": "leave/leavebalance",
             "href": null,
@@ -251,7 +261,7 @@
             "parentId": 23
         },
         {
-            "id": 26,
+            "id": 27,
             "title": "Leave Types",
             "routerLink": "leave/leavetypes",
             "href": null,
@@ -261,7 +271,7 @@
             "parentId": 23
         },
         {
-            "id": 27,
+            "id": 28,
             "title": "Events",
             "routerLink": "events/allevents",
             "href": null,
@@ -271,7 +281,7 @@
             "parentId": 0
         },
         {
-            "id": 28,
+            "id": 29,
             "title": "Guests",
             "routerLink": "guests/allguests",
             "href": null,
@@ -281,7 +291,7 @@
             "parentId": 0
         },
         {
-            "id": 29,
+            "id": 30,
             "title": "Cabs",
             "routerLink": null,
             "href": null,
@@ -291,27 +301,27 @@
             "parentId": 0
         },
         {
-            "id": 30,
+            "id": 31,
             "title": "Cab List",
             "routerLink": "cabs/cablist",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 29
+            "parentId": 30
         },
         {
-            "id": 31,
+            "id": 32,
             "title": "Cab Booking",
             "routerLink": "cabs/cabbooking",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 29
+            "parentId": 30
         },
         {
-            "id": 32,
+            "id": 33,
             "title": "Reports",
             "routerLink": null,
             "href": null,
@@ -321,24 +331,24 @@
             "parentId": 0
         },
         {
-            "id": 33,
+            "id": 34,
             "title": "Stocks",
-            "routerLink": "/stocks",
+            "routerLink": "reports/stocks",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 32
+            "parentId": 33
         },
         {
-            "id": 34,
+            "id": 35,
             "title": "Expense",
-            "routerLink": "/expense",
+            "routerLink": "reports/expense",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 32
+            "parentId": 33
         }
     ],
     "EmployeeMenu": [
@@ -364,7 +374,7 @@
         },
         {
             "id": 3,
-            "title": "My Leaves",
+            "title": "Leaves Management",
             "routerLink": null,
             "href": null,
             "icon": "assignment",
@@ -375,7 +385,7 @@
         {
             "id": 4,
             "title": "Leave Requests",
-            "routerLink": "/leaverequests",
+            "routerLink": "leave/leaverequest",
             "href": null,
             "icon": null,
             "target": null,
@@ -384,8 +394,8 @@
         },
         {
             "id": 5,
-            "title": "Leave Balance",
-            "routerLink": "/leavebalance",
+            "title": "Leave Request Approval",
+            "routerLink": "leave/leaverequestapproval",
             "href": null,
             "icon": null,
             "target": null,
@@ -394,6 +404,16 @@
         },
         {
             "id": 6,
+            "title": "Leave Balance",
+            "routerLink": "leave/leavebalance",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 3
+        },
+        {
+            "id": 7,
             "title": "Payroll",
             "routerLink": null,
             "href": null,
@@ -403,29 +423,29 @@
             "parentId": 0
         },
         {
-            "id": 7,
-            "title": "Salary",
-            "routerLink": "/leaverequests",
-            "href": null,
-            "icon": null,
-            "target": null,
-            "hasSubMenu": false,
-            "parentId": 6
-        },
-        {
             "id": 8,
-            "title": "Bank Details",
-            "routerLink": "/leavebalance",
+            "title": "Salary",
+            "routerLink": "payroll/salary",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 6
+            "parentId": 7
         },
         {
             "id": 9,
-            "title": "Shift",
-            "routerLink": "/shift",
+            "title": "Bank Details",
+            "routerLink": "payroll/bankdetails",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 7
+        },
+        {
+            "id": 10,
+            "title": "Employee Shift",
+            "routerLink": "shift/employeeshift",
             "href": null,
             "icon": "content_paste_search",
             "target": null,

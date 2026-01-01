@@ -1,0 +1,67 @@
+<h1 mat-dialog-title>New Expense</h1>
+<div mat-dialog-content class="bgsecondary">
+    <form class="row">
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Invoice No</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Date</mat-label>
+                <input matInput [matDatepicker]="Date" (focus)="Date.open()"
+                    (click)="Date.open()" required>
+                <mat-datepicker-toggle matIconSuffix [for]="Date"></mat-datepicker-toggle>
+                <mat-datepicker #Date></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Expense By</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+         <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Expense</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Status</mat-label>
+                <mat-select required>
+                    <mat-option value="Paid">Paid</mat-option>
+                    <mat-option value="Unpaid">Unpaid</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Amount</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Payment Mode</mat-label>
+                <mat-select required>
+                    <mat-option value="Cash">Cash</mat-option>
+                    <mat-option value="Cheque">Cheque</mat-option>
+                    <mat-option value="Credit Card">Credit Card</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Paid To</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button class="bgaccent">Save</button>
+    <button mat-raised-button [mat-dialog-close]="true" class="bgsecondary">Close</button>
+</div>

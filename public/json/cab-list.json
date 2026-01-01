@@ -1,5 +1,6 @@
 [
   {
+    "cabId": "cab_001",
     "driverName": "John Doe",
     "driverContact": "1234567890",
     "cabModel": "Toyota Prius",
@@ -13,6 +14,7 @@
     "notes": "Recently serviced."
   },
   {
+    "cabId": "cab_002",
     "driverName": "Jane Smith",
     "driverContact": "0987654321",
     "cabModel": "Honda Accord",
@@ -26,6 +28,7 @@
     "notes": "On a long trip."
   },
   {
+    "cabId": "cab_003",
     "driverName": "Mike Johnson",
     "driverContact": "1122334455",
     "cabModel": "Ford Focus",
@@ -39,6 +42,7 @@
     "notes": "Needs a new tire."
   },
   {
+    "cabId": "cab_004",
     "driverName": "Emily Davis",
     "driverContact": "2233445566",
     "cabModel": "Chevrolet Malibu",
@@ -52,6 +56,7 @@
     "notes": "Clean and ready."
   },
   {
+    "cabId": "cab_005",
     "driverName": "Chris Lee",
     "driverContact": "3344556677",
     "cabModel": "Hyundai Elantra",
@@ -65,6 +70,7 @@
     "notes": "Great for families."
   },
   {
+    "cabId": "cab_006",
     "driverName": "Anna White",
     "driverContact": "4455667788",
     "cabModel": "Nissan Altima",
@@ -78,6 +84,7 @@
     "notes": "On a city tour."
   },
   {
+    "cabId": "cab_007",
     "driverName": "Robert Brown",
     "driverContact": "5566778899",
     "cabModel": "Kia Optima",
@@ -91,6 +98,7 @@
     "notes": "Comfortable ride."
   },
   {
+    "cabId": "cab_008",
     "driverName": "Laura Green",
     "driverContact": "6677889900",
     "cabModel": "Mazda 6",
@@ -104,6 +112,7 @@
     "notes": "Scheduled for servicing."
   },
   {
+    "cabId": "cab_009",
     "driverName": "David Wilson",
     "driverContact": "7788990011",
     "cabModel": "Volkswagen Jetta",
@@ -117,6 +126,7 @@
     "notes": "Ready for new bookings."
   },
   {
+    "cabId": "cab_010",
     "driverName": "Sophia Martinez",
     "driverContact": "8899001122",
     "cabModel": "Subaru Legacy",
@@ -130,6 +140,7 @@
     "notes": "Currently on airport duty."
   },
   {
+    "cabId": "cab_011",
     "driverName": "Daniel Lee",
     "driverContact": "9900112233",
     "cabModel": "BMW 3 Series",
@@ -143,6 +154,7 @@
     "notes": "Luxury cab available."
   },
   {
+    "cabId": "cab_012",
     "driverName": "Olivia Walker",
     "driverContact": "0011223344",
     "cabModel": "Audi A4",
@@ -156,6 +168,7 @@
     "notes": "Undergoing repairs."
   },
   {
+    "cabId": "cab_013",
     "driverName": "James Taylor",
     "driverContact": "1122334455",
     "cabModel": "Chevrolet Cruze",
@@ -169,6 +182,7 @@
     "notes": "Good for group travel."
   },
   {
+    "cabId": "cab_014",
     "driverName": "Isabella Thompson",
     "driverContact": "2233445566",
     "cabModel": "Hyundai Sonata",
@@ -182,6 +196,7 @@
     "notes": "On a city tour."
   },
   {
+    "cabId": "cab_015",
     "driverName": "Liam Anderson",
     "driverContact": "3344556677",
     "cabModel": "Ford Fusion",
@@ -195,6 +210,7 @@
     "notes": "Recently detailed."
   },
   {
+    "cabId": "cab_016",
     "driverName": "Mia Harris",
     "driverContact": "4455667788",
     "cabModel": "Mazda CX-5",

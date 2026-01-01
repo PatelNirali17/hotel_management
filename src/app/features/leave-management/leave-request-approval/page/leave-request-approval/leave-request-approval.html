@@ -1,0 +1,66 @@
+<div class="container-fluid">
+    <div class="row g-2">
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table luxury-table">
+                    <thead>
+                        <tr>
+                            <th class="col-first-column bgsecondary">SrNo</th>
+                            <th class="bgsecondary">Employee Name</th>
+                            <th class="bgsecondary">Department</th>
+                            <th class="bgsecondary" *ngIf="IsAdminLogin">Manager Name</th>
+                            <th class="bgsecondary">Leave Type</th>
+                            <th class="bgsecondary">Start Date</th>
+                            <th class="bgsecondary">End Date</th>
+                            <th class="bgsecondary">Total Days</th>
+                            <th class="bgsecondary">Reason</th>
+                            <th class="bgsecondary">Leave Balance</th>
+                            <th class="bgsecondary">Status</th>
+                            <th class="bgsecondary">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr
+                            *ngFor="let Request of LeaveRequestApprovalDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            <td class="col-first-column">{{ i + 1 }}</td>
+                            <td>{{ Request.employeename }}</td>
+                            <td>{{ Request.department }}</td>
+                            <td *ngIf="IsAdminLogin">{{ Request.managername }}</td>
+                            <td>{{ Request.leavetype }}</td>
+                            <td>{{ Request.startdate }}</td>
+                            <td>{{ Request.enddate }}</td>
+                            <td>{{ Request.totaldays }}</td>
+                            <td>{{ Request.reason }}</td>
+                            <td>{{ Request.leavebalance }}</td>
+                            <td>
+                                <span class="status-badge" [ngClass]="{'booked': Request.status === 'Approved',
+                                'open': Request.status === 'Pending','inactive': Request.status === 'Rejected'}">
+                                    <span class="status-dot"></span>
+                                    {{ Request.status }}
+                                </span>
+                            </td>
+                            <td>
+                                <button matIconButton [matMenuTriggerFor]="menu">
+                                    <mat-icon>more_vert</mat-icon>
+                                </button>
+                                <mat-menu #menu="matMenu">
+                                    <button mat-menu-item style="color: #6B5B95;">
+                                        <mat-icon style="color: #6B5B95;">edit_square</mat-icon>
+                                        <span>Approve Leave</span>
+                                    </button>
+                                    <button mat-menu-item style="color: #d10f01;">
+                                        <mat-icon style="color: #d10f01;">close</mat-icon>
+                                        <span>Reject Leave</span>
+                                    </button>
+                                </mat-menu>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-0 text-end">
+            <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
+        </div>
+    </div>
+</div>

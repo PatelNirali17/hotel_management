@@ -1,0 +1,132 @@
+[
+  {
+    "InvoiceNo": 1008,
+    "ExpenseBy": "John Deo",
+    "Date": "2022-02-12T14:22:18Z",
+    "Expense": "New Laptop",
+    "Status": "Paid",
+    "Amount": "$158",
+    "PaymentMode": "Cash",
+    "PaidTo": "Flipkart"
+  },
+  {
+    "InvoiceNo": 8965,
+    "ExpenseBy": "Sarah Smith",
+    "Date": "2022-02-15T14:22:18Z",
+    "Expense": "Advertising",
+    "Status": "Unpaid",
+    "Amount": "$568",
+    "PaymentMode": "Cheque",
+    "PaidTo": "Anand Advertising"
+  },
+  {
+    "InvoiceNo": 4587,
+    "ExpenseBy": "Edna Gilbert",
+    "Date": "2022-02-18T14:22:18Z",
+    "Expense": "Insurance Premium",
+    "Status": "Paid",
+    "Amount": "$2458",
+    "PaymentMode": "Credit Card",
+    "PaidTo": "Max Life Premium"
+  },
+  {
+    "InvoiceNo": 5897,
+    "ExpenseBy": "Shelia Osterberg",
+    "Date": "2022-02-19T14:22:18Z",
+    "Expense": "Employee Salary",
+    "Status": "Paid",
+    "Amount": "$12875",
+    "PaymentMode": "Cash",
+    "PaidTo": "Employee"
+  },
+  {
+    "InvoiceNo": 2258,
+    "ExpenseBy": "Barbara Garland",
+    "Date": "2022-02-22T14:22:18Z",
+    "Expense": "Electricity Bill",
+    "Status": "Paid",
+    "Amount": "$365",
+    "PaymentMode": "Cheque",
+    "PaidTo": "Torrent Power"
+  },
+  {
+    "InvoiceNo": 1236,
+    "ExpenseBy": "Sarah Smith",
+    "Date": "2022-03-12T14:22:18Z",
+    "Expense": "Transportation",
+    "Status": "Paid",
+    "Amount": "$54",
+    "PaymentMode": "Cheque",
+    "PaidTo": "Bharat Travels"
+  },
+  {
+    "InvoiceNo": 9517,
+    "ExpenseBy": "Marie Brodsky",
+    "Date": "2022-03-25T14:22:18Z",
+    "Expense": "Postage and shipping",
+    "Status": "Paid",
+    "Amount": "$412",
+    "PaymentMode": "Credit Card",
+    "PaidTo": "Abc Transport"
+  },
+  {
+    "InvoiceNo": 7538,
+    "ExpenseBy": "Kara Thompson",
+    "Date": "2022-04-10T14:22:18Z",
+    "Expense": "Rent",
+    "Status": "Unpaid",
+    "Amount": "$228",
+    "PaymentMode": "Cash",
+    "PaidTo": "Rajesh Shukla"
+  },
+  {
+    "InvoiceNo": 8569,
+    "ExpenseBy": "Joseph Nye",
+    "Date": "2022-04-15T14:22:18Z",
+    "Expense": "Business meals",
+    "Status": "Paid",
+    "Amount": "$184",
+    "PaymentMode": "Credit Card",
+    "PaidTo": "Taj Hotel"
+  },
+  {
+    "InvoiceNo": 2547,
+    "ExpenseBy": "Ricardo Wendler",
+    "Date": "2022-05-05T14:22:18Z",
+    "Expense": "Charitable contributions",
+    "Status": "Paid",
+    "Amount": "$149",
+    "PaymentMode": "Cash",
+    "PaidTo": "Kirti Oldage Home"
+  },
+  {
+    "InvoiceNo": 3614,
+    "ExpenseBy": "Brian Shelley",
+    "Date": "2022-05-11T14:22:18Z",
+    "Expense": "Licenses and permits",
+    "Status": "Unpaid",
+    "Amount": "$357",
+    "PaymentMode": "Cheque",
+    "PaidTo": "Goverement"
+  },
+  {
+    "InvoiceNo": 4568,
+    "ExpenseBy": "Theresa Bullock",
+    "Date": "2022-06-14T14:22:18Z",
+    "Expense": "Client gifts",
+    "Status": "Paid",
+    "Amount": "$78",
+    "PaymentMode": "Credit Card",
+    "PaidTo": "John Deo"
+  },
+  {
+    "InvoiceNo": 3791,
+    "ExpenseBy": "Jeannie Elder",
+    "Date": "2022-06-21T14:22:18Z",
+    "Expense": "Medical expenses",
+    "Status": "Paid",
+    "Amount": "$564",
+    "PaymentMode": "Credit Card",
+    "PaidTo": "Smart Hospital"
+  }
+]

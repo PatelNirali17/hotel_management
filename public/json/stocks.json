@@ -1,0 +1,138 @@
+[
+  {
+    "ProductCode": "B123451",
+    "ProductName": "Bed Sheet",
+    "Status":"Low Stock",
+    "Price": 12,
+    "Category": "Room Service",
+    "Quantity": 12
+  },
+  {
+    "ProductCode": "T654321",
+    "ProductName": "Towel",
+    "Status":"In Stock",
+    "Price": 8,
+    "Category": "Bathroom Supplies",
+    "Quantity": 50
+  },
+  {
+    "ProductCode": "P789012",
+    "ProductName": "Pillow",
+    "Status":"Out Of Stock",
+    "Price": 15,
+    "Category": "Room Service",
+    "Quantity": 0
+  },
+  {
+    "ProductCode": "S345678",
+    "ProductName": "Shampoo",
+    "Status":"Low Stock",
+    "Price": 5,
+    "Category": "Bathroom Supplies",
+    "Quantity": 10
+  },
+  {
+    "ProductCode": "S987654",
+    "ProductName": "Soap",
+    "Status":"In Stock",
+    "Price": 3,
+    "Category": "Bathroom Supplies",
+    "Quantity": 100
+  },
+  {
+    "ProductCode": "C123987",
+    "ProductName": "Coffee",
+    "Status":"In Stock",
+    "Price": 2,
+    "Category": "Beverages",
+    "Quantity": 200
+  },
+  {
+    "ProductCode": "T564738",
+    "ProductName": "Tea Bags",
+    "Status":"In Stock",
+    "Price": 1,
+    "Category": "Beverages",
+    "Quantity": 300
+  },
+  {
+    "ProductCode": "H135792",
+    "ProductName": "Hand Sanitizer",
+    "Status":"Low Stock",
+    "Price": 6,
+    "Category": "Health & Safety",
+    "Quantity": 20
+  },
+  {
+    "ProductCode": "K246810",
+    "ProductName": "Keycard",
+    "Status":"In Stock",
+    "Price": 1,
+    "Category": "Room Service",
+    "Quantity": 500
+  },
+  {
+    "ProductCode": "B111213",
+    "ProductName": "Bathrobe",
+    "Status":"In Stock",
+    "Price": 25,
+    "Category": "Room Service",
+    "Quantity": 30
+  },
+  {
+    "ProductCode": "G314159",
+    "ProductName": "Glass Cleaner",
+    "Status":"In Stock",
+    "Price": 4,
+    "Category": "Cleaning Supplies",
+    "Quantity": 40
+  },
+  {
+    "ProductCode": "D217364",
+    "ProductName": "Dish Soap",
+    "Status":"In Stock",
+    "Price": 3,
+    "Category": "Cleaning Supplies",
+    "Quantity": 80
+  },
+  {
+    "ProductCode": "R948372",
+    "ProductName": "Remote Control",
+    "Status":"Low Stock",
+    "Price": 10,
+    "Category": "Electronics",
+    "Quantity": 15
+  },
+  {
+    "ProductCode": "L627381",
+    "ProductName": "Light Bulb",
+    "Status":"In Stock",
+    "Price": 2,
+    "Category": "Maintenance Supplies",
+    "Quantity": 100
+  },
+  {
+    "ProductCode": "C134567",
+    "ProductName": "Conditioner",
+    "Status":"Low Stock",
+    "Price": 5,
+    "Category": "Bathroom Supplies",
+    "Quantity": 10
+  },
+  {
+    "ProductCode": "N657483",
+    "ProductName": "Napkin",
+    "Status":"In Stock",
+    "Price": 1,
+    "Category": "Dining Supplies",
+    "Quantity": 500
+  },
+  {
+    "ProductCode": "F273849",
+    "ProductName": "Face Mask",
+    "Status":"In Stock",
+    "Price": 1,
+    "Category": "Health & Safety",
+    "Quantity": 200
+  }
+]

@@ -3,9 +3,9 @@
         <div class="col-lg-12 mt-0">
             <div class="d-flex align-items-center justify-content-end">
                 <div class="p-0">
-                    <button type="button" (click)="OpenCreateCabListDialog()"
+                    <button type="button" (click)="OpenStocksDialog()"
                         class="btn bgprimary btn-sm d-flex align-items-center"><mat-icon>add</mat-icon> Create
-                        Cab</button>
+                        Stock</button>
                 </div>
             </div>
         </div>
@@ -15,33 +15,31 @@
                     <thead>
                         <tr>
                             <th class="col-first-column bgsecondary">SrNo</th>
-                            <th class="bgsecondary">Driver Name</th>
-                            <th class="bgsecondary">Cab Model</th>
-                            <th class="bgsecondary">License Plate</th>
+                            <th class="bgsecondary">Product Code</th>
+                            <th class="bgsecondary">Product Name</th>
                             <th class="bgsecondary">Status</th>
-                            <th class="bgsecondary">Capacity</th>
-                            <th class="bgsecondary">Location</th>
-                            <th class="bgsecondary">Rating</th>
+                            <th class="bgsecondary">Price</th>
+                            <th class="bgsecondary">Category</th>
+                            <th class="bgsecondary">Quantity</th>
                             <th class="bgsecondary">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr
-                            *ngFor="let Cab of CabListDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            *ngFor="let Stock of StocksDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
                             <td class="col-first-column">{{ i + 1 }}</td>
-                            <td>{{ Cab.driverName }}</td>
-                            <td>{{ Cab.cabModel }}</td>
-                            <td>{{ Cab.licensePlate }}</td>
+                            <td>{{ Stock.ProductCode }}</td>
+                            <td>{{ Stock.ProductName }}</td>
                             <td>
-                                <span class="status-badge" [ngClass]="{'booked': Cab.status === 'Available','draft': Cab.status === 'In Use',
-                                 'open': Cab.status === 'Maintenance'}">
+                                <span class="status-badge" [ngClass]="{'booked': Stock.Status === 'In Stock','open': Stock.Status === 'Low Stock',
+                                 'draft': Stock.Status === 'Out Of Stock'}">
                                     <span class="status-dot"></span>
-                                    {{ Cab.status }}
+                                    {{ Stock.Status }}
                                 </span>
                             </td>
-                            <td>{{ Cab.capacity }}</td>
-                            <td>{{ Cab.location }}</td>
-                            <td>{{ Cab.rating }}</td>
+                            <td>₹{{ Stock.Price }}</td>
+                            <td>{{ Stock.Category }}</td>
+                            <td>{{ Stock.Quantity }}</td>
                             <td>
                                 <button matIconButton [matMenuTriggerFor]="menu">
                                     <mat-icon>more_vert</mat-icon>
@@ -54,10 +52,6 @@
                                     <button mat-menu-item style="color: #d10f01;">
                                         <mat-icon style="color: #d10f01;">delete</mat-icon>
                                         <span>Delete</span>
-                                    </button>
-                                    <button mat-menu-item style="color: #6B5B95;">
-                                        <mat-icon style="color: #6B5B95;">list</mat-icon>
-                                        <span>View Details</span>
                                     </button>
                                 </mat-menu>
                             </td>

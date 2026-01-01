@@ -1,0 +1,82 @@
+<h1 mat-dialog-title>New Cab Booking</h1>
+<div mat-dialog-content class="bgsecondary">
+    <form class="row">
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Guest Name</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Room Number</mat-label>
+                <mat-select required>
+                    <mat-option *ngFor="let Room of RoomList" value="Room.RoomNo">{{Room.RoomNo}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Pickup Location</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Dropoff Location</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Pickup DateTime</mat-label>
+                <input matInput [matDatepicker]="PickupDateTime" (focus)="PickupDateTime.open()"
+                    (click)="PickupDateTime.open()">
+                <mat-datepicker-toggle matIconSuffix [for]="PickupDateTime"></mat-datepicker-toggle>
+                <mat-datepicker #PickupDateTime></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Cab Model</mat-label>
+                <mat-select required (selectionChange)="onCabModelChange($event)">
+                    <mat-option *ngFor="let Cab of CabList" value="Cab.cabId">{{Cab.cabModel}} -
+                        {{Cab.licensePlate}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Status</mat-label>
+                <mat-select required>
+                    <mat-option value="Pending">Pending</mat-option>
+                    <mat-option value="Confirmed">Confirmed</mat-option>
+                    <mat-option value="Completed">Completed</mat-option>
+                    <mat-option value="Cancelled">Cancelled</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Driver Name</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Driver Contact</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Amount</mat-label>
+                <input matInput required>
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button class="bgaccent">Save</button>
+    <button mat-raised-button [mat-dialog-close]="true" class="bgsecondary">Close</button>
+</div>
