@@ -1,0 +1,112 @@
+[
+  {
+    "date": "08/01/2024",
+    "checkin": "08:00 AM",
+    "checkout": "04:30 PM",
+    "hoursworked": "08h:30m",
+    "status": "Present",
+    "shift": "Day",
+    "breakstart": "12:00 PM",
+    "breakend": "12:30 PM",
+    "notes": "On time"
+  },
+  {
+    "date": "08/02/2024",
+    "checkin": "08:15 AM",
+    "checkout": "05:00 PM",
+    "hoursworked": "08h:45m",
+    "status": "Present",
+    "shift": "Day",
+    "breakstart": "12:15 PM",
+    "breakend": "12:45 PM",
+    "notes": "On time"
+  },
+  {
+    "date": "08/03/2024",
+    "checkin": null,
+    "checkout": null,
+    "hoursworked": null,
+    "status": "Absent",
+    "shift": "Day",
+    "breakstart": null,
+    "breakend": null,
+    "notes": null
+  },
+  {
+    "date": "08/04/2024",
+    "checkin": "08:30 AM",
+    "checkout": "05:00 PM",
+    "hoursworked": "08h:30m",
+    "status": "Present",
+    "shift": "Day",
+    "breakstart": "12:30 PM",
+    "breakend": "01:00 PM",
+    "notes": "On time"
+  },
+  {
+    "date": "08/05/2024",
+    "checkin": "08:45 AM",
+    "checkout": "05:15 PM",
+    "hoursworked": "08h:30m",
+    "status": "Present",
+    "shift": "Day",
+    "breakstart": "01:00 PM",
+    "breakend": "01:30 PM",
+    "notes": "On time"
+  },
+  {
+    "date": "08/06/2024",
+    "checkin": null,
+    "checkout": null,
+    "hoursworked": null,
+    "status": "Absent",
+    "shift": "Day",
+    "breakstart": null,
+    "breakend": null,
+    "notes": null
+  },
+  {
+    "date": "08/07/2024",
+    "checkin": "08:00 AM",
+    "checkout": "04:30 PM",
+    "hoursworked": "08h:30m",
+    "status": "Present",
+    "shift": "Day",
+    "breakstart": "12:00 PM",
+    "breakend": "12:30 PM",
+    "notes": "On time"
+  },
+  {
+    "date": "08/08/2024",
+    "checkin": "08:15 AM",
+    "checkout": "04:45 PM",
+    "hoursworked": "08h:30m",
+    "status": "Present",
+    "shift": "Day",
+    "breakstart": "12:15 PM",
+    "breakend": "12:45 PM",
+    "notes": "On time"
+  },
+  {
+    "date": "08/09/2024",
+    "checkin": "09:00 AM",
+    "checkout": "05:30 PM",
+    "hoursworked": "08h:30m",
+    "status": "Present",
+    "shift": "Day",
+    "breakstart": "01:00 PM",
+    "breakend": "01:30 PM",
+    "notes": "Late check-in"
+  },
+  {
+    "date": "08/10/2024",
+    "checkin": null,
+    "checkout": null,
+    "hoursworked": null,
+    "status": "Absent",
+    "shift": "Day",
+    "breakstart": null,
+    "breakend": null,
+    "notes": null
+  }
+]

@@ -1,0 +1,111 @@
+<h1 mat-dialog-title>New Salary</h1>
+<div mat-dialog-content class="bgsecondary">
+    <form class="row">
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Employee</mat-label>
+                <mat-select required>
+                    <mat-option *ngFor="let Staff of StaffList" [value]="Staff.Name">{{Staff.Name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Basic Salary</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">House Rent Allowance</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Dearness Allowance</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Conveyance Allowance</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Medical Allowance</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Special Allowance</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Bonus</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Gross Salary</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">PF Deduction</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">ESI Deduction</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Professional Tax</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Other Deductions</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Net Salary</mat-label>
+                <input matInput type="number" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Effective From</mat-label>
+                <input matInput [matDatepicker]="EffectiveFrom" (focus)="EffectiveFrom.open()" (click)="EffectiveFrom.open()">
+                <mat-datepicker-toggle matIconSuffix [for]="EffectiveFrom"></mat-datepicker-toggle>
+                <mat-datepicker #EffectiveFrom></mat-datepicker>
+            </mat-form-field>
+        </div>
+           <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Effective To</mat-label>
+                <input matInput [matDatepicker]="EffectiveTo" (focus)="EffectiveTo.open()" (click)="EffectiveTo.open()">
+                <mat-datepicker-toggle matIconSuffix [for]="EffectiveTo"></mat-datepicker-toggle>
+                <mat-datepicker #EffectiveTo></mat-datepicker>
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button class="bgaccent">Save</button>
+    <button mat-raised-button [mat-dialog-close]="true" class="bgsecondary">Close</button>
+</div>

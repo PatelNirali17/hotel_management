@@ -1,0 +1,65 @@
+<div class="container-fluid">
+    <div class="row g-2">
+        <div class="col-lg-12 mt-0">
+            <div class="d-flex align-items-center justify-content-end">
+                <div class="p-0">
+                    <button type="button" (click)="GenerateEmployeePayroll()"
+                        class="btn bgprimary btn-sm d-flex align-items-center"><mat-icon>add</mat-icon> Generate
+                        Payroll</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table luxury-table">
+                    <thead>
+                        <tr>
+                            <th class="col-first-column bgsecondary">SrNo</th>
+                            <th class="bgsecondary">Employee Name</th>
+                            <th class="bgsecondary">Salary Month</th>
+                            <th class="bgsecondary">Working Days</th>
+                            <th class="bgsecondary">Present Days</th>
+                            <th class="bgsecondary">Leave Days</th>
+                            <th class="bgsecondary">Lop Days</th>
+                            <th class="bgsecondary">Overtime Hours</th>
+                            <th class="bgsecondary">Overtime Amount</th>
+                            <th class="bgsecondary">Gross Salary</th>
+                            <th class="bgsecondary">Total Deductions</th>
+                            <th class="bgsecondary">Net Salary</th>
+                            <th class="bgsecondary">Payment Status</th>
+                            <th class="bgsecondary">Payment Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr
+                            *ngFor="let Payroll of GeneratePayrollDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            <td class="col-first-column" style="padding: 10px;">{{ i + 1 }}</td>
+                            <td>{{ Payroll.employee_name }}</td>
+                            <td>{{ Payroll.month }}/{{ Payroll.year }}</td>
+                            <td>{{ Payroll.working_days }}</td>
+                            <td>{{ Payroll.present_days }}</td>
+                            <td>{{ Payroll.leave_days }}</td>
+                            <td>{{ Payroll.lop_days }}</td>
+                            <td>{{ Payroll.overtime_hours }}</td>
+                            <td>{{ Payroll.overtime_amount }}</td>
+                            <td>{{ Payroll.gross_salary }}</td>
+                            <td>{{ Payroll.total_deductions }}</td>
+                            <td>{{ Payroll.net_salary }}</td>
+                            <td>
+                                <span class="status-badge" [ngClass]="{'booked': Payroll.payment_status === 'Paid',
+                                'inactive': Payroll.payment_status === 'Pending'}">
+                                    <span class="status-dot"></span>
+                                    {{ Payroll.payment_status }}
+                                </span>
+                            </td>
+                            <td>{{ Payroll.payment_date }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-0 text-end">
+            <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
+        </div>
+    </div>
+</div>

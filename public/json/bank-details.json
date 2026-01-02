@@ -1,0 +1,90 @@
+[
+    {
+        "bank_id": 201,
+        "employee_id": 12,
+        "employee_name": "Rohit Sharma",
+        "bank_name": "State Bank of India",
+        "branch_name": "MG Road Branch",
+        "account_holder_name": "Rohit Sharma",
+        "account_number": "XXXXXX1234",
+        "ifsc_code": "SBIN0005678",
+        "status": "Approved"
+    },
+    {
+        "bank_id": 202,
+        "employee_id": 18,
+        "employee_name": "Anita Verma",
+        "bank_name": "HDFC Bank",
+        "branch_name": "Connaught Place",
+        "account_holder_name": "Anita Verma",
+        "account_number": "XXXXXX4321",
+        "ifsc_code": "HDFC0002345",
+        "status": "Pending"
+    },
+    {
+        "bank_id": 203,
+        "employee_id": 21,
+        "employee_name": "Suresh Kumar",
+        "bank_name": "ICICI Bank",
+        "branch_name": "Sector 15, Noida",
+        "account_holder_name": "Suresh Kumar",
+        "account_number": "XXXXXX5678",
+        "ifsc_code": "ICIC0009876",
+        "status": "Approved"
+    },
+    {
+        "bank_id": 204,
+        "employee_id": 25,
+        "employee_name": "Priya Singh",
+        "bank_name": "Axis Bank",
+        "branch_name": "Andheri West",
+        "account_holder_name": "Priya Singh",
+        "account_number": "XXXXXX8765",
+        "ifsc_code": "UTIB0003456",
+        "status": "Approved"
+    },
+    {
+        "bank_id": 205,
+        "employee_id": 30,
+        "employee_name": "Amit Joshi",
+        "bank_name": "Punjab National Bank",
+        "branch_name": "Kolkata Main Branch",
+        "account_holder_name": "Amit Joshi",
+        "account_number": "XXXXXX3456",
+        "ifsc_code": "PUNB0123456",
+        "status": "Approved"
+    },
+    {
+        "bank_id": 206,
+        "employee_id": 33,
+        "employee_name": "Rina Patel",
+        "bank_name": "Kotak Mahindra Bank",
+        "branch_name": "Bandra East",
+        "account_holder_name": "Rina Patel",
+        "account_number": "XXXXXX7890",
+        "ifsc_code": "KKBK0005678",
+        "status": "Pending"
+    },
+    {
+        "bank_id": 207,
+        "employee_id": 37,
+        "employee_name": "Vikram Singh",
+        "bank_name": "Yes Bank",
+        "branch_name": "MG Road Branch",
+        "account_holder_name": "Vikram Singh",
+        "account_number": "XXXXXX9012",
+        "ifsc_code": "YESB0003456",
+        "status": "Rejected"
+    },
+    {
+        "bank_id": 208,
+        "employee_id": 40,
+        "employee_name": "Neha Kapoor",
+        "bank_name": "IDFC First Bank",
+        "branch_name": "Connaught Place",
+        "account_holder_name": "Neha Kapoor",
+        "account_number": "XXXXXX2345",
+        "ifsc_code": "IDFB0001234",
+        "status": "Approved"
+    }
+]

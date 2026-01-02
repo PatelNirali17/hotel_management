@@ -272,6 +272,46 @@
         },
         {
             "id": 28,
+            "title": "Payroll",
+            "routerLink": null,
+            "href": null,
+            "icon": "payments",
+            "target": null,
+            "hasSubMenu": true,
+            "parentId": 0
+        },
+        {
+            "id": 29,
+            "title": "Salary Master",
+            "routerLink": "payroll/salarymaster",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 28
+        },
+        {
+            "id": 30,
+            "title": "Bank Details",
+            "routerLink": "payroll/bankdetails",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 28
+        },
+        {
+            "id": 31,
+            "title": "Generate Payroll",
+            "routerLink": "payroll/generatepayroll",
+            "href": null,
+            "icon": null,
+            "target": null,
+            "hasSubMenu": false,
+            "parentId": 28
+        },
+        {
+            "id": 32,
             "title": "Events",
             "routerLink": "events/allevents",
             "href": null,
@@ -281,7 +321,7 @@
             "parentId": 0
         },
         {
-            "id": 29,
+            "id": 33,
             "title": "Guests",
             "routerLink": "guests/allguests",
             "href": null,
@@ -291,7 +331,7 @@
             "parentId": 0
         },
         {
-            "id": 30,
+            "id": 34,
             "title": "Cabs",
             "routerLink": null,
             "href": null,
@@ -301,27 +341,27 @@
             "parentId": 0
         },
         {
-            "id": 31,
+            "id": 35,
             "title": "Cab List",
             "routerLink": "cabs/cablist",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 30
+            "parentId": 34
         },
         {
-            "id": 32,
+            "id": 36,
             "title": "Cab Booking",
             "routerLink": "cabs/cabbooking",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 30
+            "parentId": 34
         },
         {
-            "id": 33,
+            "id": 37,
             "title": "Reports",
             "routerLink": null,
             "href": null,
@@ -331,24 +371,24 @@
             "parentId": 0
         },
         {
-            "id": 34,
+            "id": 38,
             "title": "Stocks",
             "routerLink": "reports/stocks",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 33
+            "parentId": 37
         },
         {
-            "id": 35,
+            "id": 39,
             "title": "Expense",
             "routerLink": "reports/expense",
             "href": null,
             "icon": null,
             "target": null,
             "hasSubMenu": false,
-            "parentId": 33
+            "parentId": 37
         }
     ],
     "EmployeeMenu": [
@@ -405,7 +445,7 @@
         {
             "id": 6,
             "title": "Leave Balance",
-            "routerLink": "leave/leavebalance",
+            "routerLink": "leave/employeeleavebalance",
             "href": null,
             "icon": null,
             "target": null,
@@ -425,7 +465,7 @@
         {
             "id": 8,
             "title": "Salary",
-            "routerLink": "payroll/salary",
+            "routerLink": "payroll/employeesalary",
             "href": null,
             "icon": null,
             "target": null,

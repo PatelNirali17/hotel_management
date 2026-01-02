@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="row g-2">
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table luxury-table">
+                    <thead>
+                        <tr>
+                            <th class="col-first-column bgsecondary">SrNo</th>
+                            <th class="bgsecondary">Date</th>
+                            <th class="bgsecondary">Day</th>
+                            <th class="bgsecondary">Shift Start</th>
+                            <th class="bgsecondary">Shift End</th>
+                            <th class="bgsecondary">Duration</th>
+                            <th class="bgsecondary">Role</th>
+                            <th class="bgsecondary">Shift Type</th>
+                            <th class="bgsecondary">Break Start</th>
+                            <th class="bgsecondary">Break End</th>
+                            <th class="bgsecondary">Time In</th>
+                            <th class="bgsecondary">Time Out</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr
+                            *ngFor="let Shift of EmployeeShiftDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            <td class="col-first-column" style="padding: 10px;">{{ i + 1 }}</td>
+                            <td>{{ Shift.date }}</td>
+                            <td>{{ Shift.day }}</td>
+                            <td>{{ Shift.shiftstart }}</td>
+                            <td>{{ Shift.shiftend }}</td>
+                            <td>{{ Shift.duration }}</td>
+                            <td>{{ Shift.role }}</td>
+                            <td>{{ Shift.shifttype }}</td>
+                            <td>{{ Shift.breakstart }}</td>
+                            <td>{{ Shift.breakend }}</td>
+                            <td>{{ Shift.timein }}</td>
+                            <td>{{ Shift.timeout }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-0 text-end">
+            <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+<div class="container-fluid">
+    <div class="row g-2">
+        <div class="col-lg-12 mt-0" *ngIf="IsEmployeeLogin">
+            <div class="d-flex align-items-center justify-content-end">
+                <div class="p-0">
+                    <button type="button" (click)="OpenBankDetailsDialog()"
+                        class="btn bgprimary btn-sm d-flex align-items-center"><mat-icon>add</mat-icon> Add Bank
+                        Details</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table luxury-table">
+                    <thead>
+                        <tr>
+                            <th class="col-first-column bgsecondary">SrNo</th>
+                            <th class="bgsecondary" *ngIf="IsAdminLogin">Employee Name</th>
+                            <th class="bgsecondary">Bank Name</th>
+                            <th class="bgsecondary">Branch Name</th>
+                            <th class="bgsecondary">Account Holder Name</th>
+                            <th class="bgsecondary">Account Number</th>
+                            <th class="bgsecondary">IFSC Code</th>
+                            <th class="bgsecondary">Status</th>
+                            <th class="bgsecondary">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr
+                            *ngFor="let Bank of BankDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            <td class="col-first-column">{{ i + 1 }}</td>
+                            <td *ngIf="IsAdminLogin">{{ Bank.employee_name }}</td>
+                            <td>{{ Bank.bank_name }}</td>
+                            <td>{{ Bank.branch_name }}</td>
+                            <td>{{ Bank.account_holder_name }}</td>
+                            <td>{{ Bank.account_number }}</td>
+                            <td>{{ Bank.ifsc_code }}</td>
+                            <td>
+                                <span class="status-badge" [ngClass]="{'booked': Bank.status === 'Approved',
+                                'open': Bank.status === 'Pending','inactive': Bank.status === 'Rejected'}">
+                                    <span class="status-dot"></span>
+                                    {{ Bank.status }}
+                                </span>
+                            </td>
+                            <td>
+                                <button matIconButton [matMenuTriggerFor]="menu">
+                                    <mat-icon>more_vert</mat-icon>
+                                </button>
+                                <mat-menu #menu="matMenu">
+                                    <button mat-menu-item style="color: #6B5B95;" *ngIf="IsEmployeeLogin">
+                                        <mat-icon style="color: #6B5B95;">edit_square</mat-icon>
+                                        <span>Edit</span>
+                                    </button>
+                                    <button mat-menu-item style="color: #d10f01;" *ngIf="IsEmployeeLogin">
+                                        <mat-icon style="color: #d10f01;">delete</mat-icon>
+                                        <span>Delete</span>
+                                    </button>
+                                    <button mat-menu-item style="color: #6B5B95;" *ngIf="IsAdminLogin">
+                                        <mat-icon style="color: #6B5B95;">edit_square</mat-icon>
+                                        <span>Approve Bank Details</span>
+                                    </button>
+                                    <button mat-menu-item style="color: #d10f01;" *ngIf="IsAdminLogin">
+                                        <mat-icon style="color: #d10f01;">close</mat-icon>
+                                        <span>Reject Bank Details</span>
+                                    </button>
+                                </mat-menu>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-0 text-end">
+            <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
+        </div>
+    </div>
+</div>

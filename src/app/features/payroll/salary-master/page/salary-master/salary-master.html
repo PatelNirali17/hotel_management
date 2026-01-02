@@ -1,0 +1,65 @@
+<div class="container-fluid">
+    <div class="row g-2">
+        <div class="col-lg-12 mt-0">
+            <div class="d-flex align-items-center justify-content-end">
+                <div class="p-0">
+                    <button type="button" (click)="OpenSalaryMasterDialog()"
+                        class="btn bgprimary btn-sm d-flex align-items-center"><mat-icon>add</mat-icon> Create
+                        Salary</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table luxury-table">
+                    <thead>
+                        <tr>
+                            <th class="col-first-column bgsecondary">SrNo</th>
+                            <th class="bgsecondary">Employee</th>
+                            <th class="bgsecondary">Basic Salary</th>
+                            <th class="bgsecondary">Gross Salary</th>
+                            <th class="bgsecondary">Net Salary</th>
+                            <th class="bgsecondary">Effective From</th>
+                            <th class="bgsecondary">Effective To</th>
+                            <th class="bgsecondary">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr
+                            *ngFor="let Salary of SalaryMasterDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            <td class="col-first-column">{{ i + 1 }}</td>
+                            <td>{{ Salary.employee_name }}</td>
+                            <td>₹{{ Salary.basic_salary }}</td>
+                            <td>₹{{ Salary.gross_salary }}</td>
+                            <td>₹{{ Salary.net_salary }}</td>
+                            <td>{{ Salary.effective_from }}</td>
+                            <td>{{ Salary.effective_to }}</td>
+                            <td>
+                                <button matIconButton [matMenuTriggerFor]="menu">
+                                    <mat-icon>more_vert</mat-icon>
+                                </button>
+                                <mat-menu #menu="matMenu">
+                                    <button mat-menu-item style="color: #6B5B95;">
+                                        <mat-icon style="color: #6B5B95;">edit_square</mat-icon>
+                                        <span>Edit</span>
+                                    </button>
+                                    <button mat-menu-item style="color: #d10f01;">
+                                        <mat-icon style="color: #d10f01;">delete</mat-icon>
+                                        <span>Delete</span>
+                                    </button>
+                                       <button mat-menu-item style="color: #6B5B95;">
+                                        <mat-icon style="color: #6B5B95;">list</mat-icon>
+                                        <span>View Details</span>
+                                    </button>
+                                </mat-menu>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-0 text-end">
+            <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="container-fluid">
+    <div class="row g-2">
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table luxury-table">
+                    <thead>
+                        <tr>
+                            <th class="col-first-column bgsecondary">SrNo</th>
+                            <th class="bgsecondary">date</th>
+                            <th class="bgsecondary">checkin</th>
+                            <th class="bgsecondary">checkout</th>
+                            <th class="bgsecondary">hoursworked</th>
+                            <th class="bgsecondary">status</th>
+                            <th class="bgsecondary">shift</th>
+                            <th class="bgsecondary">breakstart</th>
+                            <th class="bgsecondary">breakend</th>
+                            <th class="bgsecondary">notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr
+                            *ngFor="let attendance of EmployeeAttendanceDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            <td class="col-first-column" style="padding: 10px;">{{ i + 1 }}</td>
+                            <td>{{ attendance.date }}</td>
+                            <td>{{ attendance.checkin }}</td>
+                            <td>{{ attendance.checkout }}</td>
+                            <td>{{ attendance.hoursworked }}</td>
+                            <td>
+                                <span class="status-badge"
+                                    [ngClass]="{'booked': attendance.status === 'Present','inactive': attendance.status === 'Absent'}">
+                                    <span class="status-dot"></span>
+                                    {{ attendance.status }}
+                                </span>
+                            </td>
+                            <td>{{ attendance.shift }}</td>
+                            <td>{{ attendance.breakstart }}</td>
+                            <td>{{ attendance.breakend }}</td>
+                            <td>{{ attendance.notes }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-0 text-end">
+            <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
+        </div>
+    </div>
+</div>

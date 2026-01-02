@@ -14,6 +14,8 @@ import { EventsRoutesList } from './features/events/events-routes';
 import { GuestsRoutesList } from './features/guests/guests-routes';
 import { CabsRoutesList } from './features/cabs/cabs-routes';
 import { ReportsRoutesList } from './features/reports/reports-routes';
+import { EmployeeAttendance } from './features/employee-attendance/page/employee-attendance/employee-attendance';
+import { PayrollRoutesList } from './features/payroll/payroll-routes';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -63,9 +65,14 @@ export const routes: Routes = [
                 path: 'cabs', data: { breadcrumb: 'Cabs' },
                 children: CabsRoutesList
             },
-              {
+            {
                 path: 'reports', data: { breadcrumb: 'Reports' },
                 children: ReportsRoutesList
+            },
+            { path: 'attendance', component: EmployeeAttendance, data: { breadcrumb: 'Employee Attendance' } },
+            {
+                path: 'payroll', data: { breadcrumb: 'Payroll' },
+                children: PayrollRoutesList
             },
         ]
 

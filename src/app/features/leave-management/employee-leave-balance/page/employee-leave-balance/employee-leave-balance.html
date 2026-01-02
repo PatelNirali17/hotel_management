@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row g-2">
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table luxury-table">
+                    <thead>
+                        <tr>
+                            <th class="col-first-column bgsecondary">SrNo</th>
+                            <th class="bgsecondary">Leave Type</th>
+                            <th class="bgsecondary">Total Leave</th>
+                            <th class="bgsecondary">Remaining Leave</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr
+                            *ngFor="let balance of EmployeeLeaveBalanceDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                            <td class="col-first-column" style="padding: 10px;">{{ i + 1 }}</td>
+                            <td>{{ balance.leaveType }}</td>
+                            <td>{{ balance.totalLeave }}</td>
+                            <td>{{ balance.remainingLeave }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-0 text-end">
+            <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
+        </div>
+    </div>
+</div>
