@@ -1,26 +1,174 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-12">
             <div class="salary-card">
                 <div class="d-flex p-1">
                     <div class="flex-grow-1">
                         <h5 class="mb-0">Pooja Sharma</h5>
-                        <p class="text-muted" style="font-size: 12px;">Manager ● Operations</p>
+                        <p class="text-muted" style="font-size: 12px;">Manager ● Operations ● joined: Jan 15, 2020</p>
                     </div>
                     <div class="d-flex align-items-center">
-                        <p class="text-muted" style="font-size: 12px;">joined: Jan 15, 2020</p>
+                        <div class="walletBalanceCard">
+                            <div class="balancewrapper">
+                                <span class="balanceHeading">Monthly CTC</span>
+                                <p class="balance"><span id="currency">$</span>12,000</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <p class="balanceHeading">Annual: $1,44,000</p>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-                <mat-divider></mat-divider>
-                 <div class="d-flex p-1">
-                    <div class="flex-grow-1">Monthly CTC : </div>
-                    <div><b>$12,000</b></div>
-                </div>
-                <div class="d-flex p-1">
-                    <div class="flex-grow-1">Annual : </div>
-                    <div><b>$1,44,000</b></div>
                 </div>
             </div>
         </div>
+        <div class="col-lg-12 mt-3">
+            <mat-tab-group>
+                <mat-tab label="Salary Structure">
+                    <div class="container-fluid pb-2">
+                        <div class="salary-card">
+                            <div class="d-flex p-1">
+                                <div class="flex-grow-1">
+                                    <h5 class="mb-0">Monthly CTC : $12,000</h5>
+                                    <p class="text-muted" style="font-size: 12px;">Yearly CTC : $1,44,000</p>
+                                </div>
+                            </div>
+                            <div class="row p-2">
+                                <div class="col-lg-3">
+                                    <div class="walletBalanceCard">
+                                        <div class="balancewrapper">
+                                            <span class="balanceHeading">Earning</span>
+                                            <p class="balance"><span id="currency">$</span>12,000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="walletBalanceCard">
+                                        <div class="balancewrapper">
+                                            <span class="balanceHeading">Reimbursements</span>
+                                            <p class="balance"><span id="currency">$</span>12,000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="walletBalanceCard">
+                                        <div class="balancewrapper">
+                                            <span class="balanceHeading">Deductions</span>
+                                            <p class="balance"><span id="currency">$</span>12,000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="PaySlip">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12 mt-2">
+                                <div class="salary-card">
+                                    <div class="d-flex p-1">
+                                        <div class="flex-grow-1">
+                                            <h5 class="mb-0">Month: Jan 2025</h5>
+                                            <p class="text-muted" style="font-size: 12px;">Present Days : 24 ● Leave
+                                                Days :
+                                                2 ● Lop Days : 0
+                                            </p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="text-muted" style="font-size: 12px;">Working Days: 26</p>
+                                        </div>
+                                    </div>
+                                    <mat-divider></mat-divider>
+                                    <div class="row p-1">
+                                        <div class="col-lg-3">Gross Salary : <b>$32000</b></div>
+                                        <div class="col-lg-3">Overtime Hours : <b>10</b></div>
+                                        <div class="col-lg-3">Overtime Amount : <b>$2000</b></div>
+                                        <div class="col-lg-3">Total Deductions : <b>$2860</b></div>
+                                        <div class="col-lg-8 d-flex align-items-center">Net Salary : <b>$29140</b></div>
+                                        <div class="col-lg-2">
+                                            <button type="button"
+                                                class="btn bgprimary btn-sm d-flex align-items-center"><mat-icon>download_2</mat-icon>Download</button>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <button type="button"
+                                                class="btn bgprimary btn-sm d-flex align-items-center"><mat-icon>print</mat-icon>Print</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt-3">
+                                <div class="table-responsive">
+                                    <table class="table luxury-table">
+                                        <thead>
+                                            <tr>
+                                                <th class="col-first-column bgsecondary">SrNo</th>
+                                                <th class="bgsecondary">Salary Month</th>
+                                                <th class="bgsecondary">Working Days</th>
+                                                <th class="bgsecondary">Present Days</th>
+                                                <th class="bgsecondary">Leave Days</th>
+                                                <th class="bgsecondary">Lop Days</th>
+                                                <th class="bgsecondary">Overtime Hours</th>
+                                                <th class="bgsecondary">Overtime Amount</th>
+                                                <th class="bgsecondary">Gross Salary</th>
+                                                <th class="bgsecondary">Total Deductions</th>
+                                                <th class="bgsecondary">Net Salary</th>
+                                                <th class="bgsecondary">Payment Status</th>
+                                                <th class="bgsecondary">Payment Date</th>
+                                                <th class="bgsecondary">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr
+                                                *ngFor="let Payroll of EmployeeSalarySlipDetails | paginate: { itemsPerPage:10, currentPage: page };let i=index">
+                                                <td class="col-first-column" style="padding: 10px;">{{ i + 1 }}</td>
+                                                <td>{{ Payroll.month }}/{{ Payroll.year }}</td>
+                                                <td>{{ Payroll.working_days }}</td>
+                                                <td>{{ Payroll.present_days }}</td>
+                                                <td>{{ Payroll.leave_days }}</td>
+                                                <td>{{ Payroll.lop_days }}</td>
+                                                <td>{{ Payroll.overtime_hours }}</td>
+                                                <td>{{ Payroll.overtime_amount }}</td>
+                                                <td>{{ Payroll.gross_salary }}</td>
+                                                <td>{{ Payroll.total_deductions }}</td>
+                                                <td>{{ Payroll.net_salary }}</td>
+                                                <td>
+                                                    <span class="status-badge" [ngClass]="{'booked': Payroll.payment_status === 'Paid',
+                                'inactive': Payroll.payment_status === 'Pending'}">
+                                                        <span class="status-dot"></span>
+                                                        {{ Payroll.payment_status }}
+                                                    </span>
+                                                </td>
+                                                <td>{{ Payroll.payment_date }}</td>
+                                                <td>
+                                                    <button matIconButton [matMenuTriggerFor]="menu">
+                                                        <mat-icon>more_vert</mat-icon>
+                                                    </button>
+                                                    <mat-menu #menu="matMenu">
+                                                        <button mat-menu-item style="color: #6B5B95;">
+                                                            <mat-icon style="color: #6B5B95;">download_2</mat-icon>
+                                                            <span>Download</span>
+                                                        </button>
+                                                        <button mat-menu-item style="color: #6B5B95;">
+                                                            <mat-icon style="color: #6B5B95;">print</mat-icon>
+                                                            <span>Print</span>
+                                                        </button>
+                                                    </mat-menu>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt-0 text-end">
+                                <pagination-controls (pageChange)="onPageChanged($event)"></pagination-controls>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+
+
     </div>
 </div>

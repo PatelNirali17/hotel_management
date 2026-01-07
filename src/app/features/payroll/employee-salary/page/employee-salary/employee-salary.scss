@@ -3,3 +3,35 @@
    border-top: 5px solid #6B5B95;
    border-radius: 5px;
 }
+
+/* From Uiverse.io by vinodjangid07 */ 
+.walletBalanceCard {
+  height: 90px;
+  background-color: #6B5B95;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 0px 12px;
+}
+.balancewrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 120px;
+  gap: 0px;
+}
+.balanceHeading {
+  font-size: 14px;
+  color: rgb(214, 214, 214);
+  font-weight: 100;
+  letter-spacing: 0.6px;
+}
+.balance {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}

@@ -2,10 +2,10 @@
     {
         "bank_id": 201,
         "employee_id": 12,
-        "employee_name": "Rohit Sharma",
+        "employee_name": "Pooja Sharma",
         "bank_name": "State Bank of India",
         "branch_name": "MG Road Branch",
-        "account_holder_name": "Rohit Sharma",
+        "account_holder_name": "Pooja Sharma",
         "account_number": "XXXXXX1234",
         "ifsc_code": "SBIN0005678",
         "status": "Approved"
