@@ -175,6 +175,11 @@ mat-option {
 .mat-mdc-tab .mdc-tab-indicator__content--underline {
   border-color: #6B5B95 !important;
 }
+.textlink{
+  cursor: pointer;
+  color: #6B5B95;
+  text-decoration: none;
+}
 
 //default scrollbar
 ::-webkit-scrollbar {

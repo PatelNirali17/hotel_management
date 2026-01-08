@@ -24,7 +24,11 @@ export class Login {
   async Login() {
     localStorage.setItem('UserDetails', JSON.stringify(this.LoginForm.value))
     await this.GetUserMenu()
-    this.router.navigate(['dashboard'])
+    if (this.LoginForm.value.LoginType == 'Employee') {
+      this.router.navigate(['employeedashboard'])
+    } else {
+      this.router.navigate(['dashboard'])
+    }
   }
 
   async GetUserMenu() {

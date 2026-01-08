@@ -1,0 +1,104 @@
+.salary-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top: 5px solid #6B5B95;
+    border-radius: 5px;
+}
+
+.profile-card {
+    display: flex;
+    justify-content: center;
+}
+
+.employeeimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid #e1d7fa;
+}
+
+.stats {
+    border-radius: 0.5rem;
+    background-color: #ebebeb;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgba(0, 0, 0, 1);
+    margin: 0px 10px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 4px;
+}
+
+.state-value {
+    font-weight: 700;
+    color: #6B5B95;
+}
+
+.stepper-box {
+    padding: 0px 32px;
+}
+
+.stepper-step {
+    display: flex;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.stepper-step:last-child {
+    margin-bottom: 0;
+}
+
+.stepper-line {
+    position: absolute;
+    left: 4px;
+    top: 14px;
+    bottom: -32px;
+    width: 2px;
+    background-color: #e2e8f0;
+    z-index: 1;
+}
+
+.stepper-step:last-child .stepper-line {
+    display: none;
+}
+
+.stepper-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    z-index: 2;
+    background-color: #6B5B95;
+}
+
+.stepper-content {
+    flex: 1;
+}
+
+.stepper-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.stepper-status {
+    font-size: 13px;
+    display: inline-block;
+    border-radius: 12px;
+    margin-top: 4px;
+}
+
+.stepper-time {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 4px;
+}

@@ -395,7 +395,7 @@
         {
             "id": 1,
             "title": "Employee Dashboard",
-            "routerLink": "/dashboard",
+            "routerLink": "/employeedashboard",
             "href": null,
             "icon": "desktop_mac",
             "target": null,
