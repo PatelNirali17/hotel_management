@@ -27,9 +27,18 @@
         <div class="col-lg-4">
             <mat-form-field class="w-100">
                 <mat-label style="font-size: 14px;">Room Type</mat-label>
-                <mat-select required>
+                <mat-select required (selectionChange)="onRoomTypeChange($event)">
                     <mat-option *ngFor="let RoomType of RoomTypeList"
                         [value]="RoomType.name">{{RoomType.name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4">
+            <mat-form-field class="w-100">
+                <mat-label style="font-size: 14px;">Room No</mat-label>
+                <mat-select required>
+                    <mat-option *ngFor="let Room of RoomList"
+                        [value]="Room.RoomNo">Room No {{Room.RoomNo}}</mat-option>
                 </mat-select>
             </mat-form-field>
         </div>

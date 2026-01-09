@@ -4,6 +4,11 @@
   border-radius: 5px;
 }
 
+.leave-card {
+  max-height: 300px;
+  overflow: auto;
+}
+
 .result-option {
   height: 40px;
   background-color: #eee7f8;
@@ -12,7 +17,7 @@
   align-items: center;
   padding: 10px;
   border-radius: 3px;
-  margin: 10px;
+  margin: 8px;
   cursor: pointer;
 }
 
@@ -31,6 +36,7 @@
 .result-option-Unpaid {
   background-color: #fcded6;
 }
+
 .result-option-Maternity {
   background-color: #E8F1FA;
 }

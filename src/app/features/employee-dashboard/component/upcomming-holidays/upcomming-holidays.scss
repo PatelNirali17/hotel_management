@@ -4,36 +4,79 @@
   border-radius: 5px;
 }
 
-.holidaycard {
-  display: flex;
-  align-items: center;
-  justify-content: left;
+.holiday-card {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.holiday-list {
+  list-style: none;
+  padding: 0;
   margin: 10px;
-  border-bottom: 1px solid #6B5B95;
 }
 
-.textBox {
-  width: calc(100% - 90px);
-  margin-left: 10px;
-}
-
-.textContent {
+.holiday-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
 }
 
-.span {
-  font-size: 10px;
+.holiday-item:last-child {
+  border-bottom: none;
 }
 
-.h1 {
-  font-size: 14px;
-  font-weight: bold;
-  color: #3a3a3a;
+.date {
+  width: 48px;
+  height: 48px;
+  background: #eee7f8;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 12px;
 }
 
-.p {
+.date .day {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #6B5B95;
+}
+
+.date .month {
   font-size: 12px;
+  color: #6B5B95;
 }
 
+.details {
+  flex: 1;
+}
+
+.details h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.details p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #777;
+}
+
+.badge {
+  font-size: 11px;
+  padding: 8px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.badge.full {
+  background: #E8F1FA;
+  color: #4A7EBB;
+}
+
+.badge.half {
+  background: #F7F2E8;
+  color: #B89B5E;
+}

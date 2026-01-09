@@ -4,7 +4,7 @@
     "AC_NonAC": "AC",
     "Meal": "All",
     "Mobile": "1234567890",
-    "RoomType": "Delux",
+    "RoomType": "Deluxe",
     "Rent": 25,
     "Capacity": 2,
     "Status": "Booked"
@@ -14,7 +14,7 @@
     "AC_NonAC": "Non AC",
     "Meal": "Lunch",
     "Mobile": "1234567890",
-    "RoomType": "Super Delux",
+    "RoomType": "Super Deluxe",
     "Rent": 50,
     "Capacity": 3,
     "Status": "Open"
@@ -24,7 +24,7 @@
     "AC_NonAC": "AC",
     "Meal": "All",
     "Mobile": "1234567890",
-    "RoomType": "Super Delux",
+    "RoomType": "Suite",
     "Rent": 31,
     "Capacity": 2,
     "Status": "Booked"
@@ -34,7 +34,7 @@
     "AC_NonAC": "Non AC",
     "Meal": "Dinner",
     "Mobile": "1234567890",
-    "RoomType": "Delux",
+    "RoomType": "Suite",
     "Rent": 31,
     "Capacity": 3,
     "Status": "Inactive"
@@ -44,7 +44,7 @@
     "AC_NonAC": "AC",
     "Meal": "Breakfast",
     "Mobile": "1234567890",
-    "RoomType": "Vila",
+    "RoomType": "Villa",
     "Rent": 50,
     "Capacity": 2,
     "Status": "Open"
@@ -74,7 +74,7 @@
     "AC_NonAC": "AC",
     "Meal": "Dinner",
     "Mobile": "1234567890",
-    "RoomType": "Delux",
+    "RoomType": "Deluxe",
     "Rent": 25,
     "Capacity": 3,
     "Status": "Inactive"
@@ -84,7 +84,7 @@
     "AC_NonAC": "AC",
     "Meal": "Breakfast",
     "Mobile": "1234567890",
-    "RoomType": "Delux",
+    "RoomType": "Deluxe",
     "Rent": 29,
     "Capacity": 2,
     "Status": "Open"
@@ -94,7 +94,7 @@
     "AC_NonAC": "Non AC",
     "Meal": "Lunch",
     "Mobile": "1234567890",
-    "RoomType": "Super Delux",
+    "RoomType": "Super Deluxe",
     "Rent": 50,
     "Capacity": 6,
     "Status": "Open"
@@ -104,7 +104,7 @@
     "AC_NonAC": "Non AC",
     "Meal": "Dinner",
     "Mobile": "1234567890",
-    "RoomType": "Super Delux",
+    "RoomType": "Super Deluxe",
     "Rent": 45,
     "Capacity": 3,
     "Status": "Inactive"
@@ -114,7 +114,7 @@
     "AC_NonAC": "AC",
     "Meal": "Lunch",
     "Mobile": "1234567890",
-    "RoomType": "Delux",
+    "RoomType": "Deluxe",
     "Rent": 31,
     "Capacity": 6,
     "Status": "Booked"
@@ -124,7 +124,7 @@
     "AC_NonAC": "Non AC",
     "Meal": "Lunch",
     "Mobile": "1234567890",
-    "RoomType": "Delux",
+    "RoomType": "Deluxe",
     "Rent": 45,
     "Capacity": 3,
     "Status": "Booked"
@@ -134,7 +134,7 @@
     "AC_NonAC": "Non AC",
     "Meal": "Breakfast",
     "Mobile": "1234567890",
-    "RoomType": "Vila",
+    "RoomType": "Villa",
     "Rent": 25,
     "Capacity": 2,
     "Status": "Open"
@@ -154,7 +154,7 @@
     "AC_NonAC": "AC",
     "Meal": "None",
     "Mobile": "1234567890",
-    "RoomType": "Super Delux",
+    "RoomType": "Super Deluxe",
     "Rent": 29,
     "Capacity": 4,
     "Status": "Booked"

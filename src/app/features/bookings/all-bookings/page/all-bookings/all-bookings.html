@@ -18,6 +18,7 @@
                             <th class="bgsecondary">Name</th>
                             <th class="bgsecondary">Package</th>
                             <th class="bgsecondary">Room Type</th>
+                            <th class="bgsecondary">Room No</th>
                             <th class="bgsecondary">Status</th>
                             <th class="bgsecondary">Email</th>
                             <th class="bgsecondary">CheckIn</th>
@@ -34,6 +35,7 @@
                             <td>{{ Booking.firstName }} {{ Booking.lastName }}</td>
                             <td>{{ Booking.package }}</td>
                             <td>{{ Booking.roomType }}</td>
+                            <td>{{ Booking.roomNo }}</td>
                             <td>
                                 <span class="status-badge" [ngClass]="{'booked': Booking.status === 'Booked','open': Booking.status === 'CheckIn',
                                  'inactive': Booking.status === 'Cancelled','draft': Booking.status === 'CheckOut'}">
@@ -65,11 +67,12 @@
                                         <mat-icon style="color: #d10f01;">delete</mat-icon>
                                         <span>Delete</span>
                                     </button>
-                                     <button mat-menu-item style="color: #6B5B95;">
+                                    <button mat-menu-item style="color: #6B5B95;">
                                         <mat-icon style="color: #6B5B95;">logout</mat-icon>
                                         <span>CheckOut</span>
                                     </button>
-                                     <button mat-menu-item style="color: #6B5B95;" (click)="OpenCancelBookingDialog(Booking)">
+                                    <button mat-menu-item style="color: #6B5B95;"
+                                        (click)="OpenCancelBookingDialog(Booking)">
                                         <mat-icon style="color: #6B5B95;">cancel</mat-icon>
                                         <span>Cancel Booking</span>
                                     </button>
