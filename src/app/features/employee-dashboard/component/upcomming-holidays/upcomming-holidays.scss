@@ -1,0 +1,39 @@
+.salary-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-top: 5px solid #6B5B95;
+  border-radius: 5px;
+}
+
+.holidaycard {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 10px;
+  border-bottom: 1px solid #6B5B95;
+}
+
+.textBox {
+  width: calc(100% - 90px);
+  margin-left: 10px;
+}
+
+.textContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.span {
+  font-size: 10px;
+}
+
+.h1 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #3a3a3a;
+}
+
+.p {
+  font-size: 12px;
+}
+

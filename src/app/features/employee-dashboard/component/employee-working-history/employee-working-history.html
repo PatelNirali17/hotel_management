@@ -1,0 +1,32 @@
+<div class="salary-card pb-4">
+    <div class="d-flex p-1">
+        <div class="flex-grow-1">
+            <h5 class="mb-0">Working History</h5>
+        </div>
+        <div>
+            <a class="textlink">View All</a>
+        </div>
+    </div>
+    <mat-divider class="mb-3"></mat-divider>
+    <div class="table-responsive" style="height: 405px;">
+        <table class="table luxury-table">
+            <thead>
+                <tr>
+                    <th class="bgsecondary">Date</th>
+                    <th class="bgsecondary">Arrival Time</th>
+                    <th class="bgsecondary">Departure Time</th>
+                    <th class="bgsecondary">Effective Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr
+                    *ngFor="let History of WorkingHistoryDetails;let i=index">
+                    <td style="padding: 8px;">{{ History.Date }}</td>
+                    <td>{{ History.ArrivalTime }}</td>
+                    <td>{{ History.DepartureTime }}</td>
+                    <td>{{ History.EffectiveHours }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

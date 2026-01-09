@@ -1,28 +1,70 @@
 .salary-card {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-top: 5px solid #6B5B95;
-    border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-top: 5px solid #6B5B95;
+  border-radius: 5px;
 }
 
 .stat-card {
-    border: none;
-    border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .icon-box {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
+  width: 50px;
+  height: 55px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
 }
 
 /* Colors */
 .bg-purple {
-    background-color: #eee7f8;
-    color: #6B5B95;
+  background-color: #eee7f8;
+  color: #6B5B95;
 }
+
+.bg-blue {
+  background-color: #E8F1FA;
+  color: #4A7EBB;
+}
+
+.status-list {
+  list-style: none;
+  padding: 0px 15px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.status-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.on-time {
+  background-color: #6B5B95;
+  /* Green */
+}
+
+.late-attendance {
+  background-color: #C48B9F;
+  /* Red */
+}
+
+.not-present {
+  background-color: #9E9E9E;
+  /* Gray */
+}
+

@@ -1,0 +1,78 @@
+.salary-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-top: 5px solid #6B5B95;
+  border-radius: 5px;
+}
+
+.result-option {
+  height: 40px;
+  background-color: #eee7f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.result-option-Casual {
+  background-color: #F6E9EE;
+}
+
+.result-option-Sick {
+  background-color: #e6e6e6;
+}
+
+.result-option-Personal {
+  background-color: #F7F2E8;
+}
+
+.result-option-Unpaid {
+  background-color: #fcded6;
+}
+.result-option-Maternity {
+  background-color: #E8F1FA;
+}
+
+.leave-box {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  gap: 2px;
+}
+
+.Privilege-icon-text {
+  color: #6B5B95;
+}
+
+.Casual-icon-text {
+  color: #a8687f;
+}
+
+.Sick-icon-text {
+  color: #7a7a7a;
+}
+
+.Personal-icon-text {
+  color: #a88d51;
+}
+
+.Unpaid-icon-text {
+  color: #a12404;
+}
+
+.Maternity-icon-text {
+  color: #4A7EBB;
+}
+
+.result-box {
+  font-size: 14px;
+  color: #6B5B95;
+  font-weight: 700;
+}
+
+.result-box span {
+  font-size: 14px;
+  color: #4A7EBB;
+}

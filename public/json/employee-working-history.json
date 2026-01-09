@@ -1,0 +1,80 @@
+[
+    {
+        "Date": "Oct 1, 2024",
+        "ArrivalTime": "8:00 AM",
+        "DepartureTime": "4:00 PM",
+        "EffectiveHours": 8
+    },
+    {
+        "Date": "Oct 2, 2024",
+        "ArrivalTime": "9:00 AM",
+        "DepartureTime": "5:00 PM",
+        "EffectiveHours": 8
+    },
+    {
+        "Date": "Oct 3, 2024",
+        "ArrivalTime": "8:30 AM",
+        "DepartureTime": "5:00 PM",
+        "EffectiveHours": 8.5
+    },
+    {
+        "Date": "Oct 4, 2024",
+        "ArrivalTime": "7:45 AM",
+        "DepartureTime": "3:45 PM",
+        "EffectiveHours": 8
+    },
+    {
+        "Date": "Oct 5, 2024",
+        "ArrivalTime": "9:00 AM",
+        "DepartureTime": "1:00 PM",
+        "EffectiveHours": 4
+    },
+    {
+        "Date": "Oct 6, 2024",
+        "ArrivalTime": "8:00 AM",
+        "DepartureTime": "4:30 PM",
+        "EffectiveHours": 8.5
+    },
+    {
+        "Date": "Oct 7, 2024",
+        "ArrivalTime": "10:00 AM",
+        "DepartureTime": "6:00 PM",
+        "EffectiveHours": 8
+    },
+    {
+        "Date": "Oct 8, 2024",
+        "ArrivalTime": "9:15 AM",
+        "DepartureTime": "5:15 PM",
+        "EffectiveHours": 8
+    },
+    {
+        "Date": "Oct 9, 2024",
+        "ArrivalTime": "8:00 AM",
+        "DepartureTime": "4:00 PM",
+        "EffectiveHours": 8
+    },
+    {
+        "Date": "Oct 10, 2024",
+        "ArrivalTime": "9:30 AM",
+        "DepartureTime": "5:00 PM",
+        "EffectiveHours": 7.5
+    },
+    {
+        "Date": "Oct 11, 2024",
+        "ArrivalTime": "8:15 AM",
+        "DepartureTime": "4:15 PM",
+        "EffectiveHours": 8
+    },
+    {
+        "Date": "Oct 12, 2024",
+        "ArrivalTime": "9:00 AM",
+        "DepartureTime": "5:30 PM",
+        "EffectiveHours": 8.5
+    },
+    {
+        "Date": "Oct 13, 2024",
+        "ArrivalTime": "8:45 AM",
+        "DepartureTime": "4:45 PM",
+        "EffectiveHours": 8
+    }
+]

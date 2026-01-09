@@ -38,6 +38,7 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { MatTimepickerModule, MatNativeDateTimeModule } from '@dhutaryan/ngx-mat-timepicker';
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 
 @NgModule({
@@ -84,7 +85,8 @@ import { MatTimepickerModule, MatNativeDateTimeModule } from '@dhutaryan/ngx-mat
     MatFormFieldModule,
     NgxPaginationModule,
     MatTimepickerModule,
-    MatNativeDateTimeModule
+    MatNativeDateTimeModule,
+    NgApexchartsModule
   ],
   exports: [
     CommonModule,
@@ -128,7 +130,8 @@ import { MatTimepickerModule, MatNativeDateTimeModule } from '@dhutaryan/ngx-mat
     MatFormFieldModule,
     NgxPaginationModule,
     MatTimepickerModule,
-    MatNativeDateTimeModule
+    MatNativeDateTimeModule,
+    NgApexchartsModule
   ]
 })
 export class SharedModule { }
