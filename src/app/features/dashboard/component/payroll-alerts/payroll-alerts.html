@@ -1,0 +1,32 @@
+<div class="salary-card pb-3">
+    <div class="d-flex p-1">
+        <div class="flex-grow-1">
+            <h5 class="mb-0">Payroll Alerts</h5>
+        </div>
+    </div>
+    <mat-divider class="mb-3"></mat-divider>
+    <div class="payroll-card">
+        <div class="row">
+            <div class="col-md-4 d-flex align-items-center">
+                <ul class="status-list">
+                    <li><span class="status-dot on-time"></span><span
+                            style="margin-right: 10px;"><b>$1,25,000</b></span> Pending Salary Payments</li>
+                    <li><span class="status-dot late-attendance"></span><span
+                            style="margin-right: 10px;"><b>6</b></span> Employee Pendig</li>
+                    <li><span class="status-dot not-present"></span><span
+                            style="margin-right: 10px;"><b>$8,75,000</b></span>
+                        Total Payroll Amount</li>
+                    <li><span class="status-dot not-present"></span><span style="margin-right: 10px;"><b>42</b></span>
+                        Employee Paid</li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis"
+                    [plotOptions]="chartOptions.plotOptions" [dataLabels]="chartOptions.dataLabels"
+                    [fill]="chartOptions.fill" [legend]="chartOptions.legend" [colors]="chartOptions.colors">
+                </apx-chart>
+            </div>
+        </div>
+
+    </div>
+</div>

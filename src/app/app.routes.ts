@@ -18,6 +18,7 @@ import { EmployeeAttendance } from './features/employee-attendance/page/employee
 import { PayrollRoutesList } from './features/payroll/payroll-routes';
 import { EmployeeDashboard } from './features/employee-dashboard/page/employee-dashboard/employee-dashboard';
 import { Accommodations } from './features/accommodations/page/accommodations/accommodations';
+import { MyProfile } from './features/my-profile/page/my-profile/my-profile';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -29,6 +30,7 @@ export const routes: Routes = [
             { path: 'dashboard', component: Dashboard, data: { breadcrumb: 'Dashboard' } },
             { path: 'employeedashboard', component: EmployeeDashboard, data: { breadcrumb: 'Dashboard' } },
             { path: 'accommodations', component: Accommodations, data: { breadcrumb: 'Accommodations' } },
+            { path: 'myprofile', component: MyProfile, data: { breadcrumb: 'My Profile' } },
             {
                 path: 'rooms', data: { breadcrumb: 'Rooms' },
                 children: RoomsRoutesList

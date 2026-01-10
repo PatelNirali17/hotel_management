@@ -2,11 +2,11 @@ import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { SharedModule } from '../../shared-module';
 import { AuthenticationService } from '../../../core/services/authentication-service';
 import { isPlatformBrowser } from '@angular/common';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-user-menu',
-  imports: [SharedModule],
+  imports: [SharedModule,RouterModule],
   templateUrl: './user-menu.html',
   styleUrl: './user-menu.scss',
 })

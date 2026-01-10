@@ -15,19 +15,20 @@ export type ChartOptions = {
 };
 
 @Component({
-  selector: 'app-room-reservation',
+  selector: 'app-payroll-alerts',
   imports: [SharedModule],
-  templateUrl: './room-reservation.html',
-  styleUrl: './room-reservation.scss',
+  templateUrl: './payroll-alerts.html',
+  styleUrl: './payroll-alerts.scss',
 })
-export class RoomReservation {
-  chartOptions: ChartOptions = {
+export class PayrollAlerts {
+ chartOptions: ChartOptions = {
     series: [
-      { name: "Booked", data: [44, 55, 41, 67, 22, 43, 55, 64] },
-      { name: "Canceled", data: [13, 23, 20, 8, 13, 27, 12, 9] }
+      { name: "Paid", data: [10, 15, 9, 8] },
+      { name: "Unpaid", data: [0, 3, 3, 0] }
     ],
     chart: {
       type: "bar",
+      height:250,
       stacked: true,
       toolbar: { show: true }
     },
@@ -39,7 +40,7 @@ export class RoomReservation {
     },
     dataLabels: { enabled: true },
     stroke: { show: true, width: 1, colors: ["#fff"] },
-    xaxis: { categories: ["01 Jan", "02 Jan", "03 Jan", "O4 Jan", "05 Jan", "06 Jan", "07 Jan", "08 Jan"] },
+    xaxis: { categories: ["Front Office", "Housekeeping", "Kitchen", "Security"] },
     colors: ["#6B5B95", "#C48B9F"],
     fill: { opacity: 1 },
     legend: { position: "top", horizontalAlign: "left", offsetX: 40 }

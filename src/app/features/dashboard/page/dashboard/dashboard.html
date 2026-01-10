@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid pb-4">
     <div class="row g-3">
         <div class="col-lg-3 col-md-6">
             <div class="stat-card">
@@ -22,7 +22,7 @@
                         <h3 class="fw-bold mb-0" style="color: #C48B9F;">231</h3>
                     </div>
                     <div class="icon-box checkin">
-                        <mat-icon>calendar_today</mat-icon>
+                        <mat-icon>check</mat-icon>
                     </div>
                 </div>
                 <span class="badge checkin mt-2">↑ 3.56% </span> from last week
@@ -36,7 +36,7 @@
                         <h3 class="fw-bold mb-0" style="color: #B89B5E;">124</h3>
                     </div>
                     <div class="icon-box checkout">
-                        <mat-icon>calendar_today</mat-icon>
+                        <mat-icon>logout</mat-icon>
                     </div>
                 </div>
                 <span class="badge checkout mt-2">↓ 1.06% </span> from last week
@@ -50,7 +50,7 @@
                         <h3 class="fw-bold mb-0" style="color: #4A7EBB;">$1,23,980</h3>
                     </div>
                     <div class="icon-box revenue">
-                        <mat-icon>calendar_today</mat-icon>
+                        <mat-icon>trending_up</mat-icon>
                     </div>
                 </div>
                 <span class="badge revenue mt-2">↑ 5.70% </span> from last week
@@ -77,31 +77,14 @@
         <div class="col-md-12">
             <app-leave-overview></app-leave-overview>
         </div>
-        <div class="col-md-6">Payroll Alerts
-            <!-- Payroll
-
-Payroll Generated for Current Month (Yes/No)
-
-Pending Salary Payments  -->
+        <div class="col-md-12">
+            <app-payroll-alerts></app-payroll-alerts>
         </div>
-        <div class="col-md-4">Events
-            <!-- Upcoming Events
-
-Events Today -->
+        <div class="col-md-6">
+            <app-event-dashboard></app-event-dashboard>
         </div>
-        <div class="col-md-4">Guests
-            <!-- Total Guests Today
-
-VIP Guests (if applicable)
-
-Repeat Guests (optional) -->
-        </div>
-        <div class="col-md-12">Inventory & Expenses
-            <!-- Low Stock Items Count
-
-Total Expenses (Today / Month)
-
-Stock Alerts -->
+        <div class="col-md-6">
+            <app-guest-list-dashboard></app-guest-list-dashboard>
         </div>
     </div>
 </div>

@@ -7,11 +7,14 @@ import { CurrentBooking } from '../../component/current-booking/current-booking'
 import { HousekeepingStatus } from '../../component/housekeeping-status/housekeeping-status';
 import { StaffAndShiftOverview } from '../../component/staff-and-shift-overview/staff-and-shift-overview';
 import { LeaveOverview } from '../../component/leave-overview/leave-overview';
+import { PayrollAlerts } from '../../component/payroll-alerts/payroll-alerts';
+import { EventDashboard } from '../../component/event-dashboard/event-dashboard';
+import { GuestListDashboard } from '../../component/guest-list-dashboard/guest-list-dashboard';
 
 @Component({
   selector: 'app-dashboard',
   imports: [SharedModule,RoomAvailabilityDashboard,RoomTypeOccupancy,RoomReservation,CurrentBooking,HousekeepingStatus,StaffAndShiftOverview,
-    LeaveOverview
+    LeaveOverview,PayrollAlerts,EventDashboard,GuestListDashboard
   ],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.scss',

@@ -1,0 +1,46 @@
+.salary-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-top: 5px solid #6B5B95;
+  border-radius: 5px;
+}
+
+.payroll-card {
+  height: 260px;
+}
+
+.status-list {
+  list-style: none;
+  padding: 0px 15px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.status-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.on-time {
+  background-color: #6B5B95;
+  /* Green */
+}
+
+.late-attendance {
+  background-color: #C48B9F;
+  /* Red */
+}
+
+.not-present {
+  background-color: #9E9E9E;
+  /* Gray */
+}
+

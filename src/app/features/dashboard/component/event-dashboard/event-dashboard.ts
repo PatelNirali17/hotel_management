@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { SharedModule } from '../../../../shared/shared-module';
 
 @Component({
-  selector: 'app-accommodations',
+  selector: 'app-event-dashboard',
   imports: [SharedModule],
-  templateUrl: './accommodations.html',
-  styleUrl: './accommodations.scss',
+  templateUrl: './event-dashboard.html',
+  styleUrl: './event-dashboard.scss',
 })
-export class Accommodations {
+export class EventDashboard {
 
 }
