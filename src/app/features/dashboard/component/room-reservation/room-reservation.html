@@ -1,0 +1,14 @@
+<div class="salary-card pb-3">
+    <div class="d-flex p-1">
+        <div class="flex-grow-1">
+            <h5 class="mb-0">Reservation</h5>
+        </div>
+    </div>
+    <mat-divider class="mb-3"></mat-divider>
+    <div class="reservation-card">
+        <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis"
+            [plotOptions]="chartOptions.plotOptions" [dataLabels]="chartOptions.dataLabels" [fill]="chartOptions.fill"
+            [legend]="chartOptions.legend" [colors]="chartOptions.colors">
+        </apx-chart>
+    </div>
+</div>

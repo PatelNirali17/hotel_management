@@ -1,0 +1,16 @@
+<div class="salary-card pb-2">
+    <div class="d-flex p-1">
+        <div class="flex-grow-1">
+            <h5 class="mb-0">Room Availability</h5>
+        </div>
+        <div>
+            <p class="m-0 text-muted">Total Room: 294</p>
+        </div>
+    </div>
+    <mat-divider class="mb-3"></mat-divider>
+    <div class="availability-card">
+        <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [labels]="chartOptions.labels"
+            [responsive]="chartOptions.responsive" [colors]="chartOptions.colors">
+        </apx-chart>
+    </div>
+</div>

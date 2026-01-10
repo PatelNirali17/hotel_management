@@ -17,6 +17,7 @@ import { ReportsRoutesList } from './features/reports/reports-routes';
 import { EmployeeAttendance } from './features/employee-attendance/page/employee-attendance/employee-attendance';
 import { PayrollRoutesList } from './features/payroll/payroll-routes';
 import { EmployeeDashboard } from './features/employee-dashboard/page/employee-dashboard/employee-dashboard';
+import { Accommodations } from './features/accommodations/page/accommodations/accommodations';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -27,6 +28,7 @@ export const routes: Routes = [
         children: [
             { path: 'dashboard', component: Dashboard, data: { breadcrumb: 'Dashboard' } },
             { path: 'employeedashboard', component: EmployeeDashboard, data: { breadcrumb: 'Dashboard' } },
+            { path: 'accommodations', component: Accommodations, data: { breadcrumb: 'Accommodations' } },
             {
                 path: 'rooms', data: { breadcrumb: 'Rooms' },
                 children: RoomsRoutesList

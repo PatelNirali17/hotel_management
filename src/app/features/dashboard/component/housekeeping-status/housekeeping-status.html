@@ -1,0 +1,12 @@
+<div class="salary-card pb-3">
+    <div class="d-flex p-1">
+        <div class="flex-grow-1">
+            <h5 class="mb-0">Housekeeping Status</h5>
+        </div>
+    </div>
+    <mat-divider class="mb-3"></mat-divider>
+    <div class="housekeeping-card">
+        <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis"
+         [plotOptions]="chartOptions.plotOptions" [dataLabels]="chartOptions.dataLabels" [colors]="chartOptions.colors"></apx-chart>
+    </div>
+</div>

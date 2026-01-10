@@ -1,69 +1,107 @@
 <div class="container-fluid">
-    <div class="row g-4">
-
-        <!-- Card 1 -->
-        <div class="col-md-3">
-            <div class="card stat-card position-relative">
-                <mat-icon class="card-menu">more_horiz</mat-icon>
-                <div class="card-body d-flex align-items-center">
-                    <div class="icon-box bg-purple">
-                        <mat-icon>book</mat-icon>
+    <div class="row g-3">
+        <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="text-muted mb-1">New Bookings</h6>
+                        <h3 class="fw-bold mb-0" style="color: #6B5B95;">840</h3>
                     </div>
-                    <div class="ms-3">
-                        <h5 class="mb-0 fw-bold">1879</h5>
-                        <small class="text-muted">New Booking</small>
+                    <div class="icon-box booked">
+                        <mat-icon>calendar_today</mat-icon>
                     </div>
                 </div>
+                <span class="badge booked mt-2">↑ 7.8% </span> from last week
             </div>
         </div>
-
-        <!-- Card 2 -->
-        <div class="col-md-3">
-            <div class="card stat-card position-relative">
-                <mat-icon class="card-menu">more_horiz</mat-icon>
-                <div class="card-body d-flex align-items-center">
-                    <div class="icon-box bg-blue">
-                        <mat-icon>bed</mat-icon>
+        <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="text-muted mb-1">Check-In</h6>
+                        <h3 class="fw-bold mb-0" style="color: #C48B9F;">231</h3>
                     </div>
-                    <div class="ms-3">
-                        <h5 class="mb-0 fw-bold">55</h5>
-                        <small class="text-muted">Available Rooms</small>
+                    <div class="icon-box checkin">
+                        <mat-icon>calendar_today</mat-icon>
                     </div>
                 </div>
+                <span class="badge checkin mt-2">↑ 3.56% </span> from last week
             </div>
         </div>
-
-        <!-- Card 3 -->
-        <div class="col-md-3">
-            <div class="card stat-card position-relative">
-                <mat-icon class="card-menu">more_horiz</mat-icon>
-                <div class="card-body d-flex align-items-center">
-                    <div class="icon-box bg-orange">
-                        <mat-icon>currency_exchange</mat-icon>
+        <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="text-muted mb-1">Check-Out</h6>
+                        <h3 class="fw-bold mb-0" style="color: #B89B5E;">124</h3>
                     </div>
-                    <div class="ms-3">
-                        <h5 class="mb-0 fw-bold">$2287</h5>
-                        <small class="text-muted">Revenue</small>
+                    <div class="icon-box checkout">
+                        <mat-icon>calendar_today</mat-icon>
                     </div>
                 </div>
+                <span class="badge checkout mt-2">↓ 1.06% </span> from last week
             </div>
         </div>
-
-        <!-- Card 4 -->
-        <div class="col-md-3">
-            <div class="card stat-card position-relative">
-                <mat-icon class="card-menu">more_horiz</mat-icon>
-                <div class="card-body d-flex align-items-center">
-                    <div class="icon-box bg-pink">
-                        <mat-icon>task</mat-icon>
+        <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="text-muted mb-1">Total Revenue</h6>
+                        <h3 class="fw-bold mb-0" style="color: #4A7EBB;">$1,23,980</h3>
                     </div>
-                    <div class="ms-3">
-                        <h5 class="mb-0 fw-bold">567</h5>
-                        <small class="text-muted">Check Out</small>
+                    <div class="icon-box revenue">
+                        <mat-icon>calendar_today</mat-icon>
                     </div>
                 </div>
+                <span class="badge revenue mt-2">↑ 5.70% </span> from last week
             </div>
         </div>
+        <div class="col-md-4">
+            <app-room-availability-dashboard></app-room-availability-dashboard>
+        </div>
+        <div class="col-md-4">
+            <app-room-type-occupancy></app-room-type-occupancy>
+        </div>
+        <div class="col-md-4">
+            <app-room-reservation></app-room-reservation>
+        </div>
+        <div class="col-md-12">
+            <app-current-booking></app-current-booking>
+        </div>
+        <div class="col-md-4">
+            <app-housekeeping-status></app-housekeeping-status>
+        </div>
+        <div class="col-md-8">
+            <app-staff-and-shift-overview></app-staff-and-shift-overview>
+        </div>
+        <div class="col-md-12">
+            <app-leave-overview></app-leave-overview>
+        </div>
+        <div class="col-md-6">Payroll Alerts
+            <!-- Payroll
 
+Payroll Generated for Current Month (Yes/No)
+
+Pending Salary Payments  -->
+        </div>
+        <div class="col-md-4">Events
+            <!-- Upcoming Events
+
+Events Today -->
+        </div>
+        <div class="col-md-4">Guests
+            <!-- Total Guests Today
+
+VIP Guests (if applicable)
+
+Repeat Guests (optional) -->
+        </div>
+        <div class="col-md-12">Inventory & Expenses
+            <!-- Low Stock Items Count
+
+Total Expenses (Today / Month)
+
+Stock Alerts -->
+        </div>
     </div>
 </div>

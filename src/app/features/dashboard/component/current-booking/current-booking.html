@@ -1,0 +1,82 @@
+<div class="salary-card pb-4">
+    <div class="d-flex p-1">
+        <div class="flex-grow-1">
+            <h5 class="mb-0">Current Booking</h5>
+        </div>
+        <div>
+            <a class="textlink">View All</a>
+        </div>
+    </div>
+    <mat-divider class="mb-3"></mat-divider>
+    <div class="table-responsive" style="max-height: 341px;">
+        <table class="table luxury-table">
+            <thead>
+                <tr>
+                    <th class="col-first-column bgsecondary">SRNo</th>
+                    <th class="bgsecondary">Name</th>
+                    <th class="bgsecondary">Package</th>
+                    <th class="bgsecondary">Room Type</th>
+                    <th class="bgsecondary">Room No</th>
+                    <th class="bgsecondary">Status</th>
+                    <th class="bgsecondary">Email</th>
+                    <th class="bgsecondary">CheckIn</th>
+                    <th class="bgsecondary">CheckOut</th>
+                    <th class="bgsecondary">Payment</th>
+                    <th class="bgsecondary">Mobile Number</th>
+                    <th class="bgsecondary">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr
+                    *ngFor="let Booking of BookingDetails;let i=index">
+                    <td class="col-first-column">{{ i + 1 }}</td>
+                    <td>{{ Booking.firstName }} {{ Booking.lastName }}</td>
+                    <td>{{ Booking.package }}</td>
+                    <td>{{ Booking.roomType }}</td>
+                    <td>{{ Booking.roomNo }}</td>
+                    <td>
+                        <span class="status-badge" [ngClass]="{'booked': Booking.status === 'Booked','open': Booking.status === 'CheckIn',
+                                 'inactive': Booking.status === 'Cancelled','draft': Booking.status === 'CheckOut'}">
+                            <span class="status-dot"></span>
+                            {{ Booking.status }}
+                        </span>
+                    </td>
+                    <td>{{ Booking.email }}</td>
+                    <td>{{ Booking.checkInDate }}</td>
+                    <td>{{ Booking.checkOutDate }}</td>
+                    <td>
+                        <span class="status-badge" [ngClass]="{'booked': Booking.payment === 'Paid',
+                                'inactive': Booking.payment === 'Unpaid'}">
+                            <span class="status-dot"></span>
+                            {{ Booking.payment }}
+                        </span>
+                    </td>
+                    <td>{{ Booking.mobile }}</td>
+                    <td>
+                        <button matIconButton [matMenuTriggerFor]="menu">
+                            <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item style="color: #6B5B95;">
+                                <mat-icon style="color: #6B5B95;">edit_square</mat-icon>
+                                <span>Edit</span>
+                            </button>
+                            <button mat-menu-item style="color: #d10f01;">
+                                <mat-icon style="color: #d10f01;">delete</mat-icon>
+                                <span>Delete</span>
+                            </button>
+                            <button mat-menu-item style="color: #6B5B95;">
+                                <mat-icon style="color: #6B5B95;">logout</mat-icon>
+                                <span>CheckOut</span>
+                            </button>
+                            <button mat-menu-item style="color: #6B5B95;" (click)="OpenCancelBookingDialog(Booking)">
+                                <mat-icon style="color: #6B5B95;">cancel</mat-icon>
+                                <span>Cancel Booking</span>
+                            </button>
+                        </mat-menu>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

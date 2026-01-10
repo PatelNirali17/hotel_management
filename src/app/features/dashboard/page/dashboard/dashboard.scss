@@ -1,46 +1,62 @@
 .stat-card {
-    border: none;
-    border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
 .icon-box {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: #fff;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
+    margin-bottom: 12px;
 }
 
-/* Colors */
-.bg-purple {
+.icon-box.booked {
     background-color: #eee7f8;
     color: #6B5B95;
 }
 
-.bg-blue {
-    background-color: #E8F1FA;
-    color: #4A7EBB;
-}
-
-.bg-orange {
-    background-color: #F7F2E8;
-    color: #B89B5E;
-}
-
-.bg-pink {
+.icon-box.checkin {
     background-color: #F6E9EE;
     color: #C48B9F;
 }
 
+.icon-box.checkout {
+    background-color: #F7F2E8;
+    color: #B89B5E;
+}
 
-.card-menu {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    line-height: 1;
-    color: #999999;
+.icon-box.revenue {
+    background-color: #E8F1FA;
+    color: #4A7EBB;
+}
+
+.badge {
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+.badge.booked {
+    background-color: #eee7f8;
+    color: #6B5B95;
+}
+
+.badge.checkin {
+    background-color: #F6E9EE;
+    color: #C48B9F;
+}
+
+.badge.checkout {
+    background-color: #F7F2E8;
+    color: #B89B5E;
+}
+
+.badge.revenue {
+    background-color: #E8F1FA;
+    color: #4A7EBB;
 }

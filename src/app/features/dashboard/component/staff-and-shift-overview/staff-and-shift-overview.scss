@@ -1,0 +1,124 @@
+.salary-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top: 5px solid #6B5B95;
+    border-radius: 5px;
+}
+
+.staff-card {
+    height: 260px;
+}
+
+
+.shift-card {
+    height: 260px;
+    overflow: auto;
+}
+
+.staff-list {
+    list-style: none;
+    padding: 0;
+    margin: 8px;
+}
+
+.staff-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.staff-item:last-child {
+    border-bottom: none;
+}
+
+.staff-box {
+    width: 48px;
+    height: 48px;
+    background: #eee7f8;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    color: #6B5B95;
+}
+
+.details {
+    flex: 1;
+}
+
+.details h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.badge {
+    font-size: 14px;
+    border-radius: 12px;
+    white-space: nowrap;
+    color: #C48B9F;
+}
+
+.stepper-box {
+    padding: 0px 32px;
+}
+
+.stepper-step {
+    display: flex;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.stepper-step:last-child {
+    margin-bottom: 0;
+}
+
+.stepper-line {
+    position: absolute;
+    left: 4px;
+    top: 14px;
+    bottom: -32px;
+    width: 2px;
+    background-color: #e2e8f0;
+    z-index: 1;
+}
+
+.stepper-step:last-child .stepper-line {
+    display: none;
+}
+
+.stepper-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    z-index: 2;
+    background-color: #6B5B95;
+}
+
+.stepper-content {
+    flex: 1;
+}
+
+.stepper-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.stepper-status {
+    font-size: 13px;
+    display: inline-block;
+    border-radius: 12px;
+    margin-top: 4px;
+}
+
+.stepper-time {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 4px;
+}

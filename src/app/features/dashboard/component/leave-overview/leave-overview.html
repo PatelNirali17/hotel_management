@@ -1,0 +1,69 @@
+<div class="salary-card pb-3">
+    <div class="d-flex p-1">
+        <div class="flex-grow-1">
+            <h5 class="mb-0">Leave Management</h5>
+        </div>
+        <div class="mx-2">
+            <p class="m-0 text-muted">Approved Today : {{ApprovedCount}}</p>
+        </div>
+        <div>
+            <p class="m-0 text-muted">Pending Count : {{PendingCount}}</p>
+        </div>
+    </div>
+    <mat-divider class="mb-1"></mat-divider>
+    <div class="table-responsive" style="max-height: 341px;">
+        <p class="m-0"><b>Leave Pending Request List</b></p>
+        <table class="table luxury-table">
+            <thead>
+                <tr>
+                    <th class="col-first-column bgsecondary">SrNo</th>
+                    <th class="bgsecondary">Employee Name</th>
+                    <th class="bgsecondary">Department</th>
+                    <th class="bgsecondary">Manager Name</th>
+                    <th class="bgsecondary">Leave Type</th>
+                    <th class="bgsecondary">Start Date</th>
+                    <th class="bgsecondary">End Date</th>
+                    <th class="bgsecondary">Total Days</th>
+                    <th class="bgsecondary">Reason</th>
+                    <th class="bgsecondary">Status</th>
+                    <th class="bgsecondary">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let Request of LeaveRequestDetails;let i=index">
+                    <td class="col-first-column">{{ i + 1 }}</td>
+                    <td>{{ Request.employeename }}</td>
+                    <td>{{ Request.department }}</td>
+                    <td>{{ Request.managername }}</td>
+                    <td>{{ Request.leavetype }}</td>
+                    <td>{{ Request.startdate }}</td>
+                    <td>{{ Request.enddate }}</td>
+                    <td>{{ Request.totaldays }}</td>
+                    <td>{{ Request.reason }}</td>
+                    <td>
+                        <span class="status-badge" [ngClass]="{'booked': Request.status === 'Approved',
+                                'open': Request.status === 'Pending','inactive': Request.status === 'Rejected'}">
+                            <span class="status-dot"></span>
+                            {{ Request.status }}
+                        </span>
+                    </td>
+                    <td>
+                        <button matIconButton [matMenuTriggerFor]="menu">
+                            <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item style="color: #6B5B95;">
+                                <mat-icon style="color: #6B5B95;">edit_square</mat-icon>
+                                <span>Edit</span>
+                            </button>
+                            <button mat-menu-item style="color: #d10f01;">
+                                <mat-icon style="color: #d10f01;">delete</mat-icon>
+                                <span>Delete</span>
+                            </button>
+                        </mat-menu>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
