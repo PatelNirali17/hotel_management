@@ -4,101 +4,35 @@ The Hotel Management System is a comprehensive web-based application designed to
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🔐 User Roles
---------------
+🔐 User Roles & Features
+---------------------------
 👨‍💼 Admin
 
-Admins have full control over hotel operations, management, and reporting.
+Dashboard overview
+
+Accommodations & room management
+
+Booking & cancellation management
+
+Staff, departments & shift management
+
+Housekeeping & cab services
+
+Leave & payroll management
+
+Guests, events & reports
 
 👩‍💻 Employee
 
-Employees can manage their daily activities, attendance, leaves, payroll, and assigned shifts.
+Employee dashboard
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Attendance tracking
 
-✨ Admin Features
----------------------
-📊 Dashboard – Overview of hotel operations
+Leave requests & balance
 
-🏨 Accommodations Management
+Payroll & bank details
 
-📖 Bookings
-
-   All Bookings
-   Cancel Bookings
-
-🛏️ Rooms
-
-    Room Details
-    Room Types
-
-👥 Staff Management
-
-⏰ Shift Management
-
-   Shift List
-   Assign Shift
-   Shift Report
-
-🏢 Departments
-
-    Department Master
-    Department Overview
-    Designation Master
-
-🧹 Housekeeping
-
-   Room Cleaning
-   Laundry Services
-
-🏖️ Leave Management
-
-    Leave Requests
-    Leave Approval
-    Leave Balance
-    Leave Types
-
-💰 Payroll
-
-   Salary Master
-   Bank Details
-   Generate Payroll
-
-🎉 Events Management
-
-🧍 Guest Management
-
-🚖 Cab Services
-
-   Cab List
-   Cab Booking
-
-📑 Reports
-
-   Stock Reports
-   Expense Reports
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-✨ Employee Features
------------------------
-
-📊 Employee Dashboard
-
-🕒 Attendance Management
-
-🏖️ Leave Management
-
-    Leave Requests
-    Leave Approval Status
-    Leave Balance
-
-💰 Payroll
-
-  Salary Details
-  Bank Details
-
-⏰ Employee Shift Details
-
+Shift information
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🛠️ Technologies Used
 
@@ -127,6 +61,7 @@ Mobile application support
 Notification system (Email/SMS)
 
 Advanced analytics and reports
+
 
 
 
