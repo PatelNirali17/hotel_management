@@ -1,59 +1,136 @@
-# LuxuriaHotel
+🏨 Hotel Management System
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.11.
+The Hotel Management System is a comprehensive web-based application designed to manage hotel operations efficiently. The system supports role-based access with separate dashboards and features for Admin and Employee users.
 
-## Development server
+🔐 User Roles
+👨‍💼 Admin
 
-To start a local development server, run:
+Admins have full control over hotel operations, management, and reporting.
 
-```bash
-ng serve
-```
+👩‍💻 Employee
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Employees can manage their daily activities, attendance, leaves, payroll, and assigned shifts.
 
-## Code scaffolding
+✨ Admin Features
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+📊 Dashboard – Overview of hotel operations
 
-```bash
-ng generate component component-name
-```
+🏨 Accommodations Management
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+📖 Bookings
 
-```bash
-ng generate --help
-```
+All Bookings
 
-## Building
+Cancel Bookings
 
-To build the project run:
+🛏️ Rooms
 
-```bash
-ng build
-```
+Room Details
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Room Types
 
-## Running unit tests
+👥 Staff Management
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+⏰ Shift Management
 
-```bash
-ng test
-```
+Shift List
 
-## Running end-to-end tests
+Assign Shift
 
-For end-to-end (e2e) testing, run:
+Shift Report
 
-```bash
-ng e2e
-```
+🏢 Departments
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Department Master
 
-## Additional Resources
+Department Overview
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Designation Master
+
+🧹 Housekeeping
+
+Room Cleaning
+
+Laundry Services
+
+🏖️ Leave Management
+
+Leave Requests
+
+Leave Approval
+
+Leave Balance
+
+Leave Types
+
+💰 Payroll
+
+Salary Master
+
+Bank Details
+
+Generate Payroll
+
+🎉 Events Management
+
+🧍 Guest Management
+
+🚖 Cab Services
+
+Cab List
+
+Cab Booking
+
+📑 Reports
+
+Stock Reports
+
+Expense Reports
+
+✨ Employee Features
+
+📊 Employee Dashboard
+
+🕒 Attendance Management
+
+🏖️ Leave Management
+
+Leave Requests
+
+Leave Approval Status
+
+Leave Balance
+
+💰 Payroll
+
+Salary Details
+
+Bank Details
+
+⏰ Employee Shift Details
+
+🛠️ Technologies Used
+
+(Update as per your project)
+
+Frontend: Angular / HTML / CSS / JavaScript
+
+Backend: Node.js / Java / Python / PHP
+
+Database: MySQL / MongoDB
+
+Authentication: Role-based access control
+
+🎯 Project Objective
+
+The objective of this project is to automate hotel management processes, reduce manual work, and provide a centralized system for managing hotel operations, staff, and services efficiently.
+
+🚀 Future Enhancements
+
+Online payment integration
+
+Mobile application support
+
+Notification system (Email/SMS)
+
+Advanced analytics and reports
