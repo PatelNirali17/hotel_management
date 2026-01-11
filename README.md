@@ -1,4 +1,5 @@
 🏨 Hotel Management System
+---------------------------
 
 The Hotel Management System is a comprehensive web-based application designed to manage hotel operations efficiently. The system supports role-based access with separate dashboards and features for Admin and Employee users.
 
@@ -8,34 +9,34 @@ The Hotel Management System is a comprehensive web-based application designed to
 ---------------------------
 👨‍💼 Admin
 
-Dashboard overview
+    Dashboard overview
 
-Accommodations & room management
+    Accommodations & room management
 
-Booking & cancellation management
+    Booking & cancellation management
 
-Staff, departments & shift management
+    Staff, departments & shift management
 
-Housekeeping & cab services
+    Housekeeping & cab services
 
-Leave & payroll management
+    Leave & payroll management
 
-Guests, events & reports
+    Guests, events & reports
 
 👩‍💻 Employee
 
-Employee dashboard
+    Employee dashboard
 
-Attendance tracking
+    Attendance tracking
 
-Leave requests & balance
+    Leave requests & balance
 
-Payroll & bank details
+    Payroll & bank details
 
-Shift information
+    Shift information
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🛠️ Technologies Used
-
+---------------------
 (Update as per your project)
 
 Frontend: Angular / HTML / CSS / TypeScript
@@ -61,6 +62,7 @@ Mobile application support
 Notification system (Email/SMS)
 
 Advanced analytics and reports
+
 
 
 
