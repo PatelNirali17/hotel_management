@@ -37,7 +37,6 @@ The Hotel Management System is a comprehensive web-based application designed to
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🛠️ Technologies Used
 ---------------------
-(Update as per your project)
 
 Frontend: Angular / HTML / CSS / TypeScript
 
@@ -62,6 +61,7 @@ Mobile application support
 Notification system (Email/SMS)
 
 Advanced analytics and reports
+
 
 
 
