@@ -5,6 +5,7 @@ The Hotel Management System is a comprehensive web-based application designed to
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🔐 User Roles
+--------------
 👨‍💼 Admin
 
 Admins have full control over hotel operations, management, and reporting.
@@ -12,6 +13,8 @@ Admins have full control over hotel operations, management, and reporting.
 👩‍💻 Employee
 
 Employees can manage their daily activities, attendance, leaves, payroll, and assigned shifts.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ✨ Admin Features
 
@@ -136,4 +139,5 @@ Mobile application support
 Notification system (Email/SMS)
 
 Advanced analytics and reports
+
 
