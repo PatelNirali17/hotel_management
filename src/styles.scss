@@ -54,7 +54,7 @@ body {
 //   background-color: #d9ae5f !important;
 // }
 .mat-mdc-radio-button .mdc-radio__native-control:enabled:checked+.mdc-radio__background>.mdc-radio__inner-circle {
-  background-color: #6B5B95 !important;
+  border-color: #6B5B95 !important;
 }
 
 .mat-mdc-radio-button .mdc-radio__native-control:enabled:checked+.mdc-radio__background>.mdc-radio__outer-circle {
